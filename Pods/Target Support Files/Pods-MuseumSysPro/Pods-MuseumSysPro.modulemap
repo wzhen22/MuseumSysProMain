@@ -1,0 +1,6 @@
+module Pods_MuseumSysPro [system] {
+  umbrella header "Pods-MuseumSysPro-umbrella.h"
+
+  export *
+  module * { export * }
+}

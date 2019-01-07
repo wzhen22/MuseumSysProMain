@@ -13,9 +13,15 @@
 		84293B4621E2E0F600D342F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84293B4521E2E0F600D342F3 /* Assets.xcassets */; };
 		84293B4921E2E0F600D342F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84293B4721E2E0F600D342F3 /* LaunchScreen.storyboard */; };
 		84293B4C21E2E0F600D342F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84293B4B21E2E0F600D342F3 /* main.m */; };
+		84293B6821E3019800D342F3 /* SwTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 84293B6721E3019800D342F3 /* SwTool.m */; };
+		84293B6C21E303B100D342F3 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 84293B6B21E303B100D342F3 /* GTMBase64.m */; };
+		DF317B13D9CD631213DB63FA /* libPods-MuseumSysPro.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AE1FA6E28298F09D2E2BF57 /* libPods-MuseumSysPro.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D340631019171E7DBD6D201 /* Pods-MuseumSysPro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuseumSysPro.release.xcconfig"; path = "Pods/Target Support Files/Pods-MuseumSysPro/Pods-MuseumSysPro.release.xcconfig"; sourceTree = "<group>"; };
+		21E47DE91772A4ACADD02C1B /* Pods-MuseumSysPro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuseumSysPro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MuseumSysPro/Pods-MuseumSysPro.debug.xcconfig"; sourceTree = "<group>"; };
+		3AE1FA6E28298F09D2E2BF57 /* libPods-MuseumSysPro.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MuseumSysPro.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84293B3921E2E0F300D342F3 /* MuseumSysPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuseumSysPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84293B3C21E2E0F300D342F3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		84293B3D21E2E0F300D342F3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +32,13 @@
 		84293B4821E2E0F600D342F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84293B4A21E2E0F600D342F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84293B4B21E2E0F600D342F3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84293B6621E3019800D342F3 /* SwTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwTool.h; sourceTree = "<group>"; };
+		84293B6721E3019800D342F3 /* SwTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwTool.m; sourceTree = "<group>"; };
+		84293B6A21E303B100D342F3 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		84293B6B21E303B100D342F3 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		84293B6D21E3050900D342F3 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		84293B6E21E3259A00D342F3 /* MuPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MuPrefixHeader.pch; sourceTree = "<group>"; };
+		84293B6F21E3286700D342F3 /* MuPubMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MuPubMacros.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +46,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF317B13D9CD631213DB63FA /* libPods-MuseumSysPro.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26E325A3B9C709C2381FA136 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				21E47DE91772A4ACADD02C1B /* Pods-MuseumSysPro.debug.xcconfig */,
+				0D340631019171E7DBD6D201 /* Pods-MuseumSysPro.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		84293B3021E2E0F300D342F3 = {
 			isa = PBXGroup;
 			children = (
 				84293B3B21E2E0F300D342F3 /* MuseumSysPro */,
+				84293B6221E2FD1B00D342F3 /* BaseProFile */,
 				84293B3A21E2E0F300D342F3 /* Products */,
+				26E325A3B9C709C2381FA136 /* Pods */,
+				CE0B9CFB99BC5E00A5405F2A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,15 +86,182 @@
 			children = (
 				84293B3C21E2E0F300D342F3 /* AppDelegate.h */,
 				84293B3D21E2E0F300D342F3 /* AppDelegate.m */,
+				84293B5B21E2FC7500D342F3 /* SysBMainModule */,
+				84293B5921E2FC7400D342F3 /* MyAmendThirdParts */,
+				84293B5421E2FC7400D342F3 /* SysBExpand */,
+				84293B5821E2FC7400D342F3 /* SysBFrameWorks */,
+				84293B5221E2FC7400D342F3 /* SysBPubClass */,
+				84293B5A21E2FC7400D342F3 /* SysBPubViews */,
+				84293B5C21E2FC7500D342F3 /* SysBResource */,
+				84293B5721E2FC7400D342F3 /* SysBVender */,
 				84293B3F21E2E0F300D342F3 /* ViewController.h */,
 				84293B4021E2E0F300D342F3 /* ViewController.m */,
+			);
+			path = MuseumSysPro;
+			sourceTree = "<group>";
+		};
+		84293B5221E2FC7400D342F3 /* SysBPubClass */ = {
+			isa = PBXGroup;
+			children = (
+				84293B6521E3007F00D342F3 /* OwnAppBase */,
+				84293B6421E3003A00D342F3 /* SPubSingleTon */,
+				84293B6321E2FF9D00D342F3 /* SPubNetwork */,
+				84293B5321E2FC7400D342F3 /* SPubTools */,
+			);
+			path = SysBPubClass;
+			sourceTree = "<group>";
+		};
+		84293B5321E2FC7400D342F3 /* SPubTools */ = {
+			isa = PBXGroup;
+			children = (
+				84293B6621E3019800D342F3 /* SwTool.h */,
+				84293B6721E3019800D342F3 /* SwTool.m */,
+			);
+			path = SPubTools;
+			sourceTree = "<group>";
+		};
+		84293B5421E2FC7400D342F3 /* SysBExpand */ = {
+			isa = PBXGroup;
+			children = (
+				84293B5521E2FC7400D342F3 /* ExpCategory */,
+				84293B5621E2FC7400D342F3 /* ExpMacros */,
+			);
+			path = SysBExpand;
+			sourceTree = "<group>";
+		};
+		84293B5521E2FC7400D342F3 /* ExpCategory */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ExpCategory;
+			sourceTree = "<group>";
+		};
+		84293B5621E2FC7400D342F3 /* ExpMacros */ = {
+			isa = PBXGroup;
+			children = (
+				84293B6E21E3259A00D342F3 /* MuPrefixHeader.pch */,
+				84293B6F21E3286700D342F3 /* MuPubMacros.h */,
+			);
+			path = ExpMacros;
+			sourceTree = "<group>";
+		};
+		84293B5721E2FC7400D342F3 /* SysBVender */ = {
+			isa = PBXGroup;
+			children = (
+				84293B6921E3039600D342F3 /* GTMBase64 */,
+			);
+			path = SysBVender;
+			sourceTree = "<group>";
+		};
+		84293B5821E2FC7400D342F3 /* SysBFrameWorks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SysBFrameWorks;
+			sourceTree = "<group>";
+		};
+		84293B5921E2FC7400D342F3 /* MyAmendThirdParts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MyAmendThirdParts;
+			sourceTree = "<group>";
+		};
+		84293B5A21E2FC7400D342F3 /* SysBPubViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SysBPubViews;
+			sourceTree = "<group>";
+		};
+		84293B5B21E2FC7500D342F3 /* SysBMainModule */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SysBMainModule;
+			sourceTree = "<group>";
+		};
+		84293B5C21E2FC7500D342F3 /* SysBResource */ = {
+			isa = PBXGroup;
+			children = (
+				84293B5D21E2FC7500D342F3 /* Global */,
+				84293B5E21E2FC7500D342F3 /* ImageAssets */,
+				84293B5F21E2FC7500D342F3 /* Plist */,
+			);
+			path = SysBResource;
+			sourceTree = "<group>";
+		};
+		84293B5D21E2FC7500D342F3 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		84293B5E21E2FC7500D342F3 /* ImageAssets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ImageAssets;
+			sourceTree = "<group>";
+		};
+		84293B5F21E2FC7500D342F3 /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Plist;
+			sourceTree = "<group>";
+		};
+		84293B6221E2FD1B00D342F3 /* BaseProFile */ = {
+			isa = PBXGroup;
+			children = (
 				84293B4221E2E0F300D342F3 /* Main.storyboard */,
 				84293B4521E2E0F600D342F3 /* Assets.xcassets */,
 				84293B4721E2E0F600D342F3 /* LaunchScreen.storyboard */,
 				84293B4A21E2E0F600D342F3 /* Info.plist */,
 				84293B4B21E2E0F600D342F3 /* main.m */,
 			);
+			name = BaseProFile;
 			path = MuseumSysPro;
+			sourceTree = "<group>";
+		};
+		84293B6321E2FF9D00D342F3 /* SPubNetwork */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SPubNetwork;
+			sourceTree = "<group>";
+		};
+		84293B6421E3003A00D342F3 /* SPubSingleTon */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SPubSingleTon;
+			sourceTree = "<group>";
+		};
+		84293B6521E3007F00D342F3 /* OwnAppBase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = OwnAppBase;
+			sourceTree = "<group>";
+		};
+		84293B6921E3039600D342F3 /* GTMBase64 */ = {
+			isa = PBXGroup;
+			children = (
+				84293B6D21E3050900D342F3 /* GTMDefines.h */,
+				84293B6A21E303B100D342F3 /* GTMBase64.h */,
+				84293B6B21E303B100D342F3 /* GTMBase64.m */,
+			);
+			path = GTMBase64;
+			sourceTree = "<group>";
+		};
+		CE0B9CFB99BC5E00A5405F2A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3AE1FA6E28298F09D2E2BF57 /* libPods-MuseumSysPro.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,6 +271,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84293B4F21E2E0F600D342F3 /* Build configuration list for PBXNativeTarget "MuseumSysPro" */;
 			buildPhases = (
+				A2D8B9EA1EEAE69ADECDFD72 /* [CP] Check Pods Manifest.lock */,
 				84293B3521E2E0F300D342F3 /* Sources */,
 				84293B3621E2E0F300D342F3 /* Frameworks */,
 				84293B3721E2E0F300D342F3 /* Resources */,
@@ -136,6 +330,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A2D8B9EA1EEAE69ADECDFD72 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MuseumSysPro-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		84293B3521E2E0F300D342F3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -143,7 +358,9 @@
 			files = (
 				84293B4121E2E0F300D342F3 /* ViewController.m in Sources */,
 				84293B4C21E2E0F600D342F3 /* main.m in Sources */,
+				84293B6C21E303B100D342F3 /* GTMBase64.m in Sources */,
 				84293B3E21E2E0F300D342F3 /* AppDelegate.m in Sources */,
+				84293B6821E3019800D342F3 /* SwTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,11 +500,13 @@
 		};
 		84293B5021E2E0F600D342F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21E47DE91772A4ACADD02C1B /* Pods-MuseumSysPro.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K3U9F7B5WK;
 				INFOPLIST_FILE = MuseumSysPro/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,11 +519,13 @@
 		};
 		84293B5121E2E0F600D342F3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D340631019171E7DBD6D201 /* Pods-MuseumSysPro.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K3U9F7B5WK;
 				INFOPLIST_FILE = MuseumSysPro/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
