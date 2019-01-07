@@ -13,7 +13,7 @@
 		84293B4621E2E0F600D342F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84293B4521E2E0F600D342F3 /* Assets.xcassets */; };
 		84293B4921E2E0F600D342F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84293B4721E2E0F600D342F3 /* LaunchScreen.storyboard */; };
 		84293B4C21E2E0F600D342F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84293B4B21E2E0F600D342F3 /* main.m */; };
-		84293B6821E3019800D342F3 /* SwTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 84293B6721E3019800D342F3 /* SwTool.m */; };
+		84293B6821E3019800D342F3 /* SwTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 84293B6721E3019800D342F3 /* SwTools.m */; };
 		84293B6C21E303B100D342F3 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 84293B6B21E303B100D342F3 /* GTMBase64.m */; };
 		DF317B13D9CD631213DB63FA /* libPods-MuseumSysPro.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AE1FA6E28298F09D2E2BF57 /* libPods-MuseumSysPro.a */; };
 /* End PBXBuildFile section */
@@ -32,8 +32,8 @@
 		84293B4821E2E0F600D342F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84293B4A21E2E0F600D342F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84293B4B21E2E0F600D342F3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		84293B6621E3019800D342F3 /* SwTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwTool.h; sourceTree = "<group>"; };
-		84293B6721E3019800D342F3 /* SwTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwTool.m; sourceTree = "<group>"; };
+		84293B6621E3019800D342F3 /* SwTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwTools.h; sourceTree = "<group>"; };
+		84293B6721E3019800D342F3 /* SwTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwTools.m; sourceTree = "<group>"; };
 		84293B6A21E303B100D342F3 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
 		84293B6B21E303B100D342F3 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
 		84293B6D21E3050900D342F3 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
@@ -114,8 +114,8 @@
 		84293B5321E2FC7400D342F3 /* SPubTools */ = {
 			isa = PBXGroup;
 			children = (
-				84293B6621E3019800D342F3 /* SwTool.h */,
-				84293B6721E3019800D342F3 /* SwTool.m */,
+				84293B6621E3019800D342F3 /* SwTools.h */,
+				84293B6721E3019800D342F3 /* SwTools.m */,
 			);
 			path = SPubTools;
 			sourceTree = "<group>";
@@ -360,7 +360,7 @@
 				84293B4C21E2E0F600D342F3 /* main.m in Sources */,
 				84293B6C21E303B100D342F3 /* GTMBase64.m in Sources */,
 				84293B3E21E2E0F300D342F3 /* AppDelegate.m in Sources */,
-				84293B6821E3019800D342F3 /* SwTool.m in Sources */,
+				84293B6821E3019800D342F3 /* SwTools.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

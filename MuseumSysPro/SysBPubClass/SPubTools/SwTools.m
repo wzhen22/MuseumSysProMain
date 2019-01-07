@@ -6,7 +6,7 @@
 //  Copyright © 2019年 cbg. All rights reserved.
 //
 
-#import "SwTool.h"
+#import "SwTools.h"
 #import <CommonCrypto/CommonCryptor.h>
 #import "GTMBase64.h"
 #import <ifaddrs.h>
@@ -18,7 +18,7 @@
 #define IP_ADDR_IPv4    @"ipv4"
 #define IP_ADDR_IPv6    @"ipv6"
 
-@implementation SwTool
+@implementation SwTools
 
 //时间戳字符串转时间字符串
 +(NSString *)timestampToDate:(double)timestamp DateFormat:(NSString *)format

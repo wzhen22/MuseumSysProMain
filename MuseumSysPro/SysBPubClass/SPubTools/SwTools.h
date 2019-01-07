@@ -15,7 +15,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SwTool : NSObject
+@interface SwTools : NSObject
 
 /**
  *  时间戳字符串转时间字符串
