@@ -21,5 +21,10 @@
 #import <ReactiveCocoa/ReactiveCocoa.h>
 #import <JSONModel/JSONModel.h>
 #import "UIImageView+WebCache.h"
+//PubClasses
+#import "SysPubHttpKit.h"
+#import "UIColor+HEX.h"
+#import "UIColor+Random.h"
+#import "SVProgressHUD.h"
 
 #endif /* MuPrefixHeader_pch */

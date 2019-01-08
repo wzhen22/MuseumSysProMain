@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "SysBaseTabBarVC.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    SysBaseTabBarVC *yTabBarController = [[SysBaseTabBarVC alloc]init];
+    self.window.rootViewController = yTabBarController;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
