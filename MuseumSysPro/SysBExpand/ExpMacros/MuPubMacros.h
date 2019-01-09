@@ -77,7 +77,7 @@
 #define SeparatorColor      ColorFromHexRGB(0xe6e6e6)    //分割线
 #define MarkLabelBackColor  ColorFromHexRGBA(0x000000,0.7) // 标签的背景
 #define MainThemeRedColor   ColorFromHexRGB(0xea292a) //红色主题色
-#define MainThemeBlueColor  ColorFromHexRGB(0x2a8aea) //蓝色主题色
+#define MainThemeBlueColor  ColorFromHexRGB(0x148aff) //蓝色主题色
 
 ///------ 有效性验证<字符串、数组、字典等> ------
 #define VALID_STRING(str)      ((str) && ([(str) isKindOfClass:[NSString class]]) && ([(str) length] > 0))

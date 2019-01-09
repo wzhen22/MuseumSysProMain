@@ -59,24 +59,24 @@
  * 初始化所有的子控制器
  */
 -(void) setChildViewControllers{
-    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor colorWithHexString:@"505050"], NSForegroundColorAttributeName, [UIFont fontWithName:@"Helvetica" size:13],NSFontAttributeName,nil] forState:UIControlStateNormal];
-    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor colorWithHexString:@"ea292a"], NSForegroundColorAttributeName, [UIFont fontWithName:@"Helvetica" size:13],NSFontAttributeName,nil] forState:UIControlStateSelected];
+    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor colorWithHexString:@"777777"], NSForegroundColorAttributeName, [UIFont fontWithName:@"Helvetica" size:13],NSFontAttributeName,nil] forState:UIControlStateNormal];
+    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor colorWithHexString:@"148aff"], NSForegroundColorAttributeName, [UIFont fontWithName:@"Helvetica" size:13],NSFontAttributeName,nil] forState:UIControlStateSelected];
     
     self.checkHomeVC  = [[SPBCheckHomeVC alloc]init];
     self.checkHomeVC.title = @"寻更巡检";
-    [self setupOneChildViewController:_checkHomeVC title:@"寻更巡检" image:@"account_normal" selectedImage:@"account_highlight"];
+    [self setupOneChildViewController:_checkHomeVC title:@"寻更巡检" image:@"01-巡检巡更-normal" selectedImage:@"01-巡检巡更-active"];
     
     self.manageHomeVC = [[SPBManageHomeVC alloc]init];
     self.manageHomeVC.title = @"安全管理";
-    [self setupOneChildViewController:self.manageHomeVC title:@"安全管理" image:@"mycity_normal" selectedImage:@"mycity_highlight"];
+    [self setupOneChildViewController:self.manageHomeVC title:@"安全管理" image:@"02-安全管理-normal" selectedImage:@"02-安全管理-active"];
     
     self.signInVC = [SPBSIgnInHomeVC new];
     self.signInVC.title = @"移动考勤";
-    [self setupOneChildViewController:self.signInVC title:@"移动考勤" image:@"message_normal" selectedImage:@"message_highlight"];
+    [self setupOneChildViewController:self.signInVC title:@"移动考勤" image:@"03-移动考勤-normal" selectedImage:@"03-移动考勤-active"];
     
     self.userCenterVC = [[SPBUserCenterVC alloc]init];
     self.userCenterVC.title = @"个人中心";
-    [self setupOneChildViewController:self.userCenterVC title:@"个人中心" image:@"home_normal" selectedImage:@"home_highlight"];
+    [self setupOneChildViewController:self.userCenterVC title:@"个人中心" image:@"04-个人中心-norma" selectedImage:@"04-个人中心-active"];
 }
 
 #pragma mark ****************************** private Methods     ******************************

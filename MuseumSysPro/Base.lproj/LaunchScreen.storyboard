@@ -20,12 +20,43 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="750_1334.png" translatesAutoresizingMaskIntoConstraints="NO" id="hi3-aa-aTz">
+                                <rect key="frame" x="16" y="20" width="343" height="647"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vVe-jb-eca" firstAttribute="top" secondItem="hi3-aa-aTz" secondAttribute="bottom" id="4zA-oN-MYL"/>
+                            <constraint firstItem="hi3-aa-aTz" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="GHn-Bx-DPd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hi3-aa-aTz" secondAttribute="trailing" id="WBC-6v-oVD"/>
+                            <constraint firstItem="hi3-aa-aTz" firstAttribute="top" secondItem="8I4-PH-HQz" secondAttribute="bottom" id="tcc-t1-aHO"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qPM-Fx-BNI">
+            <objects>
+                <viewController id="BAB-hc-emG" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rnh-Ma-9OP"/>
+                        <viewControllerLayoutGuide type="bottom" id="i4j-1g-fKO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Tq6-qa-Jv6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zon-NX-28h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="750_1334.png" width="375" height="667"/>
+    </resources>
 </document>

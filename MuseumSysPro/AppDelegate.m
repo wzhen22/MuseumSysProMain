@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "SysBaseTabBarVC.h"
+#import "GuideView.h"
+
 
 @interface AppDelegate ()
 
@@ -21,6 +23,8 @@
     SysBaseTabBarVC *yTabBarController = [[SysBaseTabBarVC alloc]init];
     self.window.rootViewController = yTabBarController;
     [self.window makeKeyAndVisible];
+    [self setGuiteMethord];
+    
     return YES;
 }
 
@@ -50,6 +54,19 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
-
+#pragma mark Private methord
+-(void)setGuiteMethord{
+//    [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"firstLaunched"];
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"firstLaunched"]) {
+        
+    }else{
+        //用户引导
+        [self.window makeKeyAndVisible];
+        GuideView *guideView = [[GuideView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+        [guideView setBackgroundColor:[UIColor clearColor]];
+        [self.window addSubview:guideView];
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"firstLaunched"];
+    }
+}
 
 @end

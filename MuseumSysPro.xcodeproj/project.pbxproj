@@ -267,6 +267,110 @@
 		84293B4C21E2E0F600D342F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84293B4B21E2E0F600D342F3 /* main.m */; };
 		84293B6821E3019800D342F3 /* SwTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 84293B6721E3019800D342F3 /* SwTools.m */; };
 		84293B6C21E303B100D342F3 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 84293B6B21E303B100D342F3 /* GTMBase64.m */; };
+		84BC4B6621E5D1E300E715E0 /* 01-巡检巡更-active@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4AFF21E5D1DF00E715E0 /* 01-巡检巡更-active@2x.png */; };
+		84BC4B6721E5D1E400E715E0 /* 01-巡检巡更-normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B0021E5D1DF00E715E0 /* 01-巡检巡更-normal@2x.png */; };
+		84BC4B6821E5D1E400E715E0 /* 02-安全管理-active@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B0121E5D1DF00E715E0 /* 02-安全管理-active@2x.png */; };
+		84BC4B6921E5D1E400E715E0 /* 02-安全管理-normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B0221E5D1DF00E715E0 /* 02-安全管理-normal@2x.png */; };
+		84BC4B6A21E5D1E400E715E0 /* 03-移动考勤-active@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B0321E5D1DF00E715E0 /* 03-移动考勤-active@2x.png */; };
+		84BC4B6B21E5D1E400E715E0 /* 03-移动考勤-normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B0421E5D1DF00E715E0 /* 03-移动考勤-normal@2x.png */; };
+		84BC4B6C21E5D1E400E715E0 /* 04-个人中心-active@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B0521E5D1DF00E715E0 /* 04-个人中心-active@2x.png */; };
+		84BC4B6D21E5D1E400E715E0 /* 04-个人中心-norma@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B0621E5D1DF00E715E0 /* 04-个人中心-norma@2x.png */; };
+		84BC4B6E21E5D1E400E715E0 /* icon-上报人员@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B0721E5D1DF00E715E0 /* icon-上报人员@2x.png */; };
+		84BC4B6F21E5D1E400E715E0 /* icon-上报时间（详情页）@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B0821E5D1DF00E715E0 /* icon-上报时间（详情页）@2x.png */; };
+		84BC4B7021E5D1E400E715E0 /* icon-关于我们@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B0921E5D1DF00E715E0 /* icon-关于我们@2x.png */; };
+		84BC4B7121E5D1E400E715E0 /* icon-处理人员@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B0A21E5D1DF00E715E0 /* icon-处理人员@2x.png */; };
+		84BC4B7221E5D1E400E715E0 /* icon-当日巡检记录@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B0B21E5D1DF00E715E0 /* icon-当日巡检记录@2x.png */; };
+		84BC4B7321E5D1E400E715E0 /* icon-当月累计打卡天数@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B0C21E5D1DF00E715E0 /* icon-当月累计打卡天数@2x.png */; };
+		84BC4B7421E5D1E400E715E0 /* icon-新密码@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B0D21E5D1DF00E715E0 /* icon-新密码@2x.png */; };
+		84BC4B7521E5D1E400E715E0 /* icon-添加隐患照片@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B0E21E5D1DF00E715E0 /* icon-添加隐患照片@2x.png */; };
+		84BC4B7621E5D1E400E715E0 /* icon-申请原因@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B0F21E5D1DF00E715E0 /* icon-申请原因@2x.png */; };
+		84BC4B7721E5D1E400E715E0 /* icon-确认密码@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B1021E5D1DF00E715E0 /* icon-确认密码@2x.png */; };
+		84BC4B7821E5D1E400E715E0 /* icon-补卡时间点@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B1121E5D1DF00E715E0 /* icon-补卡时间点@2x.png */; };
+		84BC4B7921E5D1E400E715E0 /* icon-返回箭头@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B1221E5D1DF00E715E0 /* icon-返回箭头@2x.png */; };
+		84BC4B7A21E5D1E400E715E0 /* icon-退出登录@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B1321E5D1DF00E715E0 /* icon-退出登录@2x.png */; };
+		84BC4B7B21E5D1E400E715E0 /* icon-选择考勤箭头@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B1421E5D1DF00E715E0 /* icon-选择考勤箭头@2x.png */; };
+		84BC4B7C21E5D1E400E715E0 /* icon-重置密码@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B1521E5D1DF00E715E0 /* icon-重置密码@2x.png */; };
+		84BC4B7D21E5D1E400E715E0 /* icon-隐患内容@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B1621E5D1DF00E715E0 /* icon-隐患内容@2x.png */; };
+		84BC4B7E21E5D1E400E715E0 /* icon-隐患地址@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B1721E5D1DF00E715E0 /* icon-隐患地址@2x.png */; };
+		84BC4B7F21E5D1E400E715E0 /* icon-隐患照片or拍照留证@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B1821E5D1DF00E715E0 /* icon-隐患照片or拍照留证@2x.png */; };
+		84BC4B8021E5D1E400E715E0 /* icon-隐患类型@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B1921E5D1DF00E715E0 /* icon-隐患类型@2x.png */; };
+		84BC4B8121E5D1E400E715E0 /* icon-验证码@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B1A21E5D1DF00E715E0 /* icon-验证码@2x.png */; };
+		84BC4B8221E5D1E400E715E0 /* icon_pic_delete-01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B1B21E5D1DF00E715E0 /* icon_pic_delete-01@2x.png */; };
+		84BC4B8321E5D1E400E715E0 /* icon_上报时间@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B1C21E5D1DF00E715E0 /* icon_上报时间@2x.png */; };
+		84BC4B8421E5D1E400E715E0 /* 个人中心-模块背景@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B1D21E5D1DF00E715E0 /* 个人中心-模块背景@2x.png */; };
+		84BC4B8521E5D1E400E715E0 /* 个人中心-管理员默认大头像@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B1E21E5D1DF00E715E0 /* 个人中心-管理员默认大头像@2x.png */; };
+		84BC4B8621E5D1E400E715E0 /* 处理状态-已关闭@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B1F21E5D1DF00E715E0 /* 处理状态-已关闭@2x.png */; };
+		84BC4B8721E5D1E400E715E0 /* 处理状态-已处理@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B2021E5D1DF00E715E0 /* 处理状态-已处理@2x.png */; };
+		84BC4B8821E5D1E400E715E0 /* 处理状态-待处理@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B2121E5D1DF00E715E0 /* 处理状态-待处理@2x.png */; };
+		84BC4B8921E5D1E400E715E0 /* 巡检记录报告图标@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B2221E5D1DF00E715E0 /* 巡检记录报告图标@2x.png */; };
+		84BC4B8A21E5D1E400E715E0 /* 引导页_跳过@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B2321E5D1DF00E715E0 /* 引导页_跳过@2x.png */; };
+		84BC4B8B21E5D1E400E715E0 /* 打卡成功-时钟背景@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B2421E5D1DF00E715E0 /* 打卡成功-时钟背景@2x.png */; };
+		84BC4B8C21E5D1E400E715E0 /* 打卡成功@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B2521E5D1DF00E715E0 /* 打卡成功@2x.png */; };
+		84BC4B8D21E5D1E400E715E0 /* 提交成功@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B2621E5D1DF00E715E0 /* 提交成功@2x.png */; };
+		84BC4B8E21E5D1E400E715E0 /* 提示-已经进入打卡范围@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B2721E5D1DF00E715E0 /* 提示-已经进入打卡范围@2x.png */; };
+		84BC4B8F21E5D1E400E715E0 /* 提示：当前不在打卡范围@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B2821E5D1DF00E715E0 /* 提示：当前不在打卡范围@2x.png */; };
+		84BC4B9021E5D1E400E715E0 /* 移动考勤页-标签-未打卡按钮@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B2921E5D1DF00E715E0 /* 移动考勤页-标签-未打卡按钮@2x.png */; };
+		84BC4B9121E5D1E400E715E0 /* 01-巡检巡更-active@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B2B21E5D1E300E715E0 /* 01-巡检巡更-active@3x.png */; };
+		84BC4B9221E5D1E400E715E0 /* 01-巡检巡更-normal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B2C21E5D1E300E715E0 /* 01-巡检巡更-normal@3x.png */; };
+		84BC4B9321E5D1E400E715E0 /* 02-安全管理-active@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B2D21E5D1E300E715E0 /* 02-安全管理-active@3x.png */; };
+		84BC4B9421E5D1E400E715E0 /* 02-安全管理-normal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B2E21E5D1E300E715E0 /* 02-安全管理-normal@3x.png */; };
+		84BC4B9521E5D1E400E715E0 /* 03-移动考勤-active@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B2F21E5D1E300E715E0 /* 03-移动考勤-active@3x.png */; };
+		84BC4B9621E5D1E400E715E0 /* 03-移动考勤-normal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B3021E5D1E300E715E0 /* 03-移动考勤-normal@3x.png */; };
+		84BC4B9721E5D1E400E715E0 /* 04-个人中心-active@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B3121E5D1E300E715E0 /* 04-个人中心-active@3x.png */; };
+		84BC4B9821E5D1E400E715E0 /* 04-个人中心-normal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B3221E5D1E300E715E0 /* 04-个人中心-normal@3x.png */; };
+		84BC4B9921E5D1E400E715E0 /* icon-上报人员@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B3321E5D1E300E715E0 /* icon-上报人员@3x.png */; };
+		84BC4B9A21E5D1E400E715E0 /* icon-上报时间（详情页）@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B3421E5D1E300E715E0 /* icon-上报时间（详情页）@3x.png */; };
+		84BC4B9B21E5D1E400E715E0 /* icon-关于我们@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B3521E5D1E300E715E0 /* icon-关于我们@3x.png */; };
+		84BC4B9C21E5D1E400E715E0 /* icon-处理人员@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B3621E5D1E300E715E0 /* icon-处理人员@3x.png */; };
+		84BC4B9D21E5D1E400E715E0 /* icon-当日巡检记录@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B3721E5D1E300E715E0 /* icon-当日巡检记录@3x.png */; };
+		84BC4B9E21E5D1E400E715E0 /* icon-当月累计打卡天数@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B3821E5D1E300E715E0 /* icon-当月累计打卡天数@3x.png */; };
+		84BC4B9F21E5D1E400E715E0 /* icon-新密码@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B3921E5D1E300E715E0 /* icon-新密码@3x.png */; };
+		84BC4BA021E5D1E400E715E0 /* icon-添加隐患照片@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B3A21E5D1E300E715E0 /* icon-添加隐患照片@3x.png */; };
+		84BC4BA121E5D1E400E715E0 /* icon-申请原因@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B3B21E5D1E300E715E0 /* icon-申请原因@3x.png */; };
+		84BC4BA221E5D1E400E715E0 /* icon-确认密码@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B3C21E5D1E300E715E0 /* icon-确认密码@3x.png */; };
+		84BC4BA321E5D1E400E715E0 /* icon-补卡时间点@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B3D21E5D1E300E715E0 /* icon-补卡时间点@3x.png */; };
+		84BC4BA421E5D1E400E715E0 /* icon-返回箭头@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B3E21E5D1E300E715E0 /* icon-返回箭头@3x.png */; };
+		84BC4BA521E5D1E400E715E0 /* icon-退出登录@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B3F21E5D1E300E715E0 /* icon-退出登录@3x.png */; };
+		84BC4BA621E5D1E400E715E0 /* icon-选择考勤箭头@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B4021E5D1E300E715E0 /* icon-选择考勤箭头@3x.png */; };
+		84BC4BA721E5D1E400E715E0 /* icon-重置密码@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B4121E5D1E300E715E0 /* icon-重置密码@3x.png */; };
+		84BC4BA821E5D1E400E715E0 /* icon-隐患内容@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B4221E5D1E300E715E0 /* icon-隐患内容@3x.png */; };
+		84BC4BA921E5D1E400E715E0 /* icon-隐患地址@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B4321E5D1E300E715E0 /* icon-隐患地址@3x.png */; };
+		84BC4BAA21E5D1E400E715E0 /* icon-隐患照片or拍照留证@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B4421E5D1E300E715E0 /* icon-隐患照片or拍照留证@3x.png */; };
+		84BC4BAB21E5D1E400E715E0 /* icon-隐患类型@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B4521E5D1E300E715E0 /* icon-隐患类型@3x.png */; };
+		84BC4BAC21E5D1E400E715E0 /* icon-验证码@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B4621E5D1E300E715E0 /* icon-验证码@3x.png */; };
+		84BC4BAD21E5D1E400E715E0 /* icon_pic_delete-01@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B4721E5D1E300E715E0 /* icon_pic_delete-01@3x.png */; };
+		84BC4BAE21E5D1E400E715E0 /* icon_上报时间@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B4821E5D1E300E715E0 /* icon_上报时间@3x.png */; };
+		84BC4BAF21E5D1E400E715E0 /* 个人中心-模块背景@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B4921E5D1E300E715E0 /* 个人中心-模块背景@3x.png */; };
+		84BC4BB021E5D1E400E715E0 /* 个人中心-管理员默认大头像@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B4A21E5D1E300E715E0 /* 个人中心-管理员默认大头像@3x.png */; };
+		84BC4BB121E5D1E400E715E0 /* 处理状态-已关闭@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B4B21E5D1E300E715E0 /* 处理状态-已关闭@3x.png */; };
+		84BC4BB221E5D1E400E715E0 /* 处理状态-已处理@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B4C21E5D1E300E715E0 /* 处理状态-已处理@3x.png */; };
+		84BC4BB321E5D1E400E715E0 /* 处理状态-待处理@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B4D21E5D1E300E715E0 /* 处理状态-待处理@3x.png */; };
+		84BC4BB421E5D1E400E715E0 /* 巡检记录报告图标@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B4E21E5D1E300E715E0 /* 巡检记录报告图标@3x.png */; };
+		84BC4BB521E5D1E400E715E0 /* 引导页_跳过@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B4F21E5D1E300E715E0 /* 引导页_跳过@3x.png */; };
+		84BC4BB621E5D1E400E715E0 /* 打卡成功-时钟背景@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B5021E5D1E300E715E0 /* 打卡成功-时钟背景@3x.png */; };
+		84BC4BB721E5D1E400E715E0 /* 打卡成功@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B5121E5D1E300E715E0 /* 打卡成功@3x.png */; };
+		84BC4BB821E5D1E400E715E0 /* 提交成功@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B5221E5D1E300E715E0 /* 提交成功@3x.png */; };
+		84BC4BB921E5D1E400E715E0 /* 提示-已经进入打卡范围@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B5321E5D1E300E715E0 /* 提示-已经进入打卡范围@3x.png */; };
+		84BC4BBA21E5D1E400E715E0 /* 提示：当前不在打卡范围@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B5421E5D1E300E715E0 /* 提示：当前不在打卡范围@3x.png */; };
+		84BC4BBB21E5D1E400E715E0 /* 移动考勤页-标签-未打卡按钮@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B5521E5D1E300E715E0 /* 移动考勤页-标签-未打卡按钮@3x.png */; };
+		84BC4BBC21E5D1E400E715E0 /* 00-A引导页-01智能巡更巡检@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B5721E5D1E300E715E0 /* 00-A引导页-01智能巡更巡检@2x.png */; };
+		84BC4BBD21E5D1E400E715E0 /* 00-A引导页-01智能巡更巡检@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B5821E5D1E300E715E0 /* 00-A引导页-01智能巡更巡检@3x.png */; };
+		84BC4BBE21E5D1E400E715E0 /* 00-B引导页-02安全管理@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B5921E5D1E300E715E0 /* 00-B引导页-02安全管理@2x.png */; };
+		84BC4BBF21E5D1E400E715E0 /* 00-B引导页-02安全管理@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B5A21E5D1E300E715E0 /* 00-B引导页-02安全管理@3x.png */; };
+		84BC4BC021E5D1E400E715E0 /* 00-C引导页-03移动考勤@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B5B21E5D1E300E715E0 /* 00-C引导页-03移动考勤@2x.png */; };
+		84BC4BC121E5D1E400E715E0 /* 00-C引导页-03移动考勤@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B5C21E5D1E300E715E0 /* 00-C引导页-03移动考勤@3x.png */; };
+		84BC4BC221E5D1E400E715E0 /* 密码@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B5E21E5D1E300E715E0 /* 密码@2x.png */; };
+		84BC4BC321E5D1E400E715E0 /* 密码@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B5F21E5D1E300E715E0 /* 密码@3x.png */; };
+		84BC4BC421E5D1E400E715E0 /* 用户名@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B6021E5D1E300E715E0 /* 用户名@2x.png */; };
+		84BC4BC521E5D1E400E715E0 /* 用户名@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B6121E5D1E300E715E0 /* 用户名@3x.png */; };
+		84BC4BC621E5D1E400E715E0 /* 登录页@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B6221E5D1E300E715E0 /* 登录页@2x.png */; };
+		84BC4BC721E5D1E400E715E0 /* 登录页@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B6321E5D1E300E715E0 /* 登录页@3x.png */; };
+		84BC4BC821E5D1E400E715E0 /* 组13@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B6421E5D1E300E715E0 /* 组13@2x.png */; };
+		84BC4BC921E5D1E400E715E0 /* 组13@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B6521E5D1E300E715E0 /* 组13@3x.png */; };
+		84BC4BCF21E5D66700E715E0 /* GuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BC4BCC21E5D66700E715E0 /* GuideView.m */; };
+		84BC4BD021E5D66700E715E0 /* start_begin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4BCD21E5D66700E715E0 /* start_begin@2x.png */; };
+		84BC4BD121E5D66700E715E0 /* start_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4BCE21E5D66700E715E0 /* start_button@2x.png */; };
+		84BC4BD621E5E6DD00E715E0 /* 750_1334@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4BD521E5E6DC00E715E0 /* 750_1334@2x.png */; };
 		DF317B13D9CD631213DB63FA /* libPods-MuseumSysPro.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AE1FA6E28298F09D2E2BF57 /* libPods-MuseumSysPro.a */; };
 /* End PBXBuildFile section */
 
@@ -801,6 +905,111 @@
 		84293B6D21E3050900D342F3 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
 		84293B6E21E3259A00D342F3 /* MuPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MuPrefixHeader.pch; sourceTree = "<group>"; };
 		84293B6F21E3286700D342F3 /* MuPubMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MuPubMacros.h; sourceTree = "<group>"; };
+		84BC4AFF21E5D1DF00E715E0 /* 01-巡检巡更-active@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "01-巡检巡更-active@2x.png"; sourceTree = "<group>"; };
+		84BC4B0021E5D1DF00E715E0 /* 01-巡检巡更-normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "01-巡检巡更-normal@2x.png"; sourceTree = "<group>"; };
+		84BC4B0121E5D1DF00E715E0 /* 02-安全管理-active@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "02-安全管理-active@2x.png"; sourceTree = "<group>"; };
+		84BC4B0221E5D1DF00E715E0 /* 02-安全管理-normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "02-安全管理-normal@2x.png"; sourceTree = "<group>"; };
+		84BC4B0321E5D1DF00E715E0 /* 03-移动考勤-active@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "03-移动考勤-active@2x.png"; sourceTree = "<group>"; };
+		84BC4B0421E5D1DF00E715E0 /* 03-移动考勤-normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "03-移动考勤-normal@2x.png"; sourceTree = "<group>"; };
+		84BC4B0521E5D1DF00E715E0 /* 04-个人中心-active@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "04-个人中心-active@2x.png"; sourceTree = "<group>"; };
+		84BC4B0621E5D1DF00E715E0 /* 04-个人中心-norma@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "04-个人中心-norma@2x.png"; sourceTree = "<group>"; };
+		84BC4B0721E5D1DF00E715E0 /* icon-上报人员@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-上报人员@2x.png"; sourceTree = "<group>"; };
+		84BC4B0821E5D1DF00E715E0 /* icon-上报时间（详情页）@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-上报时间（详情页）@2x.png"; sourceTree = "<group>"; };
+		84BC4B0921E5D1DF00E715E0 /* icon-关于我们@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-关于我们@2x.png"; sourceTree = "<group>"; };
+		84BC4B0A21E5D1DF00E715E0 /* icon-处理人员@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-处理人员@2x.png"; sourceTree = "<group>"; };
+		84BC4B0B21E5D1DF00E715E0 /* icon-当日巡检记录@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-当日巡检记录@2x.png"; sourceTree = "<group>"; };
+		84BC4B0C21E5D1DF00E715E0 /* icon-当月累计打卡天数@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-当月累计打卡天数@2x.png"; sourceTree = "<group>"; };
+		84BC4B0D21E5D1DF00E715E0 /* icon-新密码@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-新密码@2x.png"; sourceTree = "<group>"; };
+		84BC4B0E21E5D1DF00E715E0 /* icon-添加隐患照片@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-添加隐患照片@2x.png"; sourceTree = "<group>"; };
+		84BC4B0F21E5D1DF00E715E0 /* icon-申请原因@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-申请原因@2x.png"; sourceTree = "<group>"; };
+		84BC4B1021E5D1DF00E715E0 /* icon-确认密码@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-确认密码@2x.png"; sourceTree = "<group>"; };
+		84BC4B1121E5D1DF00E715E0 /* icon-补卡时间点@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-补卡时间点@2x.png"; sourceTree = "<group>"; };
+		84BC4B1221E5D1DF00E715E0 /* icon-返回箭头@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-返回箭头@2x.png"; sourceTree = "<group>"; };
+		84BC4B1321E5D1DF00E715E0 /* icon-退出登录@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-退出登录@2x.png"; sourceTree = "<group>"; };
+		84BC4B1421E5D1DF00E715E0 /* icon-选择考勤箭头@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-选择考勤箭头@2x.png"; sourceTree = "<group>"; };
+		84BC4B1521E5D1DF00E715E0 /* icon-重置密码@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-重置密码@2x.png"; sourceTree = "<group>"; };
+		84BC4B1621E5D1DF00E715E0 /* icon-隐患内容@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-隐患内容@2x.png"; sourceTree = "<group>"; };
+		84BC4B1721E5D1DF00E715E0 /* icon-隐患地址@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-隐患地址@2x.png"; sourceTree = "<group>"; };
+		84BC4B1821E5D1DF00E715E0 /* icon-隐患照片or拍照留证@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-隐患照片or拍照留证@2x.png"; sourceTree = "<group>"; };
+		84BC4B1921E5D1DF00E715E0 /* icon-隐患类型@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-隐患类型@2x.png"; sourceTree = "<group>"; };
+		84BC4B1A21E5D1DF00E715E0 /* icon-验证码@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-验证码@2x.png"; sourceTree = "<group>"; };
+		84BC4B1B21E5D1DF00E715E0 /* icon_pic_delete-01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_pic_delete-01@2x.png"; sourceTree = "<group>"; };
+		84BC4B1C21E5D1DF00E715E0 /* icon_上报时间@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_上报时间@2x.png"; sourceTree = "<group>"; };
+		84BC4B1D21E5D1DF00E715E0 /* 个人中心-模块背景@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "个人中心-模块背景@2x.png"; sourceTree = "<group>"; };
+		84BC4B1E21E5D1DF00E715E0 /* 个人中心-管理员默认大头像@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "个人中心-管理员默认大头像@2x.png"; sourceTree = "<group>"; };
+		84BC4B1F21E5D1DF00E715E0 /* 处理状态-已关闭@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "处理状态-已关闭@2x.png"; sourceTree = "<group>"; };
+		84BC4B2021E5D1DF00E715E0 /* 处理状态-已处理@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "处理状态-已处理@2x.png"; sourceTree = "<group>"; };
+		84BC4B2121E5D1DF00E715E0 /* 处理状态-待处理@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "处理状态-待处理@2x.png"; sourceTree = "<group>"; };
+		84BC4B2221E5D1DF00E715E0 /* 巡检记录报告图标@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "巡检记录报告图标@2x.png"; sourceTree = "<group>"; };
+		84BC4B2321E5D1DF00E715E0 /* 引导页_跳过@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "引导页_跳过@2x.png"; sourceTree = "<group>"; };
+		84BC4B2421E5D1DF00E715E0 /* 打卡成功-时钟背景@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "打卡成功-时钟背景@2x.png"; sourceTree = "<group>"; };
+		84BC4B2521E5D1DF00E715E0 /* 打卡成功@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "打卡成功@2x.png"; sourceTree = "<group>"; };
+		84BC4B2621E5D1DF00E715E0 /* 提交成功@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "提交成功@2x.png"; sourceTree = "<group>"; };
+		84BC4B2721E5D1DF00E715E0 /* 提示-已经进入打卡范围@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "提示-已经进入打卡范围@2x.png"; sourceTree = "<group>"; };
+		84BC4B2821E5D1DF00E715E0 /* 提示：当前不在打卡范围@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "提示：当前不在打卡范围@2x.png"; sourceTree = "<group>"; };
+		84BC4B2921E5D1DF00E715E0 /* 移动考勤页-标签-未打卡按钮@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "移动考勤页-标签-未打卡按钮@2x.png"; sourceTree = "<group>"; };
+		84BC4B2B21E5D1E300E715E0 /* 01-巡检巡更-active@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "01-巡检巡更-active@3x.png"; sourceTree = "<group>"; };
+		84BC4B2C21E5D1E300E715E0 /* 01-巡检巡更-normal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "01-巡检巡更-normal@3x.png"; sourceTree = "<group>"; };
+		84BC4B2D21E5D1E300E715E0 /* 02-安全管理-active@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "02-安全管理-active@3x.png"; sourceTree = "<group>"; };
+		84BC4B2E21E5D1E300E715E0 /* 02-安全管理-normal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "02-安全管理-normal@3x.png"; sourceTree = "<group>"; };
+		84BC4B2F21E5D1E300E715E0 /* 03-移动考勤-active@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "03-移动考勤-active@3x.png"; sourceTree = "<group>"; };
+		84BC4B3021E5D1E300E715E0 /* 03-移动考勤-normal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "03-移动考勤-normal@3x.png"; sourceTree = "<group>"; };
+		84BC4B3121E5D1E300E715E0 /* 04-个人中心-active@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "04-个人中心-active@3x.png"; sourceTree = "<group>"; };
+		84BC4B3221E5D1E300E715E0 /* 04-个人中心-normal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "04-个人中心-normal@3x.png"; sourceTree = "<group>"; };
+		84BC4B3321E5D1E300E715E0 /* icon-上报人员@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-上报人员@3x.png"; sourceTree = "<group>"; };
+		84BC4B3421E5D1E300E715E0 /* icon-上报时间（详情页）@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-上报时间（详情页）@3x.png"; sourceTree = "<group>"; };
+		84BC4B3521E5D1E300E715E0 /* icon-关于我们@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-关于我们@3x.png"; sourceTree = "<group>"; };
+		84BC4B3621E5D1E300E715E0 /* icon-处理人员@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-处理人员@3x.png"; sourceTree = "<group>"; };
+		84BC4B3721E5D1E300E715E0 /* icon-当日巡检记录@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-当日巡检记录@3x.png"; sourceTree = "<group>"; };
+		84BC4B3821E5D1E300E715E0 /* icon-当月累计打卡天数@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-当月累计打卡天数@3x.png"; sourceTree = "<group>"; };
+		84BC4B3921E5D1E300E715E0 /* icon-新密码@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-新密码@3x.png"; sourceTree = "<group>"; };
+		84BC4B3A21E5D1E300E715E0 /* icon-添加隐患照片@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-添加隐患照片@3x.png"; sourceTree = "<group>"; };
+		84BC4B3B21E5D1E300E715E0 /* icon-申请原因@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-申请原因@3x.png"; sourceTree = "<group>"; };
+		84BC4B3C21E5D1E300E715E0 /* icon-确认密码@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-确认密码@3x.png"; sourceTree = "<group>"; };
+		84BC4B3D21E5D1E300E715E0 /* icon-补卡时间点@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-补卡时间点@3x.png"; sourceTree = "<group>"; };
+		84BC4B3E21E5D1E300E715E0 /* icon-返回箭头@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-返回箭头@3x.png"; sourceTree = "<group>"; };
+		84BC4B3F21E5D1E300E715E0 /* icon-退出登录@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-退出登录@3x.png"; sourceTree = "<group>"; };
+		84BC4B4021E5D1E300E715E0 /* icon-选择考勤箭头@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-选择考勤箭头@3x.png"; sourceTree = "<group>"; };
+		84BC4B4121E5D1E300E715E0 /* icon-重置密码@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-重置密码@3x.png"; sourceTree = "<group>"; };
+		84BC4B4221E5D1E300E715E0 /* icon-隐患内容@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-隐患内容@3x.png"; sourceTree = "<group>"; };
+		84BC4B4321E5D1E300E715E0 /* icon-隐患地址@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-隐患地址@3x.png"; sourceTree = "<group>"; };
+		84BC4B4421E5D1E300E715E0 /* icon-隐患照片or拍照留证@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-隐患照片or拍照留证@3x.png"; sourceTree = "<group>"; };
+		84BC4B4521E5D1E300E715E0 /* icon-隐患类型@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-隐患类型@3x.png"; sourceTree = "<group>"; };
+		84BC4B4621E5D1E300E715E0 /* icon-验证码@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-验证码@3x.png"; sourceTree = "<group>"; };
+		84BC4B4721E5D1E300E715E0 /* icon_pic_delete-01@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_pic_delete-01@3x.png"; sourceTree = "<group>"; };
+		84BC4B4821E5D1E300E715E0 /* icon_上报时间@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_上报时间@3x.png"; sourceTree = "<group>"; };
+		84BC4B4921E5D1E300E715E0 /* 个人中心-模块背景@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "个人中心-模块背景@3x.png"; sourceTree = "<group>"; };
+		84BC4B4A21E5D1E300E715E0 /* 个人中心-管理员默认大头像@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "个人中心-管理员默认大头像@3x.png"; sourceTree = "<group>"; };
+		84BC4B4B21E5D1E300E715E0 /* 处理状态-已关闭@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "处理状态-已关闭@3x.png"; sourceTree = "<group>"; };
+		84BC4B4C21E5D1E300E715E0 /* 处理状态-已处理@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "处理状态-已处理@3x.png"; sourceTree = "<group>"; };
+		84BC4B4D21E5D1E300E715E0 /* 处理状态-待处理@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "处理状态-待处理@3x.png"; sourceTree = "<group>"; };
+		84BC4B4E21E5D1E300E715E0 /* 巡检记录报告图标@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "巡检记录报告图标@3x.png"; sourceTree = "<group>"; };
+		84BC4B4F21E5D1E300E715E0 /* 引导页_跳过@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "引导页_跳过@3x.png"; sourceTree = "<group>"; };
+		84BC4B5021E5D1E300E715E0 /* 打卡成功-时钟背景@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "打卡成功-时钟背景@3x.png"; sourceTree = "<group>"; };
+		84BC4B5121E5D1E300E715E0 /* 打卡成功@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "打卡成功@3x.png"; sourceTree = "<group>"; };
+		84BC4B5221E5D1E300E715E0 /* 提交成功@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "提交成功@3x.png"; sourceTree = "<group>"; };
+		84BC4B5321E5D1E300E715E0 /* 提示-已经进入打卡范围@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "提示-已经进入打卡范围@3x.png"; sourceTree = "<group>"; };
+		84BC4B5421E5D1E300E715E0 /* 提示：当前不在打卡范围@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "提示：当前不在打卡范围@3x.png"; sourceTree = "<group>"; };
+		84BC4B5521E5D1E300E715E0 /* 移动考勤页-标签-未打卡按钮@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "移动考勤页-标签-未打卡按钮@3x.png"; sourceTree = "<group>"; };
+		84BC4B5721E5D1E300E715E0 /* 00-A引导页-01智能巡更巡检@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "00-A引导页-01智能巡更巡检@2x.png"; sourceTree = "<group>"; };
+		84BC4B5821E5D1E300E715E0 /* 00-A引导页-01智能巡更巡检@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "00-A引导页-01智能巡更巡检@3x.png"; sourceTree = "<group>"; };
+		84BC4B5921E5D1E300E715E0 /* 00-B引导页-02安全管理@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "00-B引导页-02安全管理@2x.png"; sourceTree = "<group>"; };
+		84BC4B5A21E5D1E300E715E0 /* 00-B引导页-02安全管理@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "00-B引导页-02安全管理@3x.png"; sourceTree = "<group>"; };
+		84BC4B5B21E5D1E300E715E0 /* 00-C引导页-03移动考勤@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "00-C引导页-03移动考勤@2x.png"; sourceTree = "<group>"; };
+		84BC4B5C21E5D1E300E715E0 /* 00-C引导页-03移动考勤@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "00-C引导页-03移动考勤@3x.png"; sourceTree = "<group>"; };
+		84BC4B5E21E5D1E300E715E0 /* 密码@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "密码@2x.png"; sourceTree = "<group>"; };
+		84BC4B5F21E5D1E300E715E0 /* 密码@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "密码@3x.png"; sourceTree = "<group>"; };
+		84BC4B6021E5D1E300E715E0 /* 用户名@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "用户名@2x.png"; sourceTree = "<group>"; };
+		84BC4B6121E5D1E300E715E0 /* 用户名@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "用户名@3x.png"; sourceTree = "<group>"; };
+		84BC4B6221E5D1E300E715E0 /* 登录页@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "登录页@2x.png"; sourceTree = "<group>"; };
+		84BC4B6321E5D1E300E715E0 /* 登录页@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "登录页@3x.png"; sourceTree = "<group>"; };
+		84BC4B6421E5D1E300E715E0 /* 组13@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "组13@2x.png"; sourceTree = "<group>"; };
+		84BC4B6521E5D1E300E715E0 /* 组13@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "组13@3x.png"; sourceTree = "<group>"; };
+		84BC4BCB21E5D66700E715E0 /* GuideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuideView.h; sourceTree = "<group>"; };
+		84BC4BCC21E5D66700E715E0 /* GuideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuideView.m; sourceTree = "<group>"; };
+		84BC4BCD21E5D66700E715E0 /* start_begin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "start_begin@2x.png"; sourceTree = "<group>"; };
+		84BC4BCE21E5D66700E715E0 /* start_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "start_button@2x.png"; sourceTree = "<group>"; };
+		84BC4BD521E5E6DC00E715E0 /* 750_1334@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "750_1334@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1973,6 +2182,7 @@
 		84293B5A21E2FC7400D342F3 /* SysBPubViews */ = {
 			isa = PBXGroup;
 			children = (
+				84BC4BCA21E5D66700E715E0 /* GuideView */,
 			);
 			path = SysBPubViews;
 			sourceTree = "<group>";
@@ -1993,6 +2203,11 @@
 		84293B5C21E2FC7500D342F3 /* SysBResource */ = {
 			isa = PBXGroup;
 			children = (
+				84BC4BD221E5E62A00E715E0 /* 启动图 */,
+				84BC4B5D21E5D1E300E715E0 /* 登录页 */,
+				84BC4B5621E5D1E300E715E0 /* 引导页 */,
+				84BC4AFE21E5D1DF00E715E0 /* icon@2x */,
+				84BC4B2A21E5D1E300E715E0 /* icon@3x */,
 				84293B5D21E2FC7500D342F3 /* Global */,
 				84293B5E21E2FC7500D342F3 /* ImageAssets */,
 				84293B5F21E2FC7500D342F3 /* Plist */,
@@ -2073,6 +2288,153 @@
 			path = GTMBase64;
 			sourceTree = "<group>";
 		};
+		84BC4AFE21E5D1DF00E715E0 /* icon@2x */ = {
+			isa = PBXGroup;
+			children = (
+				84BC4AFF21E5D1DF00E715E0 /* 01-巡检巡更-active@2x.png */,
+				84BC4B0021E5D1DF00E715E0 /* 01-巡检巡更-normal@2x.png */,
+				84BC4B0121E5D1DF00E715E0 /* 02-安全管理-active@2x.png */,
+				84BC4B0221E5D1DF00E715E0 /* 02-安全管理-normal@2x.png */,
+				84BC4B0321E5D1DF00E715E0 /* 03-移动考勤-active@2x.png */,
+				84BC4B0421E5D1DF00E715E0 /* 03-移动考勤-normal@2x.png */,
+				84BC4B0521E5D1DF00E715E0 /* 04-个人中心-active@2x.png */,
+				84BC4B0621E5D1DF00E715E0 /* 04-个人中心-norma@2x.png */,
+				84BC4B0721E5D1DF00E715E0 /* icon-上报人员@2x.png */,
+				84BC4B0821E5D1DF00E715E0 /* icon-上报时间（详情页）@2x.png */,
+				84BC4B0921E5D1DF00E715E0 /* icon-关于我们@2x.png */,
+				84BC4B0A21E5D1DF00E715E0 /* icon-处理人员@2x.png */,
+				84BC4B0B21E5D1DF00E715E0 /* icon-当日巡检记录@2x.png */,
+				84BC4B0C21E5D1DF00E715E0 /* icon-当月累计打卡天数@2x.png */,
+				84BC4B0D21E5D1DF00E715E0 /* icon-新密码@2x.png */,
+				84BC4B0E21E5D1DF00E715E0 /* icon-添加隐患照片@2x.png */,
+				84BC4B0F21E5D1DF00E715E0 /* icon-申请原因@2x.png */,
+				84BC4B1021E5D1DF00E715E0 /* icon-确认密码@2x.png */,
+				84BC4B1121E5D1DF00E715E0 /* icon-补卡时间点@2x.png */,
+				84BC4B1221E5D1DF00E715E0 /* icon-返回箭头@2x.png */,
+				84BC4B1321E5D1DF00E715E0 /* icon-退出登录@2x.png */,
+				84BC4B1421E5D1DF00E715E0 /* icon-选择考勤箭头@2x.png */,
+				84BC4B1521E5D1DF00E715E0 /* icon-重置密码@2x.png */,
+				84BC4B1621E5D1DF00E715E0 /* icon-隐患内容@2x.png */,
+				84BC4B1721E5D1DF00E715E0 /* icon-隐患地址@2x.png */,
+				84BC4B1821E5D1DF00E715E0 /* icon-隐患照片or拍照留证@2x.png */,
+				84BC4B1921E5D1DF00E715E0 /* icon-隐患类型@2x.png */,
+				84BC4B1A21E5D1DF00E715E0 /* icon-验证码@2x.png */,
+				84BC4B1B21E5D1DF00E715E0 /* icon_pic_delete-01@2x.png */,
+				84BC4B1C21E5D1DF00E715E0 /* icon_上报时间@2x.png */,
+				84BC4B1D21E5D1DF00E715E0 /* 个人中心-模块背景@2x.png */,
+				84BC4B1E21E5D1DF00E715E0 /* 个人中心-管理员默认大头像@2x.png */,
+				84BC4B1F21E5D1DF00E715E0 /* 处理状态-已关闭@2x.png */,
+				84BC4B2021E5D1DF00E715E0 /* 处理状态-已处理@2x.png */,
+				84BC4B2121E5D1DF00E715E0 /* 处理状态-待处理@2x.png */,
+				84BC4B2221E5D1DF00E715E0 /* 巡检记录报告图标@2x.png */,
+				84BC4B2321E5D1DF00E715E0 /* 引导页_跳过@2x.png */,
+				84BC4B2421E5D1DF00E715E0 /* 打卡成功-时钟背景@2x.png */,
+				84BC4B2521E5D1DF00E715E0 /* 打卡成功@2x.png */,
+				84BC4B2621E5D1DF00E715E0 /* 提交成功@2x.png */,
+				84BC4B2721E5D1DF00E715E0 /* 提示-已经进入打卡范围@2x.png */,
+				84BC4B2821E5D1DF00E715E0 /* 提示：当前不在打卡范围@2x.png */,
+				84BC4B2921E5D1DF00E715E0 /* 移动考勤页-标签-未打卡按钮@2x.png */,
+			);
+			path = "icon@2x";
+			sourceTree = "<group>";
+		};
+		84BC4B2A21E5D1E300E715E0 /* icon@3x */ = {
+			isa = PBXGroup;
+			children = (
+				84BC4B2B21E5D1E300E715E0 /* 01-巡检巡更-active@3x.png */,
+				84BC4B2C21E5D1E300E715E0 /* 01-巡检巡更-normal@3x.png */,
+				84BC4B2D21E5D1E300E715E0 /* 02-安全管理-active@3x.png */,
+				84BC4B2E21E5D1E300E715E0 /* 02-安全管理-normal@3x.png */,
+				84BC4B2F21E5D1E300E715E0 /* 03-移动考勤-active@3x.png */,
+				84BC4B3021E5D1E300E715E0 /* 03-移动考勤-normal@3x.png */,
+				84BC4B3121E5D1E300E715E0 /* 04-个人中心-active@3x.png */,
+				84BC4B3221E5D1E300E715E0 /* 04-个人中心-normal@3x.png */,
+				84BC4B3321E5D1E300E715E0 /* icon-上报人员@3x.png */,
+				84BC4B3421E5D1E300E715E0 /* icon-上报时间（详情页）@3x.png */,
+				84BC4B3521E5D1E300E715E0 /* icon-关于我们@3x.png */,
+				84BC4B3621E5D1E300E715E0 /* icon-处理人员@3x.png */,
+				84BC4B3721E5D1E300E715E0 /* icon-当日巡检记录@3x.png */,
+				84BC4B3821E5D1E300E715E0 /* icon-当月累计打卡天数@3x.png */,
+				84BC4B3921E5D1E300E715E0 /* icon-新密码@3x.png */,
+				84BC4B3A21E5D1E300E715E0 /* icon-添加隐患照片@3x.png */,
+				84BC4B3B21E5D1E300E715E0 /* icon-申请原因@3x.png */,
+				84BC4B3C21E5D1E300E715E0 /* icon-确认密码@3x.png */,
+				84BC4B3D21E5D1E300E715E0 /* icon-补卡时间点@3x.png */,
+				84BC4B3E21E5D1E300E715E0 /* icon-返回箭头@3x.png */,
+				84BC4B3F21E5D1E300E715E0 /* icon-退出登录@3x.png */,
+				84BC4B4021E5D1E300E715E0 /* icon-选择考勤箭头@3x.png */,
+				84BC4B4121E5D1E300E715E0 /* icon-重置密码@3x.png */,
+				84BC4B4221E5D1E300E715E0 /* icon-隐患内容@3x.png */,
+				84BC4B4321E5D1E300E715E0 /* icon-隐患地址@3x.png */,
+				84BC4B4421E5D1E300E715E0 /* icon-隐患照片or拍照留证@3x.png */,
+				84BC4B4521E5D1E300E715E0 /* icon-隐患类型@3x.png */,
+				84BC4B4621E5D1E300E715E0 /* icon-验证码@3x.png */,
+				84BC4B4721E5D1E300E715E0 /* icon_pic_delete-01@3x.png */,
+				84BC4B4821E5D1E300E715E0 /* icon_上报时间@3x.png */,
+				84BC4B4921E5D1E300E715E0 /* 个人中心-模块背景@3x.png */,
+				84BC4B4A21E5D1E300E715E0 /* 个人中心-管理员默认大头像@3x.png */,
+				84BC4B4B21E5D1E300E715E0 /* 处理状态-已关闭@3x.png */,
+				84BC4B4C21E5D1E300E715E0 /* 处理状态-已处理@3x.png */,
+				84BC4B4D21E5D1E300E715E0 /* 处理状态-待处理@3x.png */,
+				84BC4B4E21E5D1E300E715E0 /* 巡检记录报告图标@3x.png */,
+				84BC4B4F21E5D1E300E715E0 /* 引导页_跳过@3x.png */,
+				84BC4B5021E5D1E300E715E0 /* 打卡成功-时钟背景@3x.png */,
+				84BC4B5121E5D1E300E715E0 /* 打卡成功@3x.png */,
+				84BC4B5221E5D1E300E715E0 /* 提交成功@3x.png */,
+				84BC4B5321E5D1E300E715E0 /* 提示-已经进入打卡范围@3x.png */,
+				84BC4B5421E5D1E300E715E0 /* 提示：当前不在打卡范围@3x.png */,
+				84BC4B5521E5D1E300E715E0 /* 移动考勤页-标签-未打卡按钮@3x.png */,
+			);
+			path = "icon@3x";
+			sourceTree = "<group>";
+		};
+		84BC4B5621E5D1E300E715E0 /* 引导页 */ = {
+			isa = PBXGroup;
+			children = (
+				84BC4B5721E5D1E300E715E0 /* 00-A引导页-01智能巡更巡检@2x.png */,
+				84BC4B5821E5D1E300E715E0 /* 00-A引导页-01智能巡更巡检@3x.png */,
+				84BC4B5921E5D1E300E715E0 /* 00-B引导页-02安全管理@2x.png */,
+				84BC4B5A21E5D1E300E715E0 /* 00-B引导页-02安全管理@3x.png */,
+				84BC4B5B21E5D1E300E715E0 /* 00-C引导页-03移动考勤@2x.png */,
+				84BC4B5C21E5D1E300E715E0 /* 00-C引导页-03移动考勤@3x.png */,
+			);
+			path = "引导页";
+			sourceTree = "<group>";
+		};
+		84BC4B5D21E5D1E300E715E0 /* 登录页 */ = {
+			isa = PBXGroup;
+			children = (
+				84BC4B5E21E5D1E300E715E0 /* 密码@2x.png */,
+				84BC4B5F21E5D1E300E715E0 /* 密码@3x.png */,
+				84BC4B6021E5D1E300E715E0 /* 用户名@2x.png */,
+				84BC4B6121E5D1E300E715E0 /* 用户名@3x.png */,
+				84BC4B6221E5D1E300E715E0 /* 登录页@2x.png */,
+				84BC4B6321E5D1E300E715E0 /* 登录页@3x.png */,
+				84BC4B6421E5D1E300E715E0 /* 组13@2x.png */,
+				84BC4B6521E5D1E300E715E0 /* 组13@3x.png */,
+			);
+			path = "登录页";
+			sourceTree = "<group>";
+		};
+		84BC4BCA21E5D66700E715E0 /* GuideView */ = {
+			isa = PBXGroup;
+			children = (
+				84BC4BCB21E5D66700E715E0 /* GuideView.h */,
+				84BC4BCC21E5D66700E715E0 /* GuideView.m */,
+				84BC4BCD21E5D66700E715E0 /* start_begin@2x.png */,
+				84BC4BCE21E5D66700E715E0 /* start_button@2x.png */,
+			);
+			path = GuideView;
+			sourceTree = "<group>";
+		};
+		84BC4BD221E5E62A00E715E0 /* 启动图 */ = {
+			isa = PBXGroup;
+			children = (
+				84BC4BD521E5E6DC00E715E0 /* 750_1334@2x.png */,
+			);
+			path = "启动图";
+			sourceTree = "<group>";
+		};
 		CE0B9CFB99BC5E00A5405F2A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -2139,11 +2501,114 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84BC4B6C21E5D1E400E715E0 /* 04-个人中心-active@2x.png in Resources */,
+				84BC4B8821E5D1E400E715E0 /* 处理状态-待处理@2x.png in Resources */,
+				84BC4BA021E5D1E400E715E0 /* icon-添加隐患照片@3x.png in Resources */,
+				84BC4B7021E5D1E400E715E0 /* icon-关于我们@2x.png in Resources */,
+				84BC4BB821E5D1E400E715E0 /* 提交成功@3x.png in Resources */,
+				84BC4BA921E5D1E400E715E0 /* icon-隐患地址@3x.png in Resources */,
+				84BC4BC721E5D1E400E715E0 /* 登录页@3x.png in Resources */,
+				84BC4BC821E5D1E400E715E0 /* 组13@2x.png in Resources */,
+				84BC4B8F21E5D1E400E715E0 /* 提示：当前不在打卡范围@2x.png in Resources */,
+				84BC4B6B21E5D1E400E715E0 /* 03-移动考勤-normal@2x.png in Resources */,
+				84BC4BBD21E5D1E400E715E0 /* 00-A引导页-01智能巡更巡检@3x.png in Resources */,
+				84BC4B9F21E5D1E400E715E0 /* icon-新密码@3x.png in Resources */,
+				84BC4B6E21E5D1E400E715E0 /* icon-上报人员@2x.png in Resources */,
 				84267BAE21E451C100070A36 /* SVProgressHUD.bundle in Resources */,
+				84BC4B9521E5D1E400E715E0 /* 03-移动考勤-active@3x.png in Resources */,
+				84BC4B8721E5D1E400E715E0 /* 处理状态-已处理@2x.png in Resources */,
+				84BC4B6621E5D1E300E715E0 /* 01-巡检巡更-active@2x.png in Resources */,
+				84BC4BC421E5D1E400E715E0 /* 用户名@2x.png in Resources */,
+				84BC4B6821E5D1E400E715E0 /* 02-安全管理-active@2x.png in Resources */,
+				84BC4B9A21E5D1E400E715E0 /* icon-上报时间（详情页）@3x.png in Resources */,
+				84BC4BB421E5D1E400E715E0 /* 巡检记录报告图标@3x.png in Resources */,
+				84BC4B8A21E5D1E400E715E0 /* 引导页_跳过@2x.png in Resources */,
+				84BC4B8E21E5D1E400E715E0 /* 提示-已经进入打卡范围@2x.png in Resources */,
+				84BC4BB521E5D1E400E715E0 /* 引导页_跳过@3x.png in Resources */,
+				84BC4B8321E5D1E400E715E0 /* icon_上报时间@2x.png in Resources */,
+				84BC4BAB21E5D1E400E715E0 /* icon-隐患类型@3x.png in Resources */,
 				84293B4921E2E0F600D342F3 /* LaunchScreen.storyboard in Resources */,
+				84BC4BA721E5D1E400E715E0 /* icon-重置密码@3x.png in Resources */,
+				84BC4B7D21E5D1E400E715E0 /* icon-隐患内容@2x.png in Resources */,
+				84BC4BB621E5D1E400E715E0 /* 打卡成功-时钟背景@3x.png in Resources */,
+				84BC4B8921E5D1E400E715E0 /* 巡检记录报告图标@2x.png in Resources */,
+				84BC4B6D21E5D1E400E715E0 /* 04-个人中心-norma@2x.png in Resources */,
+				84BC4B8221E5D1E400E715E0 /* icon_pic_delete-01@2x.png in Resources */,
+				84BC4BA321E5D1E400E715E0 /* icon-补卡时间点@3x.png in Resources */,
+				84BC4B7721E5D1E400E715E0 /* icon-确认密码@2x.png in Resources */,
+				84BC4BB221E5D1E400E715E0 /* 处理状态-已处理@3x.png in Resources */,
+				84BC4BC521E5D1E400E715E0 /* 用户名@3x.png in Resources */,
+				84BC4BA221E5D1E400E715E0 /* icon-确认密码@3x.png in Resources */,
+				84BC4BC021E5D1E400E715E0 /* 00-C引导页-03移动考勤@2x.png in Resources */,
 				84267B1A21E432BB00070A36 /* NSDateTimeAgo.bundle in Resources */,
+				84BC4BAE21E5D1E400E715E0 /* icon_上报时间@3x.png in Resources */,
+				84BC4BD021E5D66700E715E0 /* start_begin@2x.png in Resources */,
+				84BC4B9B21E5D1E400E715E0 /* icon-关于我们@3x.png in Resources */,
+				84BC4B8621E5D1E400E715E0 /* 处理状态-已关闭@2x.png in Resources */,
+				84BC4BC321E5D1E400E715E0 /* 密码@3x.png in Resources */,
+				84BC4BA821E5D1E400E715E0 /* icon-隐患内容@3x.png in Resources */,
+				84BC4BD621E5E6DD00E715E0 /* 750_1334@2x.png in Resources */,
+				84BC4BC921E5D1E400E715E0 /* 组13@3x.png in Resources */,
+				84BC4B9021E5D1E400E715E0 /* 移动考勤页-标签-未打卡按钮@2x.png in Resources */,
+				84BC4BBB21E5D1E400E715E0 /* 移动考勤页-标签-未打卡按钮@3x.png in Resources */,
+				84BC4BAC21E5D1E400E715E0 /* icon-验证码@3x.png in Resources */,
+				84BC4B9921E5D1E400E715E0 /* icon-上报人员@3x.png in Resources */,
+				84BC4B8C21E5D1E400E715E0 /* 打卡成功@2x.png in Resources */,
+				84BC4B8521E5D1E400E715E0 /* 个人中心-管理员默认大头像@2x.png in Resources */,
+				84BC4BA621E5D1E400E715E0 /* icon-选择考勤箭头@3x.png in Resources */,
+				84BC4B9321E5D1E400E715E0 /* 02-安全管理-active@3x.png in Resources */,
+				84BC4B7621E5D1E400E715E0 /* icon-申请原因@2x.png in Resources */,
+				84BC4BC221E5D1E400E715E0 /* 密码@2x.png in Resources */,
+				84BC4B6A21E5D1E400E715E0 /* 03-移动考勤-active@2x.png in Resources */,
+				84BC4B7A21E5D1E400E715E0 /* icon-退出登录@2x.png in Resources */,
+				84BC4B8121E5D1E400E715E0 /* icon-验证码@2x.png in Resources */,
+				84BC4BB121E5D1E400E715E0 /* 处理状态-已关闭@3x.png in Resources */,
+				84BC4B9821E5D1E400E715E0 /* 04-个人中心-normal@3x.png in Resources */,
+				84BC4B7921E5D1E400E715E0 /* icon-返回箭头@2x.png in Resources */,
+				84BC4B7321E5D1E400E715E0 /* icon-当月累计打卡天数@2x.png in Resources */,
+				84BC4BC621E5D1E400E715E0 /* 登录页@2x.png in Resources */,
+				84BC4B7F21E5D1E400E715E0 /* icon-隐患照片or拍照留证@2x.png in Resources */,
+				84BC4B8421E5D1E400E715E0 /* 个人中心-模块背景@2x.png in Resources */,
 				84293B4621E2E0F600D342F3 /* Assets.xcassets in Resources */,
+				84BC4B7E21E5D1E400E715E0 /* icon-隐患地址@2x.png in Resources */,
+				84BC4B7421E5D1E400E715E0 /* icon-新密码@2x.png in Resources */,
+				84BC4B9421E5D1E400E715E0 /* 02-安全管理-normal@3x.png in Resources */,
+				84BC4B6721E5D1E400E715E0 /* 01-巡检巡更-normal@2x.png in Resources */,
+				84BC4BA521E5D1E400E715E0 /* icon-退出登录@3x.png in Resources */,
+				84BC4BAF21E5D1E400E715E0 /* 个人中心-模块背景@3x.png in Resources */,
+				84BC4BB021E5D1E400E715E0 /* 个人中心-管理员默认大头像@3x.png in Resources */,
+				84BC4BB921E5D1E400E715E0 /* 提示-已经进入打卡范围@3x.png in Resources */,
+				84BC4B7121E5D1E400E715E0 /* icon-处理人员@2x.png in Resources */,
+				84BC4B9C21E5D1E400E715E0 /* icon-处理人员@3x.png in Resources */,
+				84BC4B6921E5D1E400E715E0 /* 02-安全管理-normal@2x.png in Resources */,
+				84BC4B7C21E5D1E400E715E0 /* icon-重置密码@2x.png in Resources */,
+				84BC4BAA21E5D1E400E715E0 /* icon-隐患照片or拍照留证@3x.png in Resources */,
+				84BC4B9D21E5D1E400E715E0 /* icon-当日巡检记录@3x.png in Resources */,
+				84BC4B9121E5D1E400E715E0 /* 01-巡检巡更-active@3x.png in Resources */,
+				84BC4B9721E5D1E400E715E0 /* 04-个人中心-active@3x.png in Resources */,
+				84BC4BC121E5D1E400E715E0 /* 00-C引导页-03移动考勤@3x.png in Resources */,
+				84BC4BBA21E5D1E400E715E0 /* 提示：当前不在打卡范围@3x.png in Resources */,
+				84BC4B9E21E5D1E400E715E0 /* icon-当月累计打卡天数@3x.png in Resources */,
+				84BC4B8B21E5D1E400E715E0 /* 打卡成功-时钟背景@2x.png in Resources */,
+				84BC4B7221E5D1E400E715E0 /* icon-当日巡检记录@2x.png in Resources */,
+				84BC4B6F21E5D1E400E715E0 /* icon-上报时间（详情页）@2x.png in Resources */,
+				84BC4B9221E5D1E400E715E0 /* 01-巡检巡更-normal@3x.png in Resources */,
+				84BC4BA121E5D1E400E715E0 /* icon-申请原因@3x.png in Resources */,
+				84BC4BBF21E5D1E400E715E0 /* 00-B引导页-02安全管理@3x.png in Resources */,
+				84BC4BAD21E5D1E400E715E0 /* icon_pic_delete-01@3x.png in Resources */,
+				84BC4B7821E5D1E400E715E0 /* icon-补卡时间点@2x.png in Resources */,
+				84BC4B8021E5D1E400E715E0 /* icon-隐患类型@2x.png in Resources */,
+				84BC4B7B21E5D1E400E715E0 /* icon-选择考勤箭头@2x.png in Resources */,
+				84BC4BA421E5D1E400E715E0 /* icon-返回箭头@3x.png in Resources */,
+				84BC4BBE21E5D1E400E715E0 /* 00-B引导页-02安全管理@2x.png in Resources */,
+				84BC4BB321E5D1E400E715E0 /* 处理状态-待处理@3x.png in Resources */,
+				84BC4B8D21E5D1E400E715E0 /* 提交成功@2x.png in Resources */,
+				84BC4B9621E5D1E400E715E0 /* 03-移动考勤-normal@3x.png in Resources */,
+				84BC4B7521E5D1E400E715E0 /* icon-添加隐患照片@2x.png in Resources */,
+				84BC4BD121E5D66700E715E0 /* start_button@2x.png in Resources */,
+				84BC4BB721E5D1E400E715E0 /* 打卡成功@3x.png in Resources */,
 				84293B4421E2E0F300D342F3 /* Main.storyboard in Resources */,
+				84BC4BBC21E5D1E400E715E0 /* 00-A引导页-01智能巡更巡检@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2259,6 +2724,7 @@
 				84267A8B21E432BB00070A36 /* UIBezierPath+Length.m in Sources */,
 				84267BAC21E451C100070A36 /* SVIndefiniteAnimatedView.m in Sources */,
 				84267B8521E4467C00070A36 /* EXTRuntimeExtensions.m in Sources */,
+				84BC4BCF21E5D66700E715E0 /* GuideView.m in Sources */,
 				84267BAD21E451C100070A36 /* SVProgressAnimatedView.m in Sources */,
 				84267B5721E432BB00070A36 /* NSUserDefaults+iCloudSync.m in Sources */,
 				84267ABF21E432BB00070A36 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
