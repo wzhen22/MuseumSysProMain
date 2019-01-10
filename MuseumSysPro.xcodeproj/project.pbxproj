@@ -371,6 +371,29 @@
 		84BC4BD021E5D66700E715E0 /* start_begin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4BCD21E5D66700E715E0 /* start_begin@2x.png */; };
 		84BC4BD121E5D66700E715E0 /* start_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4BCE21E5D66700E715E0 /* start_button@2x.png */; };
 		84BC4BD621E5E6DD00E715E0 /* 750_1334@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4BD521E5E6DC00E715E0 /* 750_1334@2x.png */; };
+		84CD9FB621E6E1A7009E6C14 /* NSDate+YW.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CD9F9F21E6E1A7009E6C14 /* NSDate+YW.m */; };
+		84CD9FB721E6E1A7009E6C14 /* UIImage+YW.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CD9FA121E6E1A7009E6C14 /* UIImage+YW.m */; };
+		84CD9FB821E6E1A7009E6C14 /* UIView+Autolayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CD9FA321E6E1A7009E6C14 /* UIView+Autolayout.m */; };
+		84CD9FB921E6E1A7009E6C14 /* YWActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CD9FA521E6E1A7009E6C14 /* YWActionSheet.m */; };
+		84CD9FBA21E6E1A7009E6C14 /* YWAddressModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CD9FA721E6E1A7009E6C14 /* YWAddressModel.m */; };
+		84CD9FBB21E6E1A7009E6C14 /* YWAddressPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CD9FA921E6E1A7009E6C14 /* YWAddressPicker.m */; };
+		84CD9FBC21E6E1A7009E6C14 /* YWAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CD9FAB21E6E1A7009E6C14 /* YWAlert.m */; };
+		84CD9FBD21E6E1A7009E6C14 /* YWAlertView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 84CD9FAC21E6E1A7009E6C14 /* YWAlertView.bundle */; };
+		84CD9FBE21E6E1A7009E6C14 /* YWAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CD9FAE21E6E1A7009E6C14 /* YWAlertView.m */; };
+		84CD9FBF21E6E1A7009E6C14 /* YWAlertViewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CD9FB021E6E1A7009E6C14 /* YWAlertViewHelper.m */; };
+		84CD9FC021E6E1A7009E6C14 /* YWContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CD9FB321E6E1A7009E6C14 /* YWContainerViewController.m */; };
+		84CD9FC121E6E1A7009E6C14 /* YWDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CD9FB521E6E1A7009E6C14 /* YWDatePicker.m */; };
+		84CD9FC921E6E1F6009E6C14 /* BAPrivacyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CD9FC721E6E1F5009E6C14 /* BAPrivacyManager.m */; };
+		84CD9FD421E6E253009E6C14 /* YXCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CD9FCC21E6E253009E6C14 /* YXCalendarView.m */; };
+		84CD9FD521E6E253009E6C14 /* YXDateHelpObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CD9FCE21E6E253009E6C14 /* YXDateHelpObject.m */; };
+		84CD9FD621E6E253009E6C14 /* YXDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CD9FD021E6E253009E6C14 /* YXDayCell.m */; };
+		84CD9FD721E6E253009E6C14 /* YXDayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84CD9FD121E6E253009E6C14 /* YXDayCell.xib */; };
+		84CD9FD821E6E253009E6C14 /* YXMonthView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CD9FD321E6E253009E6C14 /* YXMonthView.m */; };
+		84CD9FDC21E72C82009E6C14 /* SPBResetPasswordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CD9FDA21E72C82009E6C14 /* SPBResetPasswordVC.m */; };
+		84CD9FDD21E72C82009E6C14 /* SPBResetPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84CD9FDB21E72C82009E6C14 /* SPBResetPasswordVC.xib */; };
+		84CD9FE021E72CAF009E6C14 /* SPBAboutWeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CD9FDF21E72CAF009E6C14 /* SPBAboutWeVC.m */; };
+		84CD9FE521E72CF4009E6C14 /* SPBLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CD9FE321E72CF4009E6C14 /* SPBLoginVC.m */; };
+		84CD9FE621E72CF4009E6C14 /* SPBLoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84CD9FE421E72CF4009E6C14 /* SPBLoginVC.xib */; };
 		DF317B13D9CD631213DB63FA /* libPods-MuseumSysPro.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AE1FA6E28298F09D2E2BF57 /* libPods-MuseumSysPro.a */; };
 /* End PBXBuildFile section */
 
@@ -1010,6 +1033,53 @@
 		84BC4BCD21E5D66700E715E0 /* start_begin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "start_begin@2x.png"; sourceTree = "<group>"; };
 		84BC4BCE21E5D66700E715E0 /* start_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "start_button@2x.png"; sourceTree = "<group>"; };
 		84BC4BD521E5E6DC00E715E0 /* 750_1334@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "750_1334@2x.png"; sourceTree = "<group>"; };
+		84CD9F9E21E6E1A7009E6C14 /* NSDate+YW.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+YW.h"; sourceTree = "<group>"; };
+		84CD9F9F21E6E1A7009E6C14 /* NSDate+YW.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+YW.m"; sourceTree = "<group>"; };
+		84CD9FA021E6E1A7009E6C14 /* UIImage+YW.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+YW.h"; sourceTree = "<group>"; };
+		84CD9FA121E6E1A7009E6C14 /* UIImage+YW.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+YW.m"; sourceTree = "<group>"; };
+		84CD9FA221E6E1A7009E6C14 /* UIView+Autolayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Autolayout.h"; sourceTree = "<group>"; };
+		84CD9FA321E6E1A7009E6C14 /* UIView+Autolayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Autolayout.m"; sourceTree = "<group>"; };
+		84CD9FA421E6E1A7009E6C14 /* YWActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWActionSheet.h; sourceTree = "<group>"; };
+		84CD9FA521E6E1A7009E6C14 /* YWActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWActionSheet.m; sourceTree = "<group>"; };
+		84CD9FA621E6E1A7009E6C14 /* YWAddressModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWAddressModel.h; sourceTree = "<group>"; };
+		84CD9FA721E6E1A7009E6C14 /* YWAddressModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWAddressModel.m; sourceTree = "<group>"; };
+		84CD9FA821E6E1A7009E6C14 /* YWAddressPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWAddressPicker.h; sourceTree = "<group>"; };
+		84CD9FA921E6E1A7009E6C14 /* YWAddressPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWAddressPicker.m; sourceTree = "<group>"; };
+		84CD9FAA21E6E1A7009E6C14 /* YWAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWAlert.h; sourceTree = "<group>"; };
+		84CD9FAB21E6E1A7009E6C14 /* YWAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWAlert.m; sourceTree = "<group>"; };
+		84CD9FAC21E6E1A7009E6C14 /* YWAlertView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = YWAlertView.bundle; sourceTree = "<group>"; };
+		84CD9FAD21E6E1A7009E6C14 /* YWAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWAlertView.h; sourceTree = "<group>"; };
+		84CD9FAE21E6E1A7009E6C14 /* YWAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWAlertView.m; sourceTree = "<group>"; };
+		84CD9FAF21E6E1A7009E6C14 /* YWAlertViewHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWAlertViewHelper.h; sourceTree = "<group>"; };
+		84CD9FB021E6E1A7009E6C14 /* YWAlertViewHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWAlertViewHelper.m; sourceTree = "<group>"; };
+		84CD9FB121E6E1A7009E6C14 /* YWAlertViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWAlertViewProtocol.h; sourceTree = "<group>"; };
+		84CD9FB221E6E1A7009E6C14 /* YWContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWContainerViewController.h; sourceTree = "<group>"; };
+		84CD9FB321E6E1A7009E6C14 /* YWContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWContainerViewController.m; sourceTree = "<group>"; };
+		84CD9FB421E6E1A7009E6C14 /* YWDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWDatePicker.h; sourceTree = "<group>"; };
+		84CD9FB521E6E1A7009E6C14 /* YWDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWDatePicker.m; sourceTree = "<group>"; };
+		84CD9FC321E6E1F5009E6C14 /* BAKit_ConfigurationDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKit_ConfigurationDefine.h; sourceTree = "<group>"; };
+		84CD9FC421E6E1F5009E6C14 /* BAKit_PrivacyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKit_PrivacyManager.h; sourceTree = "<group>"; };
+		84CD9FC521E6E1F5009E6C14 /* BAKit_Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKit_Singleton.h; sourceTree = "<group>"; };
+		84CD9FC621E6E1F5009E6C14 /* BAPrivacyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAPrivacyManager.h; sourceTree = "<group>"; };
+		84CD9FC721E6E1F5009E6C14 /* BAPrivacyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAPrivacyManager.m; sourceTree = "<group>"; };
+		84CD9FC821E6E1F5009E6C14 /* BAPrivacyManager_Version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAPrivacyManager_Version.h; sourceTree = "<group>"; };
+		84CD9FCB21E6E253009E6C14 /* YXCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXCalendarView.h; sourceTree = "<group>"; };
+		84CD9FCC21E6E253009E6C14 /* YXCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXCalendarView.m; sourceTree = "<group>"; };
+		84CD9FCD21E6E253009E6C14 /* YXDateHelpObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXDateHelpObject.h; sourceTree = "<group>"; };
+		84CD9FCE21E6E253009E6C14 /* YXDateHelpObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXDateHelpObject.m; sourceTree = "<group>"; };
+		84CD9FCF21E6E253009E6C14 /* YXDayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXDayCell.h; sourceTree = "<group>"; };
+		84CD9FD021E6E253009E6C14 /* YXDayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXDayCell.m; sourceTree = "<group>"; };
+		84CD9FD121E6E253009E6C14 /* YXDayCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YXDayCell.xib; sourceTree = "<group>"; };
+		84CD9FD221E6E253009E6C14 /* YXMonthView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXMonthView.h; sourceTree = "<group>"; };
+		84CD9FD321E6E253009E6C14 /* YXMonthView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXMonthView.m; sourceTree = "<group>"; };
+		84CD9FD921E72C82009E6C14 /* SPBResetPasswordVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPBResetPasswordVC.h; sourceTree = "<group>"; };
+		84CD9FDA21E72C82009E6C14 /* SPBResetPasswordVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPBResetPasswordVC.m; sourceTree = "<group>"; };
+		84CD9FDB21E72C82009E6C14 /* SPBResetPasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SPBResetPasswordVC.xib; sourceTree = "<group>"; };
+		84CD9FDE21E72CAF009E6C14 /* SPBAboutWeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPBAboutWeVC.h; sourceTree = "<group>"; };
+		84CD9FDF21E72CAF009E6C14 /* SPBAboutWeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPBAboutWeVC.m; sourceTree = "<group>"; };
+		84CD9FE221E72CF4009E6C14 /* SPBLoginVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPBLoginVC.h; sourceTree = "<group>"; };
+		84CD9FE321E72CF4009E6C14 /* SPBLoginVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPBLoginVC.m; sourceTree = "<group>"; };
+		84CD9FE421E72CF4009E6C14 /* SPBLoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SPBLoginVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2063,6 +2133,11 @@
 			children = (
 				84267BDA21E4992700070A36 /* SPBUserCenterVC.h */,
 				84267BDB21E4992700070A36 /* SPBUserCenterVC.m */,
+				84CD9FDE21E72CAF009E6C14 /* SPBAboutWeVC.h */,
+				84CD9FDF21E72CAF009E6C14 /* SPBAboutWeVC.m */,
+				84CD9FD921E72C82009E6C14 /* SPBResetPasswordVC.h */,
+				84CD9FDA21E72C82009E6C14 /* SPBResetPasswordVC.m */,
+				84CD9FDB21E72C82009E6C14 /* SPBResetPasswordVC.xib */,
 			);
 			path = SPBUserCenterModule;
 			sourceTree = "<group>";
@@ -2155,6 +2230,8 @@
 		84293B5721E2FC7400D342F3 /* SysBVender */ = {
 			isa = PBXGroup;
 			children = (
+				84CD9FC221E6E1F5009E6C14 /* BAPrivacyManager */,
+				84CD9F9D21E6E1A7009E6C14 /* YWAlertView */,
 				84267BB121E4557C00070A36 /* Network */,
 				84267BA121E451C100070A36 /* SVProgressHUD */,
 				84267B9921E451AB00070A36 /* BaseRequestAPI */,
@@ -2175,6 +2252,7 @@
 		84293B5921E2FC7400D342F3 /* MyAmendThirdParts */ = {
 			isa = PBXGroup;
 			children = (
+				84CD9FCA21E6E253009E6C14 /* YXCalendar */,
 			);
 			path = MyAmendThirdParts;
 			sourceTree = "<group>";
@@ -2190,6 +2268,7 @@
 		84293B5B21E2FC7500D342F3 /* SysBMainModule */ = {
 			isa = PBXGroup;
 			children = (
+				84CD9FE121E72CC8009E6C14 /* SPBLoginModule */,
 				84267BD621E4979B00070A36 /* SPBUserCenterModule */,
 				84267BD521E4975A00070A36 /* SPBSignInModule */,
 				84267BD421E4972E00070A36 /* SPBManageModule */,
@@ -2435,6 +2514,76 @@
 			path = "启动图";
 			sourceTree = "<group>";
 		};
+		84CD9F9D21E6E1A7009E6C14 /* YWAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				84CD9F9E21E6E1A7009E6C14 /* NSDate+YW.h */,
+				84CD9F9F21E6E1A7009E6C14 /* NSDate+YW.m */,
+				84CD9FA021E6E1A7009E6C14 /* UIImage+YW.h */,
+				84CD9FA121E6E1A7009E6C14 /* UIImage+YW.m */,
+				84CD9FA221E6E1A7009E6C14 /* UIView+Autolayout.h */,
+				84CD9FA321E6E1A7009E6C14 /* UIView+Autolayout.m */,
+				84CD9FA421E6E1A7009E6C14 /* YWActionSheet.h */,
+				84CD9FA521E6E1A7009E6C14 /* YWActionSheet.m */,
+				84CD9FA621E6E1A7009E6C14 /* YWAddressModel.h */,
+				84CD9FA721E6E1A7009E6C14 /* YWAddressModel.m */,
+				84CD9FA821E6E1A7009E6C14 /* YWAddressPicker.h */,
+				84CD9FA921E6E1A7009E6C14 /* YWAddressPicker.m */,
+				84CD9FAA21E6E1A7009E6C14 /* YWAlert.h */,
+				84CD9FAB21E6E1A7009E6C14 /* YWAlert.m */,
+				84CD9FAC21E6E1A7009E6C14 /* YWAlertView.bundle */,
+				84CD9FAD21E6E1A7009E6C14 /* YWAlertView.h */,
+				84CD9FAE21E6E1A7009E6C14 /* YWAlertView.m */,
+				84CD9FAF21E6E1A7009E6C14 /* YWAlertViewHelper.h */,
+				84CD9FB021E6E1A7009E6C14 /* YWAlertViewHelper.m */,
+				84CD9FB121E6E1A7009E6C14 /* YWAlertViewProtocol.h */,
+				84CD9FB221E6E1A7009E6C14 /* YWContainerViewController.h */,
+				84CD9FB321E6E1A7009E6C14 /* YWContainerViewController.m */,
+				84CD9FB421E6E1A7009E6C14 /* YWDatePicker.h */,
+				84CD9FB521E6E1A7009E6C14 /* YWDatePicker.m */,
+			);
+			path = YWAlertView;
+			sourceTree = "<group>";
+		};
+		84CD9FC221E6E1F5009E6C14 /* BAPrivacyManager */ = {
+			isa = PBXGroup;
+			children = (
+				84CD9FC321E6E1F5009E6C14 /* BAKit_ConfigurationDefine.h */,
+				84CD9FC421E6E1F5009E6C14 /* BAKit_PrivacyManager.h */,
+				84CD9FC521E6E1F5009E6C14 /* BAKit_Singleton.h */,
+				84CD9FC621E6E1F5009E6C14 /* BAPrivacyManager.h */,
+				84CD9FC721E6E1F5009E6C14 /* BAPrivacyManager.m */,
+				84CD9FC821E6E1F5009E6C14 /* BAPrivacyManager_Version.h */,
+			);
+			path = BAPrivacyManager;
+			sourceTree = "<group>";
+		};
+		84CD9FCA21E6E253009E6C14 /* YXCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				84CD9FCB21E6E253009E6C14 /* YXCalendarView.h */,
+				84CD9FCC21E6E253009E6C14 /* YXCalendarView.m */,
+				84CD9FCD21E6E253009E6C14 /* YXDateHelpObject.h */,
+				84CD9FCE21E6E253009E6C14 /* YXDateHelpObject.m */,
+				84CD9FCF21E6E253009E6C14 /* YXDayCell.h */,
+				84CD9FD021E6E253009E6C14 /* YXDayCell.m */,
+				84CD9FD121E6E253009E6C14 /* YXDayCell.xib */,
+				84CD9FD221E6E253009E6C14 /* YXMonthView.h */,
+				84CD9FD321E6E253009E6C14 /* YXMonthView.m */,
+			);
+			path = YXCalendar;
+			sourceTree = "<group>";
+		};
+		84CD9FE121E72CC8009E6C14 /* SPBLoginModule */ = {
+			isa = PBXGroup;
+			children = (
+				84CD9FE221E72CF4009E6C14 /* SPBLoginVC.h */,
+				84CD9FE321E72CF4009E6C14 /* SPBLoginVC.m */,
+				84CD9FE421E72CF4009E6C14 /* SPBLoginVC.xib */,
+			);
+			path = SPBLoginModule;
+			sourceTree = "<group>";
+		};
 		CE0B9CFB99BC5E00A5405F2A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -2507,6 +2656,7 @@
 				84BC4B7021E5D1E400E715E0 /* icon-关于我们@2x.png in Resources */,
 				84BC4BB821E5D1E400E715E0 /* 提交成功@3x.png in Resources */,
 				84BC4BA921E5D1E400E715E0 /* icon-隐患地址@3x.png in Resources */,
+				84CD9FE621E72CF4009E6C14 /* SPBLoginVC.xib in Resources */,
 				84BC4BC721E5D1E400E715E0 /* 登录页@3x.png in Resources */,
 				84BC4BC821E5D1E400E715E0 /* 组13@2x.png in Resources */,
 				84BC4B8F21E5D1E400E715E0 /* 提示：当前不在打卡范围@2x.png in Resources */,
@@ -2556,6 +2706,7 @@
 				84BC4B8C21E5D1E400E715E0 /* 打卡成功@2x.png in Resources */,
 				84BC4B8521E5D1E400E715E0 /* 个人中心-管理员默认大头像@2x.png in Resources */,
 				84BC4BA621E5D1E400E715E0 /* icon-选择考勤箭头@3x.png in Resources */,
+				84CD9FDD21E72C82009E6C14 /* SPBResetPasswordVC.xib in Resources */,
 				84BC4B9321E5D1E400E715E0 /* 02-安全管理-active@3x.png in Resources */,
 				84BC4B7621E5D1E400E715E0 /* icon-申请原因@2x.png in Resources */,
 				84BC4BC221E5D1E400E715E0 /* 密码@2x.png in Resources */,
@@ -2574,6 +2725,7 @@
 				84BC4B7421E5D1E400E715E0 /* icon-新密码@2x.png in Resources */,
 				84BC4B9421E5D1E400E715E0 /* 02-安全管理-normal@3x.png in Resources */,
 				84BC4B6721E5D1E400E715E0 /* 01-巡检巡更-normal@2x.png in Resources */,
+				84CD9FD721E6E253009E6C14 /* YXDayCell.xib in Resources */,
 				84BC4BA521E5D1E400E715E0 /* icon-退出登录@3x.png in Resources */,
 				84BC4BAF21E5D1E400E715E0 /* 个人中心-模块背景@3x.png in Resources */,
 				84BC4BB021E5D1E400E715E0 /* 个人中心-管理员默认大头像@3x.png in Resources */,
@@ -2586,6 +2738,7 @@
 				84BC4B9D21E5D1E400E715E0 /* icon-当日巡检记录@3x.png in Resources */,
 				84BC4B9121E5D1E400E715E0 /* 01-巡检巡更-active@3x.png in Resources */,
 				84BC4B9721E5D1E400E715E0 /* 04-个人中心-active@3x.png in Resources */,
+				84CD9FBD21E6E1A7009E6C14 /* YWAlertView.bundle in Resources */,
 				84BC4BC121E5D1E400E715E0 /* 00-C引导页-03移动考勤@3x.png in Resources */,
 				84BC4BBA21E5D1E400E715E0 /* 提示：当前不在打卡范围@3x.png in Resources */,
 				84BC4B9E21E5D1E400E715E0 /* icon-当月累计打卡天数@3x.png in Resources */,
@@ -2641,6 +2794,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84267BE221E4997200070A36 /* SPBManageHomeVC.m in Sources */,
+				84CD9FC121E6E1A7009E6C14 /* YWDatePicker.m in Sources */,
 				84267B1021E432BB00070A36 /* NSData+Joker.m in Sources */,
 				84267B8E21E4467C00070A36 /* NSArray+MTLManipulationAdditions.m in Sources */,
 				84267AA121E432BB00070A36 /* UIFont-TTF.m in Sources */,
@@ -2672,17 +2826,20 @@
 				84267AF421E432BB00070A36 /* UIViewController+BlockSegue.m in Sources */,
 				84267A9921E432BB00070A36 /* UIColor+Random.m in Sources */,
 				84267AA321E432BB00070A36 /* UIImage+animatedGIF.m in Sources */,
+				84CD9FC921E6E1F6009E6C14 /* BAPrivacyManager.m in Sources */,
 				84267A9821E432BB00070A36 /* UIColor+Modify.m in Sources */,
 				84267AAC21E432BB00070A36 /* UIImage+Orientation.m in Sources */,
 				84267B8A21E4467C00070A36 /* MTLModel.m in Sources */,
 				84267AF121E432BB00070A36 /* UIViewController+BackButtonHandler.m in Sources */,
 				84267B5321E432BB00070A36 /* NSURL+QueryDictionary.m in Sources */,
+				84CD9FB921E6E1A7009E6C14 /* YWActionSheet.m in Sources */,
 				84267BC421E4565E00070A36 /* SysPubHttpKit.m in Sources */,
 				84267AD221E432BB00070A36 /* UITableView+FDIndexPathHeightCache.m in Sources */,
 				84267AD721E432BB00070A36 /* UITableViewCell+TS_delaysContentTouches.m in Sources */,
 				84267B0021E432BB00070A36 /* UIWebView+Load.m in Sources */,
 				84267A8921E432BB00070A36 /* UIBarButtonItem+Action.m in Sources */,
 				84267B4C21E432BB00070A36 /* NSString+Trims.m in Sources */,
+				84CD9FE521E72CF4009E6C14 /* SPBLoginVC.m in Sources */,
 				84267B1121E432BB00070A36 /* NSData+SDDataCache.m in Sources */,
 				84267AA821E432BB00070A36 /* UIImage+FileName.m in Sources */,
 				84267AE521E432BB00070A36 /* UIView+FDCollapsibleConstraints.m in Sources */,
@@ -2692,8 +2849,11 @@
 				84267B0321E432BB00070A36 /* UIWebVIew+SwipeGesture.m in Sources */,
 				84267B0921E432BB00070A36 /* NSBundle+AppIcon.m in Sources */,
 				84267A9721E432BB00070A36 /* UIColor+HEX.m in Sources */,
+				84CD9FD621E6E253009E6C14 /* YXDayCell.m in Sources */,
 				84267ACE21E432BB00070A36 /* UIScrollView+Pages.m in Sources */,
+				84CD9FD821E6E253009E6C14 /* YXMonthView.m in Sources */,
 				84267AF721E432BB00070A36 /* UIViewController+RecursiveDescription.m in Sources */,
+				84CD9FD421E6E253009E6C14 /* YXCalendarView.m in Sources */,
 				84267BDC21E4992700070A36 /* SPBUserCenterVC.m in Sources */,
 				84267B9421E4467C00070A36 /* NSValueTransformer+MTLInversionAdditions.m in Sources */,
 				84293B4C21E2E0F600D342F3 /* main.m in Sources */,
@@ -2704,6 +2864,7 @@
 				84267B3F21E432BB00070A36 /* NSString+Contains.m in Sources */,
 				84267AED21E432BB00070A36 /* UIView+Shake.m in Sources */,
 				84267B0221E432BB00070A36 /* UIWebView+Style.m in Sources */,
+				84CD9FBF21E6E1A7009E6C14 /* YWAlertViewHelper.m in Sources */,
 				84267B3021E432BB00070A36 /* NSObject+AddProperty.m in Sources */,
 				84267ABD21E432BB00070A36 /* UINavigationBar+CustomHeight.m in Sources */,
 				84267B4621E432BB00070A36 /* NSString+Pinyin.m in Sources */,
@@ -2759,13 +2920,16 @@
 				84267AE821E432BB00070A36 /* UIView+GestureCallback.m in Sources */,
 				84267B5821E432BB00070A36 /* NSUserDefaults+SafeAccess.m in Sources */,
 				84267AE021E432BB00070A36 /* UIView+BlockGesture.m in Sources */,
+				84CD9FB721E6E1A7009E6C14 /* UIImage+YW.m in Sources */,
 				84267B3121E432BB00070A36 /* NSObject+AppInfo.m in Sources */,
 				84267B8C21E4467C00070A36 /* MTLTransformerErrorHandling.m in Sources */,
 				84267B9221E4467C00070A36 /* NSError+MTLModelException.m in Sources */,
 				84267B8F21E4467C00070A36 /* NSDictionary+MTLJSONKeyPath.m in Sources */,
 				84267AD621E432BB00070A36 /* UITableViewCell+NIB.m in Sources */,
+				84CD9FE021E72CAF009E6C14 /* SPBAboutWeVC.m in Sources */,
 				84267AFA21E432BB00070A36 /* UIViewController+TopBarMessage.m in Sources */,
 				84267AD121E432BB00070A36 /* UITableView+iOS7Style.m in Sources */,
+				84CD9FBE21E6E1A7009E6C14 /* YWAlertView.m in Sources */,
 				84267B2521E432BB00070A36 /* NSFileManager+Paths.m in Sources */,
 				84267B3C21E432BB00070A36 /* NSSet+Block.m in Sources */,
 				84267B8821E4467C00070A36 /* MTLJSONAdapter.m in Sources */,
@@ -2794,12 +2958,14 @@
 				84267B0521E432BB00070A36 /* WebView+Debug.m in Sources */,
 				84267B1321E432BB00070A36 /* NSDate+CupertinoYankee.m in Sources */,
 				84267ABB21E432BB00070A36 /* UILabel+SuggestSize.m in Sources */,
+				84CD9FD521E6E253009E6C14 /* YXDateHelpObject.m in Sources */,
 				84267AEC21E432BB00070A36 /* UIView+Screenshot.m in Sources */,
 				84267A9121E432BB00070A36 /* UIButton+CountDown.m in Sources */,
 				84267AB721E432BB00070A36 /* UIImageView+Reflect.m in Sources */,
 				84267AA221E432BB00070A36 /* UIImage+Alpha.m in Sources */,
 				84267B4721E432BB00070A36 /* NSString+RegexCategory.m in Sources */,
 				84267AA921E432BB00070A36 /* UIImage+FX.m in Sources */,
+				84CD9FB621E6E1A7009E6C14 /* NSDate+YW.m in Sources */,
 				84267B3D21E432BB00070A36 /* NSMutableString+Ruby.m in Sources */,
 				84267B3821E432BB00070A36 /* NSObject+MKBlockTimer.m in Sources */,
 				84267B1F21E432BB00070A36 /* NSDictionary+SafeAccess.m in Sources */,
@@ -2819,6 +2985,7 @@
 				84267AB621E432BB00070A36 /* UIImageView+Letters.m in Sources */,
 				84267AF921E432BB00070A36 /* UIViewController+StoreKit.m in Sources */,
 				84267AC521E432BB00070A36 /* UINavigationItem+Margin.m in Sources */,
+				84CD9FBA21E6E1A7009E6C14 /* YWAddressModel.m in Sources */,
 				84267B2A21E432BB00070A36 /* NSNotificationCenter+MainThread.m in Sources */,
 				84267A8521E432BB00070A36 /* UIApplication+ApplicationSize.m in Sources */,
 				84267B2921E432BB00070A36 /* NSInvocation+Block.m in Sources */,
@@ -2841,6 +3008,8 @@
 				84267B5521E432BB00070A36 /* NSMutableURLRequest+Upload.m in Sources */,
 				84267AB021E432BB00070A36 /* UIImage+RoundedCorner.m in Sources */,
 				84267A9C21E432BB00070A36 /* UIControl+Block.m in Sources */,
+				84CD9FC021E6E1A7009E6C14 /* YWContainerViewController.m in Sources */,
+				84CD9FBB21E6E1A7009E6C14 /* YWAddressPicker.m in Sources */,
 				84267A8821E432BB00070A36 /* UIApplication+Permissions.m in Sources */,
 				84267B1921E432BB00070A36 /* NSDate+Utilities.m in Sources */,
 				84267AB521E432BB00070A36 /* UIImageView+GeometryConversion.m in Sources */,
@@ -2853,6 +3022,7 @@
 				84267A8E21E432BB00070A36 /* UIBezierPath+Symbol.m in Sources */,
 				84267B4321E432BB00070A36 /* NSString+Hash.m in Sources */,
 				84293B3E21E2E0F300D342F3 /* AppDelegate.m in Sources */,
+				84CD9FB821E6E1A7009E6C14 /* UIView+Autolayout.m in Sources */,
 				84267AC121E432BB00070A36 /* UINavigationController+KeyboardFix.m in Sources */,
 				84267B3221E432BB00070A36 /* NSObject+AssociatedObject.m in Sources */,
 				84267AE221E432BB00070A36 /* UIView+CustomBorder.m in Sources */,
@@ -2860,6 +3030,7 @@
 				84267AD021E432BB00070A36 /* UISplitViewController+QuickAccess.m in Sources */,
 				84267AFC21E432BB00070A36 /* UIWebView+Alert.m in Sources */,
 				84267B9521E4467C00070A36 /* NSValueTransformer+MTLPredefinedTransformerAdditions.m in Sources */,
+				84CD9FBC21E6E1A7009E6C14 /* YWAlert.m in Sources */,
 				84267AF621E432BB00070A36 /* UIViewController+MJPopupViewController.m in Sources */,
 				84267BDF21E4995900070A36 /* SPBSIgnInHomeVC.m in Sources */,
 				84267AAF21E432BB00070A36 /* UIImage+Resize.m in Sources */,
@@ -2867,6 +3038,7 @@
 				84267B5021E432BB00070A36 /* NSTimer+Addition.m in Sources */,
 				84267B2C21E432BB00070A36 /* NSDecimalNumber+Extensions.m in Sources */,
 				84267B3E21E432BB00070A36 /* NSString+Base64.m in Sources */,
+				84CD9FDC21E72C82009E6C14 /* SPBResetPasswordVC.m in Sources */,
 				84267A9621E432BB00070A36 /* UIColor+Gradient.m in Sources */,
 				84267A9021E432BB00070A36 /* UIButton+Block.m in Sources */,
 				84267AC221E432BB00070A36 /* UINavigationController+StackManager.m in Sources */,
