@@ -254,7 +254,6 @@
 		84267BCD21E47B0300070A36 /* SysPubSingleThings.m in Sources */ = {isa = PBXBuildFile; fileRef = 84267BCC21E47B0300070A36 /* SysPubSingleThings.m */; };
 		84267BD021E48FEA00070A36 /* SysPBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84267BCF21E48FEA00070A36 /* SysPBaseViewController.m */; };
 		84267BD921E498C900070A36 /* SysBaseTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84267BD821E498C900070A36 /* SysBaseTabBarVC.m */; };
-		84267BDC21E4992700070A36 /* SPBUserCenterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84267BDB21E4992700070A36 /* SPBUserCenterVC.m */; };
 		84267BDF21E4995900070A36 /* SPBSIgnInHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84267BDE21E4995900070A36 /* SPBSIgnInHomeVC.m */; };
 		84267BE221E4997200070A36 /* SPBManageHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84267BE121E4997200070A36 /* SPBManageHomeVC.m */; };
 		84267BE521E4999500070A36 /* SPBCheckHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84267BE421E4999500070A36 /* SPBCheckHomeVC.m */; };
@@ -267,6 +266,16 @@
 		84293B4C21E2E0F600D342F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84293B4B21E2E0F600D342F3 /* main.m */; };
 		84293B6821E3019800D342F3 /* SwTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 84293B6721E3019800D342F3 /* SwTools.m */; };
 		84293B6C21E303B100D342F3 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 84293B6B21E303B100D342F3 /* GTMBase64.m */; };
+		84B96B5021EC2262004E6BDE /* qidong@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84B96B4E21EC225E004E6BDE /* qidong@2x.png */; };
+		84B96B5121EC2262004E6BDE /* qidong@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84B96B4F21EC2262004E6BDE /* qidong@3x.png */; };
+		84B96B6321EC22FD004E6BDE /* SPBAboutWeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B96B5421EC22FD004E6BDE /* SPBAboutWeVC.m */; };
+		84B96B6421EC22FD004E6BDE /* SPBResetPasswordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B96B5621EC22FD004E6BDE /* SPBResetPasswordVC.m */; };
+		84B96B6521EC22FD004E6BDE /* SPBResetPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84B96B5721EC22FD004E6BDE /* SPBResetPasswordVC.xib */; };
+		84B96B6621EC22FD004E6BDE /* SPBUserCenterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B96B5921EC22FD004E6BDE /* SPBUserCenterVC.m */; };
+		84B96B6721EC22FD004E6BDE /* PubCellDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B96B5C21EC22FD004E6BDE /* PubCellDetailView.m */; };
+		84B96B6821EC22FD004E6BDE /* SPBMainUserHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B96B5E21EC22FD004E6BDE /* SPBMainUserHeaderView.m */; };
+		84B96B6921EC22FD004E6BDE /* UserCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B96B6021EC22FD004E6BDE /* UserCTableViewCell.m */; };
+		84B96B6A21EC22FD004E6BDE /* UserHeaderSubShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B96B6221EC22FD004E6BDE /* UserHeaderSubShowView.m */; };
 		84BC4B6621E5D1E300E715E0 /* 01-巡检巡更-active@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4AFF21E5D1DF00E715E0 /* 01-巡检巡更-active@2x.png */; };
 		84BC4B6721E5D1E400E715E0 /* 01-巡检巡更-normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B0021E5D1DF00E715E0 /* 01-巡检巡更-normal@2x.png */; };
 		84BC4B6821E5D1E400E715E0 /* 02-安全管理-active@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC4B0121E5D1DF00E715E0 /* 02-安全管理-active@2x.png */; };
@@ -388,9 +397,6 @@
 		84CD9FD621E6E253009E6C14 /* YXDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CD9FD021E6E253009E6C14 /* YXDayCell.m */; };
 		84CD9FD721E6E253009E6C14 /* YXDayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84CD9FD121E6E253009E6C14 /* YXDayCell.xib */; };
 		84CD9FD821E6E253009E6C14 /* YXMonthView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CD9FD321E6E253009E6C14 /* YXMonthView.m */; };
-		84CD9FDC21E72C82009E6C14 /* SPBResetPasswordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CD9FDA21E72C82009E6C14 /* SPBResetPasswordVC.m */; };
-		84CD9FDD21E72C82009E6C14 /* SPBResetPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84CD9FDB21E72C82009E6C14 /* SPBResetPasswordVC.xib */; };
-		84CD9FE021E72CAF009E6C14 /* SPBAboutWeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CD9FDF21E72CAF009E6C14 /* SPBAboutWeVC.m */; };
 		84CD9FE521E72CF4009E6C14 /* SPBLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CD9FE321E72CF4009E6C14 /* SPBLoginVC.m */; };
 		84CD9FE621E72CF4009E6C14 /* SPBLoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84CD9FE421E72CF4009E6C14 /* SPBLoginVC.xib */; };
 		84F7495721E8770400C67C67 /* UIWindow+JXSafeArea.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F7495521E8770400C67C67 /* UIWindow+JXSafeArea.m */; };
@@ -429,7 +435,6 @@
 		84F749C921E8784D00C67C67 /* JXCategoryTitleImageCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F749A621E8784D00C67C67 /* JXCategoryTitleImageCellModel.m */; };
 		84F749CA21E8784D00C67C67 /* JXCategoryTitleImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F749A821E8784D00C67C67 /* JXCategoryTitleImageView.m */; };
 		84F749CD21E882AE00C67C67 /* SubManagerDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F749CC21E882AE00C67C67 /* SubManagerDetailVC.m */; };
-		84F749CF21E886A400C67C67 /* q750_1334@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84F749CE21E886A400C67C67 /* q750_1334@2x.png */; };
 		84F749FF21E88F3600C67C67 /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F749D321E88F3600C67C67 /* MJRefreshAutoFooter.m */; };
 		84F74A0021E88F3600C67C67 /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F749D521E88F3600C67C67 /* MJRefreshBackFooter.m */; };
 		84F74A0121E88F3600C67C67 /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F749D721E88F3600C67C67 /* MJRefreshComponent.m */; };
@@ -957,8 +962,6 @@
 		84267BCF21E48FEA00070A36 /* SysPBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SysPBaseViewController.m; sourceTree = "<group>"; };
 		84267BD721E498C900070A36 /* SysBaseTabBarVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SysBaseTabBarVC.h; sourceTree = "<group>"; };
 		84267BD821E498C900070A36 /* SysBaseTabBarVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SysBaseTabBarVC.m; sourceTree = "<group>"; };
-		84267BDA21E4992700070A36 /* SPBUserCenterVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPBUserCenterVC.h; sourceTree = "<group>"; };
-		84267BDB21E4992700070A36 /* SPBUserCenterVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPBUserCenterVC.m; sourceTree = "<group>"; };
 		84267BDD21E4995900070A36 /* SPBSIgnInHomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPBSIgnInHomeVC.h; sourceTree = "<group>"; };
 		84267BDE21E4995900070A36 /* SPBSIgnInHomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPBSIgnInHomeVC.m; sourceTree = "<group>"; };
 		84267BE021E4997200070A36 /* SPBManageHomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPBManageHomeVC.h; sourceTree = "<group>"; };
@@ -984,6 +987,23 @@
 		84293B6D21E3050900D342F3 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
 		84293B6E21E3259A00D342F3 /* MuPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MuPrefixHeader.pch; sourceTree = "<group>"; };
 		84293B6F21E3286700D342F3 /* MuPubMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MuPubMacros.h; sourceTree = "<group>"; };
+		84B96B4E21EC225E004E6BDE /* qidong@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qidong@2x.png"; sourceTree = "<group>"; };
+		84B96B4F21EC2262004E6BDE /* qidong@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qidong@3x.png"; sourceTree = "<group>"; };
+		84B96B5321EC22FD004E6BDE /* SPBAboutWeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPBAboutWeVC.h; sourceTree = "<group>"; };
+		84B96B5421EC22FD004E6BDE /* SPBAboutWeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPBAboutWeVC.m; sourceTree = "<group>"; };
+		84B96B5521EC22FD004E6BDE /* SPBResetPasswordVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPBResetPasswordVC.h; sourceTree = "<group>"; };
+		84B96B5621EC22FD004E6BDE /* SPBResetPasswordVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPBResetPasswordVC.m; sourceTree = "<group>"; };
+		84B96B5721EC22FD004E6BDE /* SPBResetPasswordVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPBResetPasswordVC.xib; sourceTree = "<group>"; };
+		84B96B5821EC22FD004E6BDE /* SPBUserCenterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPBUserCenterVC.h; sourceTree = "<group>"; };
+		84B96B5921EC22FD004E6BDE /* SPBUserCenterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPBUserCenterVC.m; sourceTree = "<group>"; };
+		84B96B5B21EC22FD004E6BDE /* PubCellDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PubCellDetailView.h; sourceTree = "<group>"; };
+		84B96B5C21EC22FD004E6BDE /* PubCellDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PubCellDetailView.m; sourceTree = "<group>"; };
+		84B96B5D21EC22FD004E6BDE /* SPBMainUserHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPBMainUserHeaderView.h; sourceTree = "<group>"; };
+		84B96B5E21EC22FD004E6BDE /* SPBMainUserHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPBMainUserHeaderView.m; sourceTree = "<group>"; };
+		84B96B5F21EC22FD004E6BDE /* UserCTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCTableViewCell.h; sourceTree = "<group>"; };
+		84B96B6021EC22FD004E6BDE /* UserCTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCTableViewCell.m; sourceTree = "<group>"; };
+		84B96B6121EC22FD004E6BDE /* UserHeaderSubShowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserHeaderSubShowView.h; sourceTree = "<group>"; };
+		84B96B6221EC22FD004E6BDE /* UserHeaderSubShowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserHeaderSubShowView.m; sourceTree = "<group>"; };
 		84BC4AFF21E5D1DF00E715E0 /* 01-巡检巡更-active@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "01-巡检巡更-active@2x.png"; sourceTree = "<group>"; };
 		84BC4B0021E5D1DF00E715E0 /* 01-巡检巡更-normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "01-巡检巡更-normal@2x.png"; sourceTree = "<group>"; };
 		84BC4B0121E5D1DF00E715E0 /* 02-安全管理-active@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "02-安全管理-active@2x.png"; sourceTree = "<group>"; };
@@ -1127,11 +1147,6 @@
 		84CD9FD121E6E253009E6C14 /* YXDayCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YXDayCell.xib; sourceTree = "<group>"; };
 		84CD9FD221E6E253009E6C14 /* YXMonthView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXMonthView.h; sourceTree = "<group>"; };
 		84CD9FD321E6E253009E6C14 /* YXMonthView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXMonthView.m; sourceTree = "<group>"; };
-		84CD9FD921E72C82009E6C14 /* SPBResetPasswordVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPBResetPasswordVC.h; sourceTree = "<group>"; };
-		84CD9FDA21E72C82009E6C14 /* SPBResetPasswordVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPBResetPasswordVC.m; sourceTree = "<group>"; };
-		84CD9FDB21E72C82009E6C14 /* SPBResetPasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SPBResetPasswordVC.xib; sourceTree = "<group>"; };
-		84CD9FDE21E72CAF009E6C14 /* SPBAboutWeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPBAboutWeVC.h; sourceTree = "<group>"; };
-		84CD9FDF21E72CAF009E6C14 /* SPBAboutWeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPBAboutWeVC.m; sourceTree = "<group>"; };
 		84CD9FE221E72CF4009E6C14 /* SPBLoginVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPBLoginVC.h; sourceTree = "<group>"; };
 		84CD9FE321E72CF4009E6C14 /* SPBLoginVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPBLoginVC.m; sourceTree = "<group>"; };
 		84CD9FE421E72CF4009E6C14 /* SPBLoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SPBLoginVC.xib; sourceTree = "<group>"; };
@@ -1210,7 +1225,6 @@
 		84F749A821E8784D00C67C67 /* JXCategoryTitleImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXCategoryTitleImageView.m; sourceTree = "<group>"; };
 		84F749CB21E882AE00C67C67 /* SubManagerDetailVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubManagerDetailVC.h; sourceTree = "<group>"; };
 		84F749CC21E882AE00C67C67 /* SubManagerDetailVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubManagerDetailVC.m; sourceTree = "<group>"; };
-		84F749CE21E886A400C67C67 /* q750_1334@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "q750_1334@2x.png"; path = "SysBResource/启动图/q750_1334@2x.png"; sourceTree = "<group>"; };
 		84F749D221E88F3600C67C67 /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoFooter.h; sourceTree = "<group>"; };
 		84F749D321E88F3600C67C67 /* MJRefreshAutoFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoFooter.m; sourceTree = "<group>"; };
 		84F749D421E88F3600C67C67 /* MJRefreshBackFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackFooter.h; sourceTree = "<group>"; };
@@ -2303,20 +2317,6 @@
 			path = SPBSignInModule;
 			sourceTree = "<group>";
 		};
-		84267BD621E4979B00070A36 /* SPBUserCenterModule */ = {
-			isa = PBXGroup;
-			children = (
-				84267BDA21E4992700070A36 /* SPBUserCenterVC.h */,
-				84267BDB21E4992700070A36 /* SPBUserCenterVC.m */,
-				84CD9FDE21E72CAF009E6C14 /* SPBAboutWeVC.h */,
-				84CD9FDF21E72CAF009E6C14 /* SPBAboutWeVC.m */,
-				84CD9FD921E72C82009E6C14 /* SPBResetPasswordVC.h */,
-				84CD9FDA21E72C82009E6C14 /* SPBResetPasswordVC.m */,
-				84CD9FDB21E72C82009E6C14 /* SPBResetPasswordVC.xib */,
-			);
-			path = SPBUserCenterModule;
-			sourceTree = "<group>";
-		};
 		84293B3021E2E0F300D342F3 = {
 			isa = PBXGroup;
 			children = (
@@ -2445,8 +2445,8 @@
 		84293B5B21E2FC7500D342F3 /* SysBMainModule */ = {
 			isa = PBXGroup;
 			children = (
+				84B96B5221EC22FD004E6BDE /* SPBUserCenterModule */,
 				84CD9FE121E72CC8009E6C14 /* SPBLoginModule */,
-				84267BD621E4979B00070A36 /* SPBUserCenterModule */,
 				84267BD521E4975A00070A36 /* SPBSignInModule */,
 				84267BD421E4972E00070A36 /* SPBManageModule */,
 				84267BD321E496CE00070A36 /* SPBCheckModule */,
@@ -2495,7 +2495,8 @@
 		84293B6221E2FD1B00D342F3 /* BaseProFile */ = {
 			isa = PBXGroup;
 			children = (
-				84F749CE21E886A400C67C67 /* q750_1334@2x.png */,
+				84B96B4E21EC225E004E6BDE /* qidong@2x.png */,
+				84B96B4F21EC2262004E6BDE /* qidong@3x.png */,
 				84293B4221E2E0F300D342F3 /* Main.storyboard */,
 				84293B4521E2E0F600D342F3 /* Assets.xcassets */,
 				84293B4721E2E0F600D342F3 /* LaunchScreen.storyboard */,
@@ -2543,6 +2544,36 @@
 				84293B6B21E303B100D342F3 /* GTMBase64.m */,
 			);
 			path = GTMBase64;
+			sourceTree = "<group>";
+		};
+		84B96B5221EC22FD004E6BDE /* SPBUserCenterModule */ = {
+			isa = PBXGroup;
+			children = (
+				84B96B5321EC22FD004E6BDE /* SPBAboutWeVC.h */,
+				84B96B5421EC22FD004E6BDE /* SPBAboutWeVC.m */,
+				84B96B5521EC22FD004E6BDE /* SPBResetPasswordVC.h */,
+				84B96B5621EC22FD004E6BDE /* SPBResetPasswordVC.m */,
+				84B96B5721EC22FD004E6BDE /* SPBResetPasswordVC.xib */,
+				84B96B5821EC22FD004E6BDE /* SPBUserCenterVC.h */,
+				84B96B5921EC22FD004E6BDE /* SPBUserCenterVC.m */,
+				84B96B5A21EC22FD004E6BDE /* UserCenterViews */,
+			);
+			path = SPBUserCenterModule;
+			sourceTree = "<group>";
+		};
+		84B96B5A21EC22FD004E6BDE /* UserCenterViews */ = {
+			isa = PBXGroup;
+			children = (
+				84B96B5B21EC22FD004E6BDE /* PubCellDetailView.h */,
+				84B96B5C21EC22FD004E6BDE /* PubCellDetailView.m */,
+				84B96B5D21EC22FD004E6BDE /* SPBMainUserHeaderView.h */,
+				84B96B5E21EC22FD004E6BDE /* SPBMainUserHeaderView.m */,
+				84B96B5F21EC22FD004E6BDE /* UserCTableViewCell.h */,
+				84B96B6021EC22FD004E6BDE /* UserCTableViewCell.m */,
+				84B96B6121EC22FD004E6BDE /* UserHeaderSubShowView.h */,
+				84B96B6221EC22FD004E6BDE /* UserHeaderSubShowView.m */,
+			);
+			path = UserCenterViews;
 			sourceTree = "<group>";
 		};
 		84BC4AFE21E5D1DF00E715E0 /* icon@2x */ = {
@@ -3092,7 +3123,6 @@
 				84BC4B6621E5D1E300E715E0 /* 01-巡检巡更-active@2x.png in Resources */,
 				84BC4BC421E5D1E400E715E0 /* 用户名@2x.png in Resources */,
 				84BC4B6821E5D1E400E715E0 /* 02-安全管理-active@2x.png in Resources */,
-				84F749CF21E886A400C67C67 /* q750_1334@2x.png in Resources */,
 				84BC4B9A21E5D1E400E715E0 /* icon-上报时间（详情页）@3x.png in Resources */,
 				84BC4BB421E5D1E400E715E0 /* 巡检记录报告图标@3x.png in Resources */,
 				84BC4B8A21E5D1E400E715E0 /* 引导页_跳过@2x.png in Resources */,
@@ -3129,7 +3159,6 @@
 				84BC4B8C21E5D1E400E715E0 /* 打卡成功@2x.png in Resources */,
 				84BC4B8521E5D1E400E715E0 /* 个人中心-管理员默认大头像@2x.png in Resources */,
 				84BC4BA621E5D1E400E715E0 /* icon-选择考勤箭头@3x.png in Resources */,
-				84CD9FDD21E72C82009E6C14 /* SPBResetPasswordVC.xib in Resources */,
 				84BC4B9321E5D1E400E715E0 /* 02-安全管理-active@3x.png in Resources */,
 				84BC4B7621E5D1E400E715E0 /* icon-申请原因@2x.png in Resources */,
 				84BC4BC221E5D1E400E715E0 /* 密码@2x.png in Resources */,
@@ -3148,6 +3177,7 @@
 				84BC4B7421E5D1E400E715E0 /* icon-新密码@2x.png in Resources */,
 				84BC4B9421E5D1E400E715E0 /* 02-安全管理-normal@3x.png in Resources */,
 				84BC4B6721E5D1E400E715E0 /* 01-巡检巡更-normal@2x.png in Resources */,
+				84B96B5121EC2262004E6BDE /* qidong@3x.png in Resources */,
 				84CD9FD721E6E253009E6C14 /* YXDayCell.xib in Resources */,
 				84BC4BA521E5D1E400E715E0 /* icon-退出登录@3x.png in Resources */,
 				84BC4BAF21E5D1E400E715E0 /* 个人中心-模块背景@3x.png in Resources */,
@@ -3164,6 +3194,7 @@
 				84CD9FBD21E6E1A7009E6C14 /* YWAlertView.bundle in Resources */,
 				84BC4BC121E5D1E400E715E0 /* 00-C引导页-03移动考勤@3x.png in Resources */,
 				84BC4BBA21E5D1E400E715E0 /* 提示：当前不在打卡范围@3x.png in Resources */,
+				84B96B5021EC2262004E6BDE /* qidong@2x.png in Resources */,
 				84BC4B9E21E5D1E400E715E0 /* icon-当月累计打卡天数@3x.png in Resources */,
 				84BC4B8B21E5D1E400E715E0 /* 打卡成功-时钟背景@2x.png in Resources */,
 				84BC4B7221E5D1E400E715E0 /* icon-当日巡检记录@2x.png in Resources */,
@@ -3175,6 +3206,7 @@
 				84BC4B7821E5D1E400E715E0 /* icon-补卡时间点@2x.png in Resources */,
 				84BC4B8021E5D1E400E715E0 /* icon-隐患类型@2x.png in Resources */,
 				84BC4B7B21E5D1E400E715E0 /* icon-选择考勤箭头@2x.png in Resources */,
+				84B96B6521EC22FD004E6BDE /* SPBResetPasswordVC.xib in Resources */,
 				84BC4BA421E5D1E400E715E0 /* icon-返回箭头@3x.png in Resources */,
 				84BC4BBE21E5D1E400E715E0 /* 00-B引导页-02安全管理@2x.png in Resources */,
 				84BC4BB321E5D1E400E715E0 /* 处理状态-待处理@3x.png in Resources */,
@@ -3222,6 +3254,7 @@
 				84267B1021E432BB00070A36 /* NSData+Joker.m in Sources */,
 				84267B8E21E4467C00070A36 /* NSArray+MTLManipulationAdditions.m in Sources */,
 				84F749BA21E8784D00C67C67 /* JXCategoryIndicatorComponentView.m in Sources */,
+				84B96B6321EC22FD004E6BDE /* SPBAboutWeVC.m in Sources */,
 				84267AA121E432BB00070A36 /* UIFont-TTF.m in Sources */,
 				84267ADF21E432BB00070A36 /* UIView+Animation.m in Sources */,
 				84267B5621E432BB00070A36 /* NSURLRequest+ParamsFromDictionary.m in Sources */,
@@ -3247,6 +3280,7 @@
 				84267AFE21E432BB00070A36 /* UIWebView+Canvas.m in Sources */,
 				84267AA621E432BB00070A36 /* UIImage+Capture.m in Sources */,
 				84267B2821E432BB00070A36 /* NSInvocation+Bb.m in Sources */,
+				84B96B6921EC22FD004E6BDE /* UserCTableViewCell.m in Sources */,
 				84293B4121E2E0F300D342F3 /* ViewController.m in Sources */,
 				84267A8621E432BB00070A36 /* UIApplication+KeyboardFrame.m in Sources */,
 				84267AAB21E432BB00070A36 /* UIImage+Merge.m in Sources */,
@@ -3290,7 +3324,6 @@
 				84CD9FD821E6E253009E6C14 /* YXMonthView.m in Sources */,
 				84267AF721E432BB00070A36 /* UIViewController+RecursiveDescription.m in Sources */,
 				84CD9FD421E6E253009E6C14 /* YXCalendarView.m in Sources */,
-				84267BDC21E4992700070A36 /* SPBUserCenterVC.m in Sources */,
 				84267B9421E4467C00070A36 /* NSValueTransformer+MTLInversionAdditions.m in Sources */,
 				84293B4C21E2E0F600D342F3 /* main.m in Sources */,
 				84293B6C21E303B100D342F3 /* GTMBase64.m in Sources */,
@@ -3311,6 +3344,7 @@
 				84267BBE21E4557C00070A36 /* SgdFileDownLoad.m in Sources */,
 				84267A8421E432BB00070A36 /* UIAlertView+Block.m in Sources */,
 				84267AF021E432BB00070A36 /* UIView+Visuals.m in Sources */,
+				84B96B6821EC22FD004E6BDE /* SPBMainUserHeaderView.m in Sources */,
 				84267BBD21E4557C00070A36 /* SgdHttpNetWork.m in Sources */,
 				84267AA721E432BB00070A36 /* UIImage+Color.m in Sources */,
 				84267B2F21E432BB00070A36 /* NSNumber+Round.m in Sources */,
@@ -3370,7 +3404,6 @@
 				84267B8F21E4467C00070A36 /* NSDictionary+MTLJSONKeyPath.m in Sources */,
 				84F749AD21E8784D00C67C67 /* JXCategoryFactory.m in Sources */,
 				84267AD621E432BB00070A36 /* UITableViewCell+NIB.m in Sources */,
-				84CD9FE021E72CAF009E6C14 /* SPBAboutWeVC.m in Sources */,
 				84F749C821E8784D00C67C67 /* JXCategoryTitleImageCell.m in Sources */,
 				84F749C721E8784D00C67C67 /* JXCategoryTitleView.m in Sources */,
 				84267AFA21E432BB00070A36 /* UIViewController+TopBarMessage.m in Sources */,
@@ -3387,6 +3420,7 @@
 				84267A8A21E432BB00070A36 /* UIBezierPath+BasicShapes.m in Sources */,
 				84267AD321E432BB00070A36 /* UITableView+FDKeyedHeightCache.m in Sources */,
 				84F749AE21E8784D00C67C67 /* JXCategoryIndicatorParamsModel.m in Sources */,
+				84B96B6A21EC22FD004E6BDE /* UserHeaderSubShowView.m in Sources */,
 				84267BB021E451C100070A36 /* SVRadialGradientLayer.m in Sources */,
 				84267AF221E432BB00070A36 /* UIViewController+BackButtonItemTitle.m in Sources */,
 				84267B2621E432BB00070A36 /* NSHTTPCookieStorage+FreezeDry.m in Sources */,
@@ -3425,6 +3459,7 @@
 				84267B0421E432BB00070A36 /* UIWebView+TS_JavaScriptContext.m in Sources */,
 				84267AEF21E432BB00070A36 /* UIView+ViewController.m in Sources */,
 				84267B0721E432BB00070A36 /* NSArray+Block.m in Sources */,
+				84B96B6621EC22FD004E6BDE /* SPBUserCenterVC.m in Sources */,
 				84F749AC21E8784D00C67C67 /* JXCategoryCollectionView.m in Sources */,
 				84267B4921E432BB00070A36 /* NSString+Ruby.m in Sources */,
 				84267B2B21E432BB00070A36 /* NSDecimalNumber+CalculatingByString.m in Sources */,
@@ -3489,6 +3524,7 @@
 				84CD9FB821E6E1A7009E6C14 /* UIView+Autolayout.m in Sources */,
 				84267AC121E432BB00070A36 /* UINavigationController+KeyboardFix.m in Sources */,
 				84267B3221E432BB00070A36 /* NSObject+AssociatedObject.m in Sources */,
+				84B96B6721EC22FD004E6BDE /* PubCellDetailView.m in Sources */,
 				84267AE221E432BB00070A36 /* UIView+CustomBorder.m in Sources */,
 				84267B8B21E4467C00070A36 /* MTLReflection.m in Sources */,
 				84267AD021E432BB00070A36 /* UISplitViewController+QuickAccess.m in Sources */,
@@ -3508,7 +3544,6 @@
 				84267B3E21E432BB00070A36 /* NSString+Base64.m in Sources */,
 				84F74A1221E88F3600C67C67 /* UIView+MJExtension.m in Sources */,
 				84F749AA21E8784D00C67C67 /* JXCategoryBaseCellModel.m in Sources */,
-				84CD9FDC21E72C82009E6C14 /* SPBResetPasswordVC.m in Sources */,
 				84267A9621E432BB00070A36 /* UIColor+Gradient.m in Sources */,
 				84267A9021E432BB00070A36 /* UIButton+Block.m in Sources */,
 				84267AC221E432BB00070A36 /* UINavigationController+StackManager.m in Sources */,
@@ -3533,6 +3568,7 @@
 				84267AB421E432BB00070A36 /* UIImageView+FaceAwareFill.m in Sources */,
 				84F749B521E8784D00C67C67 /* JXCategoryImageCell.m in Sources */,
 				84267B2721E432BB00070A36 /* NSIndexPath+Offset.m in Sources */,
+				84B96B6421EC22FD004E6BDE /* SPBResetPasswordVC.m in Sources */,
 				84267B8D21E4467C00070A36 /* MTLValueTransformer.m in Sources */,
 				84267A8F21E432BB00070A36 /* UIButton+BackgroundColor.m in Sources */,
 				84267B2021E432BB00070A36 /* NSDictionary+URL.m in Sources */,

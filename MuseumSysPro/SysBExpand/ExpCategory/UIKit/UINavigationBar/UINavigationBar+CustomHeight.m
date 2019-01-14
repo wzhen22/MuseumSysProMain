@@ -34,7 +34,7 @@ static char const *const heightKey = "Height";
     objc_setAssociatedObject(self, heightKey, @(height), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-- (NSNumber *)height
+- (NSNumber *)barHeight
 {
     return objc_getAssociatedObject(self, heightKey);
 }
@@ -43,8 +43,8 @@ static char const *const heightKey = "Height";
 {
     CGSize newSize;
     
-    if (self.height) {
-        newSize = CGSizeMake(self.superview.bounds.size.width, [self.height floatValue]);
+    if (self.barHeight) {
+        newSize = CGSizeMake(self.superview.bounds.size.width, [self.barHeight floatValue]);
     } else {
         newSize = [super sizeThatFits:size];
     }

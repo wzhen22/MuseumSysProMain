@@ -27,4 +27,6 @@
 #import "UIColor+Random.h"
 #import "SVProgressHUD.h"
 
+#import "UIView+Frame.h"
+
 #endif /* MuPrefixHeader_pch */
