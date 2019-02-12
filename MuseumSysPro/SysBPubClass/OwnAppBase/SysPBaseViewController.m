@@ -27,21 +27,45 @@
 {
     [super viewDidLoad];
     
+//#if (isIOS7)
+//    if([self respondsToSelector:@selector(edgesForExtendedLayout)])
+//    {
+//        self.edgesForExtendedLayout = UIExtendedEdgeNone;
+//    }
+//#else
+//    float barHeight =0;
+//    if (!isIPad()&& ![[UIApplication sharedApplication] isStatusBarHidden]) {
+//        barHeight+=([[UIApplication sharedApplication]statusBarFrame]).size.height;
+//    }
+//    if(self.navigationController &&!self.navigationController.navigationBarHidden) {    barHeight+=self.navigationController.navigationBar.frame.size.height;
+//    }
+//    for (UIView *view in self.view.subviews) {
+//        if ([view isKindOfClass:[UIScrollView class]]) {
+//            view.frame = CGRectMake(view.frame.origin.x, view.frame.origin.y +barHeight, view.frame.size.width, view.frame.size.height - barHeight);
+//        } else {
+//            view.frame = CGRectMake(view.frame.origin.x, view.frame.origin.y +barHeight, view.frame.size.width, view.frame.size.height);
+//        }
+//    }
+//#endif
+    
     self.navigationController.navigationBar.translucent = NO;
     self.view.backgroundColor = [UIColor whiteColor];
     
     self.automaticallyAdjustsScrollViewInsets = NO;
     self.navigationController.navigationBar.titleTextAttributes = [NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor],NSForegroundColorAttributeName,[UIFont systemFontOfSize:19.0],NSFontAttributeName, nil];
     
-    UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    backButton.frame = CGRectMake(0, 0, 40.f, 40.f);
-    [backButton setBackgroundImage:[UIImage imageNamed:@"YY_Base_backPiC"] forState:UIControlStateNormal];//150610gai,home_status_back
+    UIButton *backButton = [UIButton new];
+    backButton.frame = CGRectMake(0, 0, 23.f, 25.f);
+    [backButton setBackgroundImage:[UIImage imageNamed:@"icon-返回箭头"] forState:UIControlStateNormal];//150610gai,home_status_back
     [backButton addTarget:self action:@selector(navBackAction) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithCustomView:backButton];
     self.navigationItem.leftBarButtonItem = leftItem;
     
     [self.navigationController.navigationBar setShadowImage:[UIImage new]];
-    
+//    if (!self.navigationController) {
+//        backButton.frame = CGRectMake(10, 30, 23.f, 25.f);
+//        [self.view addSubview:backButton];
+//    }
     
 }
 
@@ -98,7 +122,7 @@
     UIViewController *ctrl = [self.navigationController popViewControllerAnimated:YES];
     if (ctrl == nil)
     {
-        [self dismissViewControllerAnimated:YES completion:nil];
+        [self dismissViewControllerAnimated:NO completion:nil];
     }
 }
 

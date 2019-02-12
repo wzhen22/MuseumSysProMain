@@ -21,15 +21,16 @@
 
 #ifdef DEBUG //处于开发测试阶段
 
-NSString * const HQMNetworkDomain = @"http://101.200.139.156";
+//NSString * const HQMNetworkDomain = @"http://101.200.139.156";
+NSString * const HQMNetworkDomain = @"http://inspection.museum.cqcztech.com";
 
 ///< 关闭https SSL 验证
 #define kOpenHttpsAuth NO
 
 #else //处于发布正式阶段
 
-NSString * const HQMNetworkDomain = @"http://www.xiaoban.mobi";
-
+//NSString * const HQMNetworkDomain = @"http://www.xiaoban.mobi";
+NSString * const HQMNetworkDomain = @"http://inspection.chinamuseum.cn";
 ///< 开启https SSL 验证
 #define kOpenHttpsAuth YES
 
@@ -63,7 +64,7 @@ NSString * const HQMNetworkDomain = @"http://www.xiaoban.mobi";
     _networkIsError = NO;
     _page = -1;
     _showHUD = NO;
-    _timeoutInterval = 10.;
+    _timeoutInterval = 300.;
     
     if (!_manager) {
         _manager = [AFHTTPSessionManager manager];
@@ -306,11 +307,10 @@ NSString * const HQMNetworkDomain = @"http://www.xiaoban.mobi";
             }
             else {
                 NSDictionary *jsonDict = (NSDictionary *)json;
-                id resultData = [jsonDict objectForKey:@"data"];
-                NSInteger errorCode = [[jsonDict objectForKey:@"error"] integerValue];
+                NSInteger errorCode = [[jsonDict objectForKey:@"success"] integerValue];
                 DLog(@"jsonData:%@", jsonDict);
-                if (resultData) {
-                    [self handleData:resultData errCode:errorCode];
+                if (errorCode) {
+                    [self handleData:jsonDict errCode:errorCode];
                 } else {
                     DLog(@"服务器返回数据为null");
 //                    NSAssert(NO, @"服务器返回数据为null");

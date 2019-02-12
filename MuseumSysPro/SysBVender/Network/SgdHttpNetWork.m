@@ -97,7 +97,7 @@ static dispatch_once_t getSgdUrlPredicate;//保证单例只创建一次
     NSMutableURLRequest *request=[NSMutableURLRequest requestWithURL:url];
     
     // 超时设置
-    [request setTimeoutInterval:30.0];
+    [request setTimeoutInterval:300.0];
     // 访问方式
     [request setHTTPMethod:method];
     // body内容

@@ -785,8 +785,8 @@ NSString* _stringRepresentationOf(id<Concatenatable> object){
     if(result)
       return [self substringWithRange:result.range];
   } else if([key isKindOfClass:[NSArray class]]) {
-    NSInteger loc = [key[0] intValue];
-    NSInteger len = [key[1] intValue];
+    NSInteger loc = [key[0] integerValue];
+    NSInteger len = [key[1] integerValue];
     return [self substringWithRange:NSMakeRange((loc > 0) ? loc:self.length - labs(loc),
                                                 len)];
   }

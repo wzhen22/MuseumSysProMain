@@ -11,6 +11,32 @@
 
 // 应用程序托管
 #define AppDelegateInstance                            ((AppDelegate*)([UIApplication sharedApplication].delegate))
+
+#define isIOS11 [[UIDevice currentDevice].systemVersion floatValue] >= 11
+#define isIOS7 [[UIDevice currentDevice].systemVersion floatValue] >= 7
+//
+#define kScreenWidth ([[UIScreen mainScreen] bounds].size.width)
+#define kScreenHeight ([[UIScreen mainScreen] bounds].size.height)
+#define kIs_iphone (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+#define kIs_iPhoneX kScreenWidth >=375.0f && kScreenHeight >=812.0f&& kIs_iphone
+
+/*状态栏高度*/
+#define kStatusBarHeight (CGFloat)(kIs_iPhoneX?(44.0):(20.0))
+/*导航栏高度*/
+#define kNavBarHeight (44)
+/*状态栏和导航栏总高度*/
+#define kNavBarAndStatusBarHeight (CGFloat)(kIs_iPhoneX?(88.0):(64.0))
+/*TabBar高度*/
+#define kTabBarHeight (CGFloat)(kIs_iPhoneX?(49.0 + 34.0):(49.0))
+/*顶部安全区域远离高度*/
+#define kTopBarSafeHeight (CGFloat)(kIs_iPhoneX?(44.0):(0))
+/*底部安全区域远离高度*/
+#define kBottomSafeHeight (CGFloat)(kIs_iPhoneX?(34.0):(0))
+/*iPhoneX的状态栏高度差值*/
+#define kTopBarDifHeight (CGFloat)(kIs_iPhoneX?(24.0):(0))
+/*导航条和Tabbar总高度*/
+#define kNavAndTabHeight (kNavBarAndStatusBarHeight + kTabBarHeight)
+
 //请求超时时间
 #define HTTPTimeoutInterval 20.0f
 //获取图片资源
@@ -97,5 +123,8 @@
 #define VersionAPP [NSString stringWithFormat:@"%@",[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]]
 
 
-#define BASE_HTTP_SERVER (@"gd4.tv.cq3g.cn")
+//#define BASE_HTTP_SERVER (@"http://inspection.museum.cqcztech.com")
+#define BASE_HTTP_SERVER (@"http://inspection.chinamuseum.cn")
+//测试地址：http://inspection.museum.cqcztech.com/login
+//正式地址：http://inspection.chinamuseum.cn/login
 #endif /* MuPubMacros_h */

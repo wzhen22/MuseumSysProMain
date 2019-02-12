@@ -19,8 +19,8 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    
-    _dayL.layer.cornerRadius = dayCellH / 2;
+    //10是距离cell底部的高度
+    _dayL.layer.cornerRadius = (dayCellH-10) / 2;
     _pointV.layer.cornerRadius = 1.5;
     
 }
@@ -55,11 +55,11 @@
 - (void)showDateFunction {
     
     self.userInteractionEnabled = YES;
-    
+//    _dayL.layer.cornerRadius = (_dayL.frame.size.width) / 2.f;
     _dayL.text = [[YXDateHelpObject manager] getStrFromDateFormat:@"d" Date:_cellDate];
     if ([[YXDateHelpObject manager] isSameDate:_cellDate AnotherDate:[NSDate date]]) {
         _dayL.layer.borderWidth = 1.5;
-        _dayL.layer.borderColor = [UIColor blueColor].CGColor;
+        _dayL.layer.borderColor = [UIColor colorWithHexString:@"148aff"].CGColor;
     } else {
         _dayL.layer.borderWidth = 0;
         _dayL.layer.borderColor = [UIColor clearColor].CGColor;
@@ -67,13 +67,13 @@
     if (_selectDate) {
         
         if ([[YXDateHelpObject manager] isSameDate:_cellDate AnotherDate:_selectDate]) {
-            _dayL.backgroundColor = [UIColor blueColor];
+            _dayL.backgroundColor = [UIColor colorWithHexString:@"148aff"];
             _dayL.textColor = [UIColor whiteColor];
-            _pointV.backgroundColor = [UIColor whiteColor];
+            _pointV.backgroundColor = [UIColor colorWithHexString:@"148aff"];
         } else {
             _dayL.backgroundColor = [UIColor clearColor];
             _dayL.textColor = [UIColor blackColor];
-            _pointV.backgroundColor = [UIColor orangeColor];
+            _pointV.backgroundColor = [UIColor colorWithHexString:@"148aff"];
         }
         
     }

@@ -34,7 +34,7 @@
     layout.itemSize = CGSizeMake((self.frame.size.width - 1) / 7, dayCellH);
     layout.scrollDirection = UICollectionViewScrollDirectionVertical;
     
-    _collectionV = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, 6 * dayCellH) collectionViewLayout:layout];
+    _collectionV = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 30, self.frame.size.width, 6 * dayCellH+30) collectionViewLayout:layout];
     _collectionV.scrollEnabled = NO;
     _collectionV.delegate = self;
     _collectionV.dataSource = self;

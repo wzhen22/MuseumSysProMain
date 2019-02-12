@@ -336,7 +336,12 @@ static SysPubHttpKit *globalSysPubNetKit;
     AFHTTPSessionManager *session = [AFHTTPSessionManager manager];
     
     AFJSONRequestSerializer * requestSerializer = [AFJSONRequestSerializer serializer];
-//    [requestSerializer setValue:[Singleton getHttpToken] forHTTPHeaderField:@"Authorization"];
+    [requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    NSDictionary *allHeaders = [SysPubSingleThings sharePublicSingle].loginCookie;
+    NSString *cookieStr = [allHeaders safeObjectForKey:@"Set-Cookie"];
+    NSString *tokenStr = [allHeaders safeObjectForKey:@"X-CSRF-TOKEN"];
+    [requestSerializer setValue:cookieStr forHTTPHeaderField:@"cookie"];
+    [requestSerializer setValue:tokenStr forHTTPHeaderField:@"X-CSRF-TOKEN"];
     session.requestSerializer  = requestSerializer;
     // 加上这行代码，https ssl 验证。
     [session setSecurityPolicy:[self customSecurityPolicy]];
@@ -345,7 +350,7 @@ static SysPubHttpKit *globalSysPubNetKit;
     XJSONResponseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json",@"application/xml",@"text/json",@"text/javascript",@"text/html",@"text/plain",nil];
     session.responseSerializer  = XJSONResponseSerializer;
     
-    
+    NSLog(@"targetUrlStr:%@",targetUrlStr);
     NSURLSessionDataTask * task = [session GET:targetUrlStr parameters:targetRequestInfo progress:^(NSProgress * _Nonnull uploadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
@@ -360,14 +365,20 @@ static SysPubHttpKit *globalSysPubNetKit;
         if(jsonStringToPrint != nil)
         {
             //后续NSLog可以替换自身的宏定义
-            DLog(@"%@",@"----------- begin print api invoke --------------------");
-            DLog(@"ThePostApiName is %@ , postValue is %@,  get the retValue is %@",targetApiName,(targetRequestInfo == nil)?@"":targetRequestInfo,retJsonValue);
-            DLog(@"%@",@"----------- end print api invoke ----------------------");
+//            DLog(@"%@",@"----------- begin print api invoke --------------------");
+//            DLog(@"ThePostApiName is %@ , postValue is %@,  get the retValue is %@",targetApiName,(targetRequestInfo == nil)?@"":targetRequestInfo,retJsonValue);
+//            DLog(@"%@",@"----------- end print api invoke ----------------------");
         }
 #endif
         [self runSuccessBlockWith:retJsonValue andSuccessBlock:successBlock];
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSHTTPURLResponse *response = (NSHTTPURLResponse *)task.response;
+        NSInteger statusCode = response.statusCode;
+        if (statusCode == 401 || statusCode == 402) {
+            //重新登录
+            [self loginHttpRequest];
+        }
         [self runFailBlockWith:error andContextInfo:nil andFailBlock:failBlock];
     }];
     
@@ -387,39 +398,36 @@ static SysPubHttpKit *globalSysPubNetKit;
     NSString *targetUrlStr = [NSString stringWithFormat:@"%@%@",baseUrl,tempApiName];
     DLog(@"post requestPath :%@",targetUrlStr);
     
-    NSMutableURLRequest *httpRequst = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:[targetUrlStr stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]]];
-    [httpRequst setHTTPMethod:@"POST"];
-    [self addCommonHeaderValueTo:httpRequst];
-    NSData *jsonData;
-    if(targetRequestInfo != nil && [NSJSONSerialization isValidJSONObject:targetRequestInfo])
-    {
-        jsonData = [NSJSONSerialization dataWithJSONObject:targetRequestInfo options:NSJSONWritingPrettyPrinted error:nil];
-        [httpRequst setHTTPBody:jsonData];
-    }
-    //在这里添加请求Header
-    [httpRequst setValue:[@([jsonData length]) stringValue] forHTTPHeaderField:@"Content-Length"];
-    [httpRequst setValue:@"application/json" forHTTPHeaderField:@"Accept"];
-    [httpRequst setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
-    [httpRequst setValue:@"access_token" forHTTPHeaderField:@"Authorization"];
-    NSLog(@"httpRequst  Authorization:%@",[httpRequst valueForHTTPHeaderField:@"Authorization"]);
     
     AFHTTPSessionManager *session = [AFHTTPSessionManager manager];
+    session.responseSerializer = [AFHTTPResponseSerializer serializer];
     
     AFJSONRequestSerializer * requestSerializer = [AFJSONRequestSerializer serializer];
-//    [requestSerializer setValue:[Singleton getHttpToken] forHTTPHeaderField:@"Authorization"];
+    [requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    NSDictionary *allHeaders = [SysPubSingleThings sharePublicSingle].loginCookie;
+    NSString *cookieStr = [allHeaders safeObjectForKey:@"Set-Cookie"];
+    NSString *tokenStr = [allHeaders safeObjectForKey:@"X-CSRF-TOKEN"];
+//    NSLog(@"cookieStr:%@,tokenStr:%@",cookieStr,tokenStr);
+    [requestSerializer setValue:cookieStr forHTTPHeaderField:@"cookie"];
+    [requestSerializer setValue:tokenStr forHTTPHeaderField:@"X-CSRF-TOKEN"];
     session.requestSerializer  = requestSerializer;
     // 加上这行代码，https ssl 验证。
     [session setSecurityPolicy:[self customSecurityPolicy]];
-    
-    AFJSONResponseSerializer * XJSONResponseSerializer = [AFJSONResponseSerializer serializer];
-    XJSONResponseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json",@"application/xml",@"text/json",@"text/javascript",@"text/html",@"text/plain",nil];
-    session.responseSerializer  = XJSONResponseSerializer;
     
     
     NSURLSessionDataTask * task = [session POST:targetUrlStr parameters:targetRequestInfo progress:^(NSProgress * _Nonnull uploadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        
+        //定制化需求http://inspection.museum.cqcztech.com/login
+        if ([targetUrlStr hasSuffix:@"/login"]) {
+            NSHTTPURLResponse *response = (NSHTTPURLResponse *)task.response;
+            NSDictionary *allHeaders = response.allHeaderFields;
+//            NSLog(@"allHeaders:%@",allHeaders);
+            NSString *cookieStr = [allHeaders safeObjectForKey:@"Set-Cookie"];
+            if (cookieStr.length) {
+                [SysPubSingleThings sharePublicSingle].loginCookie = allHeaders;
+            }
+        }
         id retJsonValue = [self getCMCCJsonNetRetWith:targetApiName andResponseObj:responseObject andFailBlock:failBlock];
         if(retJsonValue == nil) return;
         
@@ -431,14 +439,20 @@ static SysPubHttpKit *globalSysPubNetKit;
         if(jsonStringToPrint != nil)
         {
             //后续NSLog可以替换自身的宏定义
-            DLog(@"%@",@"----------- begin print api invoke --------------------");
-            DLog(@"ThePostApiName is %@ , postValue is %@,  get the retValue is %@",targetApiName,(targetRequestInfo == nil)?@"":targetRequestInfo,retJsonValue);
-            DLog(@"%@",@"----------- end print api invoke ----------------------");
+//            DLog(@"%@",@"----------- begin print api invoke --------------------");
+//            DLog(@"ThePostApiName is %@ , postValue is %@,  get the retValue is %@",targetApiName,(targetRequestInfo == nil)?@"":targetRequestInfo,retJsonValue);
+//            DLog(@"%@",@"----------- end print api invoke ----------------------");
         }
 #endif
         [self runSuccessBlockWith:retJsonValue andSuccessBlock:successBlock];
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSHTTPURLResponse *response = (NSHTTPURLResponse *)task.response;
+        NSInteger statusCode = response.statusCode;
+        if (statusCode == 401 || statusCode == 402) {
+            //重新登录
+            [self loginHttpRequest];
+        }
         [self runFailBlockWith:error andContextInfo:nil andFailBlock:failBlock];
     }];
     [self ADDNetWorkToOperationDicWithOperation:task CommandKey:targetApiName];
@@ -503,5 +517,25 @@ static SysPubHttpKit *globalSysPubNetKit;
     securityPolicy.validatesDomainName = NO;
     return securityPolicy;
 }
-
+//私有方法
+-(void)loginHttpRequest{
+    NSString *login = [SysPubSingleThings getUserName];
+    NSString *ste = [SysPubSingleThings getPassword];
+    NSString *passStr = [SwTools encodeMD5:ste];
+    NSLog(@"%@",[SwTools encodeMD5:ste]);
+    NSDictionary * dic = @{
+                           @"loginname":login,
+                           @"password":passStr};
+    [[SysPubHttpKit shareHttpKit] sPubInvokeApiWithPostBaseURL:BASE_HTTP_SERVER andMethond:@"/login" andParams:dic andSuccessBlock:^(id  _Nonnull retValue) {
+        NSLog(@"andSuccessBlock:%@",retValue);
+        NSString *statusStr = [retValue safeObjectForKey:@"success"];
+        if (statusStr.boolValue) {
+            [SysPubSingleThings sharePublicSingle].loginDic =  [retValue safeObjectForKey:@"obj"];
+        }else{
+            
+        }
+    } andFailBlock:^(NSError * _Nonnull error, id  _Nonnull contextInfo) {
+        NSLog(@"andFailBlock:%@",error);
+    }];
+}
 @end

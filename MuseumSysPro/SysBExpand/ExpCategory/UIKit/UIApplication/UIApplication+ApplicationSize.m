@@ -52,7 +52,7 @@
     
     while (file = [contentsEnumurator nextObject]) {
         NSDictionary *fileAttributes = [[NSFileManager defaultManager] attributesOfItemAtPath:[folderPath stringByAppendingPathComponent:file] error:nil];
-        folderSize += [[fileAttributes objectForKey:NSFileSize] intValue];
+        folderSize += [[fileAttributes objectForKey:NSFileSize] integerValue];
     }
     return folderSize;
 }

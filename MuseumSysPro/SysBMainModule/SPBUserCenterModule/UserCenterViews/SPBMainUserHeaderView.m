@@ -40,7 +40,7 @@
     
     _userNameLable = [[UILabel alloc]init];
     _userNameLable.backgroundColor = [UIColor clearColor];
-    _userNameLable.font = [UIFont systemFontOfSize:13.f];
+    _userNameLable.font = [UIFont systemFontOfSize:15.f];
     _userNameLable.textColor = [UIColor blackColor];
     _userNameLable.textAlignment = NSTextAlignmentCenter;
     _userNameLable.text = @"累计上报隐患数hhh";
@@ -64,7 +64,7 @@
 {
     [super layoutSubviews];
     CGRect frame = self.bounds;
-    _userImageView.frame = CGRectMake((frame.size.width-100)/2.f, 30, 100, 100);
+    _userImageView.frame = CGRectMake((frame.size.width-100)/2.f, 50, 100, 100);
     _userNameLable.frame = CGRectMake(0, _userImageView.bottom, frame.size.width, 40);
     CGFloat subWidth = (frame.size.width-20)/3.f;
     _userHeaderSubShowView1.frame = CGRectMake(10, _userNameLable.bottom, subWidth, 80);

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SPBAboutWeVC">
+            <connections>
+                <outlet property="mainImageView" destination="oy9-sa-0eb" id="oWe-hl-BjG"/>
+                <outlet property="mainTextView" destination="AsM-1l-g8h" id="kNB-dS-eay"/>
+                <outlet property="view" destination="iN0-l3-epB" id="M0M-4P-8ra"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="组13.png" translatesAutoresizingMaskIntoConstraints="NO" id="oy9-sa-0eb">
+                    <rect key="frame" x="92.5" y="40" width="190" height="108"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="190" id="EiW-lC-hNH"/>
+                        <constraint firstAttribute="height" constant="108" id="X8e-zp-goZ"/>
+                    </constraints>
+                </imageView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="AsM-1l-g8h">
+                    <rect key="frame" x="47" y="148" width="280" height="273"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="273" id="QQc-vH-qDr"/>
+                    </constraints>
+                    <string key="text">        智能巡更巡检系统是由重庆常朝科技有限公司根据博物馆需求自主研发的智能系统，全面满足博物馆对巡更、安全隐患上报、隐患处理以及考勤管理的要求。系统无须外接电源即插即用并且支持离线巡检，特别适用于对安全和消防管理要求较高的使用场景。
+        本系统是“i博物馆”智慧博物馆解决方案的组成部分，希望了解更多智慧博物馆系统请您访问官网：http://www.chinamuseum.cn</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="oy9-sa-0eb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="40" id="71m-eo-eTK"/>
+                <constraint firstItem="AsM-1l-g8h" firstAttribute="top" secondItem="oy9-sa-0eb" secondAttribute="bottom" id="HI5-wu-gZk"/>
+                <constraint firstAttribute="trailing" secondItem="AsM-1l-g8h" secondAttribute="trailing" constant="48" id="LoB-I5-cem"/>
+                <constraint firstItem="AsM-1l-g8h" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="47" id="hUH-o5-leF"/>
+                <constraint firstItem="oy9-sa-0eb" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="w1B-iO-puf"/>
+            </constraints>
+            <point key="canvasLocation" x="61.600000000000001" y="48.125937031484263"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="组13.png" width="111" height="43"/>
+    </resources>
+</document>

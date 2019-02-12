@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SubManagerDetailVC : SysPBaseViewController<JXCategoryListContentViewDelegate>
 
+@property (nonatomic, strong) UINavigationController *naviController;
+@property (nonatomic,assign) NSInteger currentInt;
 @end
 
 NS_ASSUME_NONNULL_END

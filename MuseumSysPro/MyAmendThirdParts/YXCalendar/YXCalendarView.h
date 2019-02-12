@@ -10,16 +10,20 @@
 #import "YXMonthView.h"
 
 typedef void(^RefreshH)(CGFloat viewH);
+typedef void(^ChangeMonth)(NSDate *date);
 
 @interface YXCalendarView : UIView
 
 @property (nonatomic, copy) SendSelectDate sendSelectDate;  //回传选择日期
-
+@property (nonatomic, strong) NSArray *markArray;          //标记数组
 /**
  实现该block滑动时更新控件高度
  */
 @property (nonatomic, copy) RefreshH refreshH;
-
+/**
+ 左右切换月份的响应事件
+ */
+@property (nonatomic, copy) ChangeMonth changeMonth;
 /**
  根据日期获取控件总高度
  

@@ -11,6 +11,7 @@
 #import "SPBSIgnInHomeVC.h"
 #import "SPBManageHomeVC.h"
 #import "SPBCheckHomeVC.h"
+#import "StatisticsCenterHomeVC.h"
 
 #import "SgdBaseNavigationController.h"
 
@@ -22,6 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,strong) SPBSIgnInHomeVC *signInVC;
 @property(nonatomic,strong) SPBManageHomeVC *manageHomeVC;
 @property(nonatomic,strong) SPBCheckHomeVC *checkHomeVC;
+@property(nonatomic,strong) StatisticsCenterHomeVC *statisticsCenterVC;
 
 @end
 

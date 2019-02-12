@@ -287,7 +287,7 @@
     NSMutableArray * arrEvenNum = [[NSMutableArray alloc] initWithCapacity:0];//偶数位数组
     
     for (int i=0; i< forwardDescArr.count; i++) {
-        NSInteger num = [forwardDescArr[i] intValue];
+        NSInteger num = [forwardDescArr[i] integerValue];
         if (i%2) {//偶数位
             [arrEvenNum addObject:[NSNumber numberWithInteger:num]];
         }else{//奇数位

@@ -16,6 +16,7 @@ static CGFloat const weeksH = 30;       //周高度
 @interface YXCalendarView ()
 
 @property (nonatomic, strong) UILabel *yearMonthL;      //年月label
+@property (nonatomic, strong) UIButton *chooseBt;      //选择年月
 @property (nonatomic, strong) UIScrollView *scrollV;    //scrollview
 @property (nonatomic, assign) CalendarType type;        //选择类型
 @property (nonatomic, strong) NSDate *currentDate;      //当前月份
@@ -41,7 +42,7 @@ static CGFloat const weeksH = 30;       //周高度
             _currentDate = [[YXDateHelpObject manager] getLastdayOfTheWeek:date];
         }
         [self settingViews];
-        [self addSwipes];
+//        [self addSwipes];//切换月份和周
     }
     return self;
 }
@@ -66,10 +67,10 @@ static CGFloat const weeksH = 30;       //周高度
             if (ViewH == dayCellH + yearMonthH + weeksH) {
                 return;
             }
-            _refreshH(dayCellH + yearMonthH + weeksH);
+            _refreshH(dayCellH + yearMonthH + weeksH+30);
             __weak typeof(_scrollV) weakScroll = _scrollV;
             [UIView animateWithDuration:0.3 animations:^{
-                weakScroll.frame = CGRectMake(0, yearMonthH + weeksH, ViewW, dayCellH);
+                weakScroll.frame = CGRectMake(0, yearMonthH + weeksH, ViewW, dayCellH+30);
             }];
             
         }
@@ -80,10 +81,10 @@ static CGFloat const weeksH = 30;       //周高度
             if (viewH == ViewH) {
                 return;
             }
-            _refreshH(viewH);
+            _refreshH(viewH+30);
             __weak typeof(_scrollV) weakScroll = _scrollV;
             [UIView animateWithDuration:0.3 animations:^{
-                weakScroll.frame = CGRectMake(0, yearMonthH + weeksH, ViewW, viewH - yearMonthH - weeksH);
+                weakScroll.frame = CGRectMake(0, yearMonthH + weeksH, ViewW, viewH - yearMonthH - weeksH+30);
             }];
         }
     }
@@ -91,6 +92,43 @@ static CGFloat const weeksH = 30;       //周高度
 }
 
 //MARK: - otherMethod
+-(void)chooseBtClick{
+    NSLog(@"chooseBtClick:%@",_currentDate);
+    [self date_defalut_yearMoth];
+    
+}
+-(void)changeMouths:(NSString *)dateStr{
+    //左滑,下个月(动态定位月份，只需要设置_currentDate即可)
+    NSDate *newDate1 = [SwTools stringToDate:dateStr DateFormat:@"yyyy-MM"];
+    //获取上个月的时间
+    NSDate *newDate = [[YXDateHelpObject manager] getPreviousMonth:newDate1];
+    _currentDate = newDate;
+    _leftView.currentDate = _currentDate;
+    _middleView.currentDate = [[YXDateHelpObject manager] getNextMonth:_currentDate];
+    _currentDate = [[YXDateHelpObject manager] getNextMonth:_currentDate];
+    _rightView.currentDate = [[YXDateHelpObject manager] getNextMonth:_currentDate];
+    _yearMonthL.text = [[YXDateHelpObject manager] getStrFromDateFormat:@"yyyy年MM月" Date:_currentDate];
+    _rightView.selectDate = _selectDate;
+    _leftView.selectDate = _selectDate;
+    _middleView.selectDate = _selectDate;
+    
+    [self scrollToCenter];
+    self.type = _type;
+    if (self.changeMonth) {
+        self.changeMonth(_currentDate);
+    }
+}
+- (void)date_defalut_yearMoth{
+    id <YWAlertViewProtocol>_dateAlert = [YWAlertView alertViewWithTitle:@"请选择日期" preferredStyle:YWAlertViewStyleDatePicker2 footStyle:YWAlertPublicFootStyleDefalut bodyStyle:YWAlertStyleShowYearMonth cancelButtonTitle:@"取消" sureButtonTitles:@"确定" handler:^(NSInteger buttonIndex, id  _Nullable value) {
+        NSLog(@"选择日期 %@",value);
+        if (buttonIndex == 101) {
+            //选择了确定
+            [self changeMouths:value];
+        }
+    }];
+    [(id<YWAlertDatePickerViewProtocol>)_dateAlert setPickerHeightOnDatePickerView:200];
+    [_dateAlert show];
+}
 + (CGFloat)getMonthTotalHeight:(NSDate *)date type:(CalendarType)type {
     if (type == CalendarType_Week) {
         return yearMonthH + weeksH + dayCellH;
@@ -161,11 +199,20 @@ static CGFloat const weeksH = 30;       //周高度
 
 - (void)settingHeadLabel {
     
-    _yearMonthL = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, ViewW, yearMonthH)];
+    _yearMonthL = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, ViewW/2+30, yearMonthH)];
     _yearMonthL.text = [[YXDateHelpObject manager] getStrFromDateFormat:@"yyyy年MM月" Date:_currentDate];
-    _yearMonthL.textAlignment = NSTextAlignmentCenter;
-    _yearMonthL.font = [UIFont systemFontOfSize:15];
+    _yearMonthL.textAlignment = NSTextAlignmentRight;
+    _yearMonthL.font = [UIFont systemFontOfSize:17];
+    //添加响应手势
+    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(chooseBtClick)];
+    [_yearMonthL addGestureRecognizer:tapGesture];
+    _yearMonthL.userInteractionEnabled = YES;
     [self addSubview:_yearMonthL];
+    _chooseBt = [[UIButton alloc]initWithFrame:CGRectMake(_yearMonthL.right+2, 3, 20, 25)];
+    [_chooseBt setImage:[UIImage imageNamed:@"icon-选择考勤箭头"] forState:UIControlStateNormal];
+    _chooseBt.backgroundColor = [UIColor clearColor];
+    [_chooseBt addTarget:self action:@selector(chooseBtClick) forControlEvents:UIControlEventTouchUpInside];
+    [self addSubview:_chooseBt];
     
     NSArray *weekdays = @[@"日",@"一",@"二",@"三",@"四",@"五",@"六"];
     CGFloat weekdayW = ViewW/7;
@@ -194,7 +241,7 @@ static CGFloat const weeksH = 30;       //周高度
     [self addSubview:_scrollV];
     
     __weak typeof(self) weakSelf = self;
-    CGFloat height = 6 * dayCellH;
+    CGFloat height = 6 * dayCellH + 30;
     _leftView = [[YXMonthView alloc] initWithFrame:CGRectMake(0, 0, ViewW, height) Date:
                  _type == CalendarType_Month ? [[YXDateHelpObject manager] getPreviousMonth:_currentDate] :[[YXDateHelpObject manager]getEarlyOrLaterDate:_currentDate LeadTime:-7 Type:2]];
     _leftView.type = _type;
@@ -280,7 +327,9 @@ static CGFloat const weeksH = 30;       //周高度
         
         [self scrollToCenter];
         self.type = _type;
-        
+        if (self.changeMonth) {
+            self.changeMonth(_currentDate);
+        }
     } else if (_scrollV.contentOffset.x < 1) {
         
         _rightView.currentDate = _currentDate;
@@ -304,23 +353,34 @@ static CGFloat const weeksH = 30;       //周高度
         
         [self scrollToCenter];
         self.type = _type;
-        
+        if (self.changeMonth) {
+            self.changeMonth(_currentDate);
+        }
     }
     
 }
 
-//MARK: - scrollViewMethod
+//MARK: - scrollViewMethod 随机日期测试
+//- (void)scrollToCenter {
+//    _scrollV.contentOffset = CGPointMake(ViewW, 0);
+//
+//    //可以在这边进行网络请求获取事件日期数组等,记得取消上个未完成的网络请求
+//    NSMutableArray *array = [NSMutableArray array];
+//    for (int i = 0; i < 10; i++) {
+//        NSString *dateStr = [NSString stringWithFormat:@"%@-%d",[[YXDateHelpObject manager] getStrFromDateFormat:@"MM" Date:_currentDate],1 + arc4random()%28];
+//        NSLog(@"dateStr:%@",dateStr);
+//        [array addObject:dateStr];
+//    }
+//
+//    _middleView.eventArray = array;
+//}
+-(void)setMarkArray:(NSArray *)markArray{
+    _markArray = markArray;
+    [self scrollToCenter];
+}
 - (void)scrollToCenter {
     _scrollV.contentOffset = CGPointMake(ViewW, 0);
     
-    //可以在这边进行网络请求获取事件日期数组等,记得取消上个未完成的网络请求
-    NSMutableArray *array = [NSMutableArray array];
-    for (int i = 0; i < 10; i++) {
-        NSString *dateStr = [NSString stringWithFormat:@"%@-%d",[[YXDateHelpObject manager] getStrFromDateFormat:@"MM" Date:_currentDate],1 + arc4random()%28];
-        [array addObject:dateStr];
-    }
-    
-    _middleView.eventArray = array;
+    _middleView.eventArray = self.markArray;
 }
-
 @end

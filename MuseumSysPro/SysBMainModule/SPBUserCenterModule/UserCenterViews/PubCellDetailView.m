@@ -39,23 +39,24 @@
     
     _mainLable = [[UILabel alloc]init];
     _mainLable.backgroundColor = [UIColor clearColor];
-    _mainLable.font = [UIFont systemFontOfSize:13.f];
-    _mainLable.textColor = [UIColor blackColor];
-    _mainLable.textAlignment = NSTextAlignmentCenter;
+    _mainLable.font = [UIFont systemFontOfSize:15.f];
+    _mainLable.textColor = [UIColor colorWithHexString:@"333333"];
+    _mainLable.textAlignment = NSTextAlignmentLeft;
     _mainLable.text = @"累计上报隐患数";
     [self addSubview:_mainLable];
     
     _subLable = [[UILabel alloc]init];
     _subLable.backgroundColor = [UIColor clearColor];
-    _subLable.font = [UIFont systemFontOfSize:13.f];
-    _subLable.textColor = [UIColor blackColor];
-    _subLable.textAlignment = NSTextAlignmentCenter;
+    _subLable.font = [UIFont systemFontOfSize:15.f];
+    _subLable.textColor = [UIColor colorWithHexString:@"333333"];
+    _subLable.textAlignment = NSTextAlignmentRight;
     _subLable.text = @"上报隐患数";
     [self addSubview:_subLable];
     
     _rightBT = [[UIButton alloc]init];
-    _rightBT.backgroundColor = [UIColor blueColor];
+    _rightBT.backgroundColor = [UIColor clearColor];
     _rightBT.layer.cornerRadius = 5.f;
+    [_rightBT addTarget:self action:@selector(rightBtClick) forControlEvents:UIControlEventTouchUpInside];
     [_rightBT setTitle:@"" forState:UIControlStateNormal];
     [self addSubview:_rightBT];
     //添加响应手势
@@ -65,16 +66,21 @@
 -(void) tapGestureClick{
     DLog(@"");
 }
+-(void)rightBtClick{
+    if (self.rightBtBlock) {
+        self.rightBtBlock();
+    }
+}
 -(void)layoutSubviews
 {
     [super layoutSubviews];
     //    CGSize size =  [_subLable sizeThatFits:_subLable.bounds.size];
     CGRect frame = self.bounds;
     
-    _mainImageView.frame = CGRectMake(5, (frame.size.height-35)/2, 35, 35);
-    _mainLable.frame  =  CGRectMake(_mainImageView.right +10, (frame.size.height-35)/2, 100, 35);
-    _subLable.frame  =  CGRectMake(_mainLable.right+10, (frame.size.height-35)/2, 100, 35);
-    _rightBT.frame = CGRectMake((frame.size.width-50), (frame.size.height-35)/2, 40, 35);
+    _mainImageView.frame = CGRectMake(20, (frame.size.height-16)/2, 16, 16);
+    _mainLable.frame  =  CGRectMake(_mainImageView.right +10, (frame.size.height-35)/2, 160, 35);
+    _rightBT.frame = CGRectMake((frame.size.width-40-70), (frame.size.height-32)/2, 70, 32);
+    _subLable.frame  =  CGRectMake(_mainLable.right+10, (frame.size.height-35)/2, (frame.size.width-30-_mainLable.right-30), 35);
 }
 
 @end

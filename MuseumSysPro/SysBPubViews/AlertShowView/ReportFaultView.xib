@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ReportFaultView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="izb-px-mEm" userLabel="BackBaseView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mo3-Dj-e0E">
+                            <rect key="frame" x="37.5" y="163.5" width="300" height="280"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qyd-2B-VFV">
+                                    <rect key="frame" x="10" y="237" width="280" height="33"/>
+                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="33" id="Am5-rQ-1oQ"/>
+                                    </constraints>
+                                    <state key="normal" title="提交">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="sureBtClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="psi-hc-dpy"/>
+                                    </connections>
+                                </button>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1V9-4k-UpG">
+                                    <rect key="frame" x="0.0" y="-10" width="300" height="98"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="巡检记录报告" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yvG-Ws-4pk">
+                                            <rect key="frame" x="0.0" y="62" width="300" height="20.5"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="巡检记录报告图标.png" translatesAutoresizingMaskIntoConstraints="NO" id="EOk-VY-1sR">
+                                            <rect key="frame" x="127.5" y="8" width="45" height="44"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="45" id="481-Uc-efV"/>
+                                                <constraint firstAttribute="height" constant="44" id="6a9-4u-7Dn"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="yvG-Ws-4pk" firstAttribute="top" secondItem="EOk-VY-1sR" secondAttribute="bottom" constant="10" id="Xbf-GC-5aA"/>
+                                        <constraint firstAttribute="trailing" secondItem="yvG-Ws-4pk" secondAttribute="trailing" id="dAE-wo-aAg"/>
+                                        <constraint firstItem="EOk-VY-1sR" firstAttribute="centerX" secondItem="1V9-4k-UpG" secondAttribute="centerX" id="hPG-aV-nKf"/>
+                                        <constraint firstItem="EOk-VY-1sR" firstAttribute="top" secondItem="1V9-4k-UpG" secondAttribute="top" constant="8" id="kLs-we-Ndl"/>
+                                        <constraint firstItem="yvG-Ws-4pk" firstAttribute="leading" secondItem="1V9-4k-UpG" secondAttribute="leading" id="lN0-sz-dGA"/>
+                                        <constraint firstAttribute="height" constant="98" id="sDk-7j-iCd"/>
+                                    </constraints>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  记录报告" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kzz-UG-zgC">
+                                    <rect key="frame" x="0.0" y="93" width="300" height="18"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="18" id="oDA-iB-qcf"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="已巡检，无安全隐患" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="D0G-Mt-2Ck">
+                                    <rect key="frame" x="10" y="113" width="280" height="119"/>
+                                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                </textView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="Kzz-UG-zgC" firstAttribute="leading" secondItem="mo3-Dj-e0E" secondAttribute="leading" id="2Bi-Vq-mq7"/>
+                                <constraint firstAttribute="width" constant="300" id="CqQ-Kl-IAQ"/>
+                                <constraint firstItem="D0G-Mt-2Ck" firstAttribute="top" secondItem="Kzz-UG-zgC" secondAttribute="bottom" constant="2" id="Jef-95-Vss"/>
+                                <constraint firstAttribute="trailing" secondItem="1V9-4k-UpG" secondAttribute="trailing" id="PZT-zp-Rdc"/>
+                                <constraint firstItem="D0G-Mt-2Ck" firstAttribute="leading" secondItem="mo3-Dj-e0E" secondAttribute="leading" constant="10" id="Uja-uz-aBT"/>
+                                <constraint firstItem="qyd-2B-VFV" firstAttribute="leading" secondItem="mo3-Dj-e0E" secondAttribute="leading" constant="10" id="ZEe-Da-cTr"/>
+                                <constraint firstAttribute="bottom" secondItem="qyd-2B-VFV" secondAttribute="bottom" constant="10" id="ZeU-dR-UUo"/>
+                                <constraint firstAttribute="trailing" secondItem="D0G-Mt-2Ck" secondAttribute="trailing" constant="10" id="bFI-lX-AOo"/>
+                                <constraint firstAttribute="trailing" secondItem="qyd-2B-VFV" secondAttribute="trailing" constant="10" id="ec1-U5-FHD"/>
+                                <constraint firstAttribute="height" constant="280" id="gfL-DA-vtn"/>
+                                <constraint firstItem="1V9-4k-UpG" firstAttribute="top" secondItem="mo3-Dj-e0E" secondAttribute="top" constant="-10" id="mxA-S5-amk"/>
+                                <constraint firstItem="D0G-Mt-2Ck" firstAttribute="bottom" secondItem="qyd-2B-VFV" secondAttribute="top" constant="-5" id="oAd-Mr-4mS"/>
+                                <constraint firstItem="Kzz-UG-zgC" firstAttribute="top" secondItem="1V9-4k-UpG" secondAttribute="bottom" constant="5" id="uoU-3D-THY"/>
+                                <constraint firstAttribute="trailing" secondItem="Kzz-UG-zgC" secondAttribute="trailing" id="yeZ-3y-4Fd"/>
+                                <constraint firstItem="1V9-4k-UpG" firstAttribute="leading" secondItem="mo3-Dj-e0E" secondAttribute="leading" id="zAd-hY-XQH"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="mo3-Dj-e0E" firstAttribute="centerX" secondItem="izb-px-mEm" secondAttribute="centerX" id="YM4-0I-WvJ"/>
+                        <constraint firstItem="mo3-Dj-e0E" firstAttribute="centerY" secondItem="izb-px-mEm" secondAttribute="centerY" constant="-30" id="r96-7Z-eTH"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="izb-px-mEm" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="M4D-Qc-zFd"/>
+                <constraint firstItem="izb-px-mEm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="chI-uu-Hz0"/>
+                <constraint firstAttribute="trailing" secondItem="izb-px-mEm" secondAttribute="trailing" id="hd5-ix-D87"/>
+                <constraint firstAttribute="bottom" secondItem="izb-px-mEm" secondAttribute="bottom" id="ven-OL-DIG"/>
+            </constraints>
+            <connections>
+                <outlet property="BackBaseView" destination="izb-px-mEm" id="wsn-86-FeB"/>
+                <outlet property="headView" destination="1V9-4k-UpG" id="GDy-OQ-46g"/>
+                <outlet property="mainBackView" destination="mo3-Dj-e0E" id="jpt-Mv-jkX"/>
+                <outlet property="sureBt" destination="qyd-2B-VFV" id="9TP-4w-kmQ"/>
+                <outlet property="textView" destination="D0G-Mt-2Ck" id="GkC-dH-n0D"/>
+            </connections>
+            <point key="canvasLocation" x="40.799999999999997" y="46.326836581709152"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="巡检记录报告图标.png" width="37" height="37"/>
+    </resources>
+</document>

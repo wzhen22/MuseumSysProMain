@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
+typedef void(^RightBtBlock)();
 
 @interface PubCellDetailView : UIView
 
@@ -16,6 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,strong) UILabel *mainLable;
 @property(nonatomic,strong) UILabel *subLable;
 @property(nonatomic,strong) UIButton *rightBT;
+
+@property (nonatomic, copy) RightBtBlock rightBtBlock;
 
 @end
 

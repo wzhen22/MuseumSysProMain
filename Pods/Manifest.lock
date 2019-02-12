@@ -15,6 +15,7 @@ PODS:
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
   - JSONModel (1.7.0)
+  - Masonry (1.1.0)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
   - ReactiveCocoa/Core (2.5):
@@ -29,6 +30,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
   - JSONModel (~> 1.7.0)
+  - Masonry (~> 1.1.0)
   - ReactiveCocoa (~> 2.5)
   - SDWebImage (~> 4.2.2)
 
@@ -36,15 +38,17 @@ SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - AFNetworking
     - JSONModel
+    - Masonry
     - ReactiveCocoa
     - SDWebImage
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   JSONModel: 840bc0fcffb24b8454d2c026bf26fea454b8e98d
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   SDWebImage: 89a9d32cd520bbb46eb14e541d5109b3564af198
 
-PODFILE CHECKSUM: 6ac5c34f6b0d59c64bb44fbc68c7dbb9a082c1ff
+PODFILE CHECKSUM: 748c28ae048f266ad106e895c59a537505adb2a9
 
 COCOAPODS: 1.5.0
