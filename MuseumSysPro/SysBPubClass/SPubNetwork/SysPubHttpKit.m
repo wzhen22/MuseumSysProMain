@@ -375,7 +375,7 @@ static SysPubHttpKit *globalSysPubNetKit;
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSHTTPURLResponse *response = (NSHTTPURLResponse *)task.response;
         NSInteger statusCode = response.statusCode;
-        if (statusCode == 401 || statusCode == 402) {
+        if (statusCode == 401 || statusCode == 403) {
             //重新登录
             [self loginHttpRequest];
         }
@@ -449,7 +449,7 @@ static SysPubHttpKit *globalSysPubNetKit;
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSHTTPURLResponse *response = (NSHTTPURLResponse *)task.response;
         NSInteger statusCode = response.statusCode;
-        if (statusCode == 401 || statusCode == 402) {
+        if (statusCode == 401 || statusCode == 403) {
             //重新登录
             [self loginHttpRequest];
         }

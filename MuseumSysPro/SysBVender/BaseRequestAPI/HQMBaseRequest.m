@@ -32,7 +32,7 @@ NSString * const HQMNetworkDomain = @"http://inspection.museum.cqcztech.com";
 //NSString * const HQMNetworkDomain = @"http://www.xiaoban.mobi";
 NSString * const HQMNetworkDomain = @"http://inspection.chinamuseum.cn";
 ///< 开启https SSL 验证
-#define kOpenHttpsAuth YES
+#define kOpenHttpsAuth NO
 
 #endif
 
@@ -72,8 +72,10 @@ NSString * const HQMNetworkDomain = @"http://inspection.chinamuseum.cn";
 
     //_processingQueue = dispatch_group_create();
 
-    _manager.responseSerializer = [AFJSONResponseSerializer serializer];
-    _manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json",@"text/json", @"text/html",nil];
+    _manager.responseSerializer = [AFJSONResponseSerializer serializer];//AFHTTPResponseSerializer  AFJSONResponseSerializer
+//    _manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json",@"text/json", @"text/html",nil];
+    _manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json",@"application/xml",@"text/json",@"text/javascript",@"text/html",@"text/plain",nil];
+//    _manager.responseSerializer = [AFHTTPResponseSerializer serializer];
     if (kOpenHttpsAuth) {
         [_manager setSecurityPolicy:[self customSecurityPolicy]];
     }
@@ -133,7 +135,7 @@ NSString * const HQMNetworkDomain = @"http://inspection.chinamuseum.cn";
 }
 
 - (void)constructURL {
-    _url = [NSString stringWithFormat:@"%@%@", HQMNetworkDomain, [self requestURLPath]];
+    _url = [NSString stringWithFormat:@"%@%@", BASE_HTTP_SERVER, [self requestURLPath]];
 }
 
 - (void)constructSessionTask {
@@ -160,7 +162,7 @@ NSString * const HQMNetworkDomain = @"http://inspection.chinamuseum.cn";
 
     AFConstructingBodyBlock constructingBodyBlock = [self constructingBodyBlock];
     AFHTTPRequestSerializer *requestSerializer = [self requestSerializer];
-
+    NSLog(@"requestSerializer.HTTPRequestHeaders:%@",requestSerializer.HTTPRequestHeaders);
     switch (method) {
         case HQMRequestMethodGET: {
             return [self dataTaskWithHTTPMethod:@"GET"
@@ -208,6 +210,11 @@ NSString * const HQMNetworkDomain = @"http://inspection.chinamuseum.cn";
     __block NSURLSessionDataTask *dataTask = nil;
     dataTask = [_manager dataTaskWithRequest:request uploadProgress:uploadProgress downloadProgress:downloadProgress completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
         //关闭状态栏网络状态小菊花
+//        id jsonStringToPrint  = responseObject;
+//        if ([responseObject isKindOfClass:[NSData class]]) {
+//            jsonStringToPrint = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
+//            NSLog(@"jsonStringToPrint:%@",jsonStringToPrint);
+//        }
         [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
         //AFN 返回的数据responseObject已经是字典了，不必再用NSJSONSerialization解析了
         [self handleRequestResult:dataTask response:response responseObject:responseObject error:error];
@@ -289,7 +296,7 @@ NSString * const HQMNetworkDomain = @"http://inspection.chinamuseum.cn";
         }
 
         if (_showHUD) {
-            [SVProgressHUD showErrorWithStatus:@"网络连接失败"];
+            [SVProgressHUD showErrorWithStatus:@"网络传输失败"];
         } else {
             [SVProgressHUD dismiss];
         }

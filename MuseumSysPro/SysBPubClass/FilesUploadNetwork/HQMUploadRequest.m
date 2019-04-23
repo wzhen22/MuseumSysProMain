@@ -14,7 +14,12 @@
 - (HQMRequestMethod)requestMethod {
     return HQMRequestMethodPOST;
 }
-
+- (HQMRequestSerializerType)requestSerializerType{
+    return HQMRequestSerializerTypeJSON;
+}
+- (HQMResponseSerializerType)responseSerializerType{
+    return HQMResponseSerializerTypeXMLParser;
+}
 - (NSString *)requestURLPath {
     return @"/sys/file/item/upload";
 }
@@ -42,7 +47,7 @@
     void (^bodyBlock)(id<AFMultipartFormData> formData) = ^(id<AFMultipartFormData> formData) {
         @strongify(self);
         
-        NSAssert(self.images.count != 0, @"上传内容没有包括图片"); ///< 断言，防止图片数组为空
+//        NSAssert(self.images.count != 0, @"上传内容没有包括图片"); ///< 断言，防止图片数组为空
         
         NSInteger imgIndex = 0;
 //        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
@@ -64,7 +69,6 @@
             
             imgIndex++;
         }
-        
 //        ///< 注意：两种方式传参 --> 2.通过 body 体传
 //        NSString *token = @"51d8ab705465128b27bd5cffa944db81";
 //        NSString *uid = @"1160";

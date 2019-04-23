@@ -24,15 +24,68 @@
         [[UIScrollView appearance] setContentInsetAdjustmentBehavior:UIScrollViewContentInsetAdjustmentNever];
     }
     [application registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert|UIUserNotificationTypeBadge|UIUserNotificationTypeSound categories:nil]];
+    [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
+    
     if ([SysPubSingleThings getLoginStatus]) {
 //        [self loginHttpRequest];
 //        [self testUpdateAppSystemConfig];
         [self updateAppSystemConfig];//同步方式
     }
-    SysBaseTabBarVC *yTabBarController = [[SysBaseTabBarVC alloc]init];
-    self.window.rootViewController = yTabBarController;
-    self.window.backgroundColor = [UIColor colorWithHexString:@"fafafa"];
-    [self.window makeKeyAndVisible];
+    //
+    NSDictionary *ddddDic = [SysPubSingleThings sharePublicSingle].loginDic;
+    if (ddddDic) {
+        NSArray *aaaArray = [ddddDic safeObjectForKey:@"roles"];
+        BOOL isbool = NO;//[aaaArray containsObject: @"4"];
+        if ([aaaArray isKindOfClass:[NSArray class]] && aaaArray.count) {
+            for (NSString *nSSSSS in aaaArray) {
+                if (nSSSSS.intValue == 4) {
+                    isbool = YES;
+                }
+            }
+//            for (NSDictionary *nSSSSS in aaaArray) {
+//                NSString *newSSS = [nSSSSS objectForKey:@"roleId"];
+//                if (newSSS.intValue == 4) {
+//                    isbool = YES;
+//                }
+//            }
+        }
+        if (isbool) {
+            NSLog(@"containsObject");
+        }
+        SysBaseTabBarVC *yTabBarController = [[SysBaseTabBarVC alloc]initAboutIsContentStatistics:isbool];
+        self.window.rootViewController = yTabBarController;
+        self.window.backgroundColor = [UIColor colorWithHexString:@"fafafa"];
+        [self.window makeKeyAndVisible];
+    }else{
+        SPBLoginVC *sVC = [[SPBLoginVC alloc]init];
+        sVC.loginResult = ^(UIViewController * _Nonnull cViewC) {
+            NSDictionary *ddddDic = [SysPubSingleThings sharePublicSingle].loginDic;
+            NSArray *aaaArray = [ddddDic safeObjectForKey:@"roles"];
+            BOOL isbool = NO;//[aaaArray containsObject: @"4"];
+            if ([aaaArray isKindOfClass:[NSArray class]] && aaaArray.count) {
+                for (NSString *nSSSSS in aaaArray) {
+                    if (nSSSSS.intValue == 4) {
+                        isbool = YES;
+                    }
+                }
+//                for (NSDictionary *nSSSSS in aaaArray) {
+//                    NSString *newSSS = [nSSSSS objectForKey:@"roleId"];
+//                    if (newSSS.intValue == 4) {
+//                        isbool = YES;
+//                    }
+//                }
+            }
+            if (isbool) {
+                NSLog(@"containsObject");
+            }
+            SysBaseTabBarVC *yTabBarController = [[SysBaseTabBarVC alloc]initAboutIsContentStatistics:isbool];
+            self.window.rootViewController = yTabBarController;
+            self.window.backgroundColor = [UIColor colorWithHexString:@"fafafa"];
+            [self.window makeKeyAndVisible];
+        };
+        self.window.rootViewController = sVC;
+    }
+   
     [self setGuiteMethord];
     
     return YES;

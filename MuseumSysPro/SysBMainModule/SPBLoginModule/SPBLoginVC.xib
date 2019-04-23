@@ -42,7 +42,7 @@
                 <view autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cb4-ZK-L4l">
                     <rect key="frame" x="49" y="190" width="276" height="46"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="密码.png" translatesAutoresizingMaskIntoConstraints="NO" id="JmI-4M-ORA">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="用户名.png" translatesAutoresizingMaskIntoConstraints="NO" id="JmI-4M-ORA">
                             <rect key="frame" x="8" y="13" width="20" height="20"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="20" id="1HL-P6-qyY"/>
@@ -82,7 +82,7 @@
                 <view autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z9T-yj-WsH">
                     <rect key="frame" x="49" y="266" width="276" height="46"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="用户名.png" translatesAutoresizingMaskIntoConstraints="NO" id="yvA-NB-tve">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="密码.png" translatesAutoresizingMaskIntoConstraints="NO" id="yvA-NB-tve">
                             <rect key="frame" x="8" y="13" width="20" height="20"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="20" id="Aqy-9H-WuG"/>

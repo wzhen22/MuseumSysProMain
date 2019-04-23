@@ -33,14 +33,15 @@
     baseImageArray2 = [[NSMutableArray alloc]initWithCapacity:10];
     solveimgArray = [[NSMutableArray alloc]initWithCapacity:10];
     [self setSubViewsProperty];
+    if (self.midString) {
+        [self httpRequestFromServers:self.midString];
+    }
 }
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
     self.navigationController.navigationBar.titleTextAttributes = [NSDictionary dictionaryWithObjectsAndKeys:[UIColor blackColor],NSForegroundColorAttributeName,[UIFont systemFontOfSize:19],NSFontAttributeName, nil];
-    if (self.midString) {
-        [self httpRequestFromServers:self.midString];
-    }
+    
 }
 - (void)viewWillDisappear:(BOOL)animated
 {

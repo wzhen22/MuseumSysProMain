@@ -5,6 +5,7 @@
 //  Created by admin on 2019/1/7.
 //  Copyright © 2019年 cbg. All rights reserved.
 //
+#import "AppDelegate.h"
 
 #ifndef MuPubMacros_h
 #define MuPubMacros_h

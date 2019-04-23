@@ -32,6 +32,9 @@
     UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(mainTapGestureClick)];
     [self.topBackView addGestureRecognizer:tapGesture];
     [self.middleBackView addGestureRecognizer:tapGesture];
+    if (self.midString) {
+        [self httpRequestFromServers:self.midString];
+    }
 }
 -(void) mainTapGestureClick{
     [self.textField resignFirstResponder];
@@ -41,9 +44,7 @@
 {
     [super viewWillAppear:animated];
     self.navigationController.navigationBar.titleTextAttributes = [NSDictionary dictionaryWithObjectsAndKeys:[UIColor blackColor],NSForegroundColorAttributeName,[UIFont systemFontOfSize:19],NSFontAttributeName, nil];
-    if (self.midString) {
-        [self httpRequestFromServers:self.midString];
-    }
+    
 }
 - (void)viewWillDisappear:(BOOL)animated
 {

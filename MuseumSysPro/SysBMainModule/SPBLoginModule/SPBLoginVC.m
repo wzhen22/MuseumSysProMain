@@ -109,11 +109,17 @@
         }
         [SysPubSingleThings saveLoginStatus:YES];
         [SysPubSingleThings saveUserNameAndPwd:self.fSubTextfield.text andPwd:self.SSubTextfield.text];
+        if (self.loginResult) {
+            self.loginResult(self);
+        }
         [self navBackAction];
     } andFailBlock:^(NSError * _Nonnull error, id  _Nonnull contextInfo) {
 //        [SVProgressHUD dismiss];
-        [SVProgressHUD showSuccessWithStatus:@"登录成功"];
+        [SVProgressHUD showSuccessWithStatus:@"登录失败"];
         [SysPubSingleThings saveLoginStatus:NO];
+        if (self.loginResult) {
+            self.loginResult(self);
+        }
         NSLog(@"andFailBlock:%@",error);
     }];
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		841AA3A8221F9E29007F7276 /* SpbBlueModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 841AA3A7221F9E29007F7276 /* SpbBlueModel.m */; };
 		841B552021FE99DF0003B076 /* WDLineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 841B551F21FE99DF0003B076 /* WDLineChartView.m */; };
 		841B552721FE9AFD0003B076 /* StatisticsDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 841B552621FE9AFD0003B076 /* StatisticsDetailVC.m */; };
 		841B552A21FE9DDA0003B076 /* StatisticsCenterHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 841B552921FE9DDA0003B076 /* StatisticsCenterHomeVC.m */; };
@@ -288,6 +289,16 @@
 		842E4A7221F16B9E000F8A98 /* OperateFaultPublishVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 842E4A7021F16B9E000F8A98 /* OperateFaultPublishVC.xib */; };
 		842E4A7521F1B4B2000F8A98 /* 矩形2490拷贝@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 842E4A7321F1B4B1000F8A98 /* 矩形2490拷贝@2x.png */; };
 		842E4A7621F1B4B2000F8A98 /* 矩形2490拷贝@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 842E4A7421F1B4B2000F8A98 /* 矩形2490拷贝@3x.png */; };
+		843489F1221D4C9B00C0FC8F /* BabyBluetooth.m in Sources */ = {isa = PBXBuildFile; fileRef = 843489DF221D4C9700C0FC8F /* BabyBluetooth.m */; };
+		843489F2221D4C9B00C0FC8F /* BabyCentralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 843489E0221D4C9800C0FC8F /* BabyCentralManager.m */; };
+		843489F3221D4C9B00C0FC8F /* BabyToy.m in Sources */ = {isa = PBXBuildFile; fileRef = 843489E2221D4C9800C0FC8F /* BabyToy.m */; };
+		843489F4221D4C9B00C0FC8F /* BabyRhythm.m in Sources */ = {isa = PBXBuildFile; fileRef = 843489E4221D4C9800C0FC8F /* BabyRhythm.m */; };
+		843489F5221D4C9B00C0FC8F /* BabyCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = 843489E9221D4C9900C0FC8F /* BabyCallback.m */; };
+		843489F6221D4C9B00C0FC8F /* BabyOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 843489EA221D4C9900C0FC8F /* BabyOptions.m */; };
+		843489F7221D4C9B00C0FC8F /* BabyPeripheralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 843489EE221D4C9A00C0FC8F /* BabyPeripheralManager.m */; };
+		843489F8221D4C9B00C0FC8F /* BabySpeaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 843489EF221D4C9A00C0FC8F /* BabySpeaker.m */; };
+		843489F9221D4C9B00C0FC8F /* BabyDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 843489F0221D4C9B00C0FC8F /* BabyDefine.m */; };
+		843489FC221D4D1B00C0FC8F /* SysBeaconManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 843489FB221D4D1B00C0FC8F /* SysBeaconManager.m */; };
 		8461020821F949A6007CED31 /* BeaconManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8461020721F949A6007CED31 /* BeaconManager.m */; };
 		8461020D21F94D95007CED31 /* libMinewBeacon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8461020B21F94D94007CED31 /* libMinewBeacon.a */; };
 		849002D521F01959005B87DD /* ShowSuccessView.m in Sources */ = {isa = PBXBuildFile; fileRef = 849002D421F01959005B87DD /* ShowSuccessView.m */; };
@@ -495,7 +506,6 @@
 		84CD9FBF21E6E1A7009E6C14 /* YWAlertViewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CD9FB021E6E1A7009E6C14 /* YWAlertViewHelper.m */; };
 		84CD9FC021E6E1A7009E6C14 /* YWContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CD9FB321E6E1A7009E6C14 /* YWContainerViewController.m */; };
 		84CD9FC121E6E1A7009E6C14 /* YWDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CD9FB521E6E1A7009E6C14 /* YWDatePicker.m */; };
-		84CD9FC921E6E1F6009E6C14 /* BAPrivacyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CD9FC721E6E1F5009E6C14 /* BAPrivacyManager.m */; };
 		84CD9FD421E6E253009E6C14 /* YXCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CD9FCC21E6E253009E6C14 /* YXCalendarView.m */; };
 		84CD9FD521E6E253009E6C14 /* YXDateHelpObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CD9FCE21E6E253009E6C14 /* YXDateHelpObject.m */; };
 		84CD9FD621E6E253009E6C14 /* YXDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CD9FD021E6E253009E6C14 /* YXDayCell.m */; };
@@ -570,6 +580,8 @@
 		0D340631019171E7DBD6D201 /* Pods-MuseumSysPro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuseumSysPro.release.xcconfig"; path = "Pods/Target Support Files/Pods-MuseumSysPro/Pods-MuseumSysPro.release.xcconfig"; sourceTree = "<group>"; };
 		21E47DE91772A4ACADD02C1B /* Pods-MuseumSysPro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuseumSysPro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MuseumSysPro/Pods-MuseumSysPro.debug.xcconfig"; sourceTree = "<group>"; };
 		3AE1FA6E28298F09D2E2BF57 /* libPods-MuseumSysPro.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MuseumSysPro.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		841AA3A6221F9E29007F7276 /* SpbBlueModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpbBlueModel.h; sourceTree = "<group>"; };
+		841AA3A7221F9E29007F7276 /* SpbBlueModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpbBlueModel.m; sourceTree = "<group>"; };
 		841B551E21FE99DF0003B076 /* WDLineChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDLineChartView.h; sourceTree = "<group>"; };
 		841B551F21FE99DF0003B076 /* WDLineChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDLineChartView.m; sourceTree = "<group>"; };
 		841B552521FE9AFD0003B076 /* StatisticsDetailVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StatisticsDetailVC.h; sourceTree = "<group>"; };
@@ -1123,6 +1135,26 @@
 		842E4A7021F16B9E000F8A98 /* OperateFaultPublishVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OperateFaultPublishVC.xib; sourceTree = "<group>"; };
 		842E4A7321F1B4B1000F8A98 /* 矩形2490拷贝@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "矩形2490拷贝@2x.png"; sourceTree = "<group>"; };
 		842E4A7421F1B4B2000F8A98 /* 矩形2490拷贝@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "矩形2490拷贝@3x.png"; sourceTree = "<group>"; };
+		843489DF221D4C9700C0FC8F /* BabyBluetooth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyBluetooth.m; sourceTree = "<group>"; };
+		843489E0221D4C9800C0FC8F /* BabyCentralManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyCentralManager.m; sourceTree = "<group>"; };
+		843489E1221D4C9800C0FC8F /* BabyToy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyToy.h; sourceTree = "<group>"; };
+		843489E2221D4C9800C0FC8F /* BabyToy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyToy.m; sourceTree = "<group>"; };
+		843489E3221D4C9800C0FC8F /* BabyCentralManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyCentralManager.h; sourceTree = "<group>"; };
+		843489E4221D4C9800C0FC8F /* BabyRhythm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyRhythm.m; sourceTree = "<group>"; };
+		843489E5221D4C9800C0FC8F /* BabyBluetooth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyBluetooth.h; sourceTree = "<group>"; };
+		843489E6221D4C9900C0FC8F /* BabyOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyOptions.h; sourceTree = "<group>"; };
+		843489E7221D4C9900C0FC8F /* BabyRhythm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyRhythm.h; sourceTree = "<group>"; };
+		843489E8221D4C9900C0FC8F /* BabySpeaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabySpeaker.h; sourceTree = "<group>"; };
+		843489E9221D4C9900C0FC8F /* BabyCallback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyCallback.m; sourceTree = "<group>"; };
+		843489EA221D4C9900C0FC8F /* BabyOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyOptions.m; sourceTree = "<group>"; };
+		843489EB221D4C9A00C0FC8F /* BabyPeripheralManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyPeripheralManager.h; sourceTree = "<group>"; };
+		843489EC221D4C9A00C0FC8F /* BabyDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyDefine.h; sourceTree = "<group>"; };
+		843489ED221D4C9A00C0FC8F /* BabyCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyCallback.h; sourceTree = "<group>"; };
+		843489EE221D4C9A00C0FC8F /* BabyPeripheralManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyPeripheralManager.m; sourceTree = "<group>"; };
+		843489EF221D4C9A00C0FC8F /* BabySpeaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabySpeaker.m; sourceTree = "<group>"; };
+		843489F0221D4C9B00C0FC8F /* BabyDefine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyDefine.m; sourceTree = "<group>"; };
+		843489FA221D4D1B00C0FC8F /* SysBeaconManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SysBeaconManager.h; sourceTree = "<group>"; };
+		843489FB221D4D1B00C0FC8F /* SysBeaconManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SysBeaconManager.m; sourceTree = "<group>"; };
 		8461020621F949A6007CED31 /* BeaconManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BeaconManager.h; sourceTree = "<group>"; };
 		8461020721F949A6007CED31 /* BeaconManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeaconManager.m; sourceTree = "<group>"; };
 		8461020921F94D93007CED31 /* MinewBeacon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinewBeacon.h; sourceTree = "<group>"; };
@@ -1434,12 +1466,6 @@
 		84CD9FB321E6E1A7009E6C14 /* YWContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWContainerViewController.m; sourceTree = "<group>"; };
 		84CD9FB421E6E1A7009E6C14 /* YWDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWDatePicker.h; sourceTree = "<group>"; };
 		84CD9FB521E6E1A7009E6C14 /* YWDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWDatePicker.m; sourceTree = "<group>"; };
-		84CD9FC321E6E1F5009E6C14 /* BAKit_ConfigurationDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKit_ConfigurationDefine.h; sourceTree = "<group>"; };
-		84CD9FC421E6E1F5009E6C14 /* BAKit_PrivacyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKit_PrivacyManager.h; sourceTree = "<group>"; };
-		84CD9FC521E6E1F5009E6C14 /* BAKit_Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKit_Singleton.h; sourceTree = "<group>"; };
-		84CD9FC621E6E1F5009E6C14 /* BAPrivacyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAPrivacyManager.h; sourceTree = "<group>"; };
-		84CD9FC721E6E1F5009E6C14 /* BAPrivacyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAPrivacyManager.m; sourceTree = "<group>"; };
-		84CD9FC821E6E1F5009E6C14 /* BAPrivacyManager_Version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAPrivacyManager_Version.h; sourceTree = "<group>"; };
 		84CD9FCB21E6E253009E6C14 /* YXCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXCalendarView.h; sourceTree = "<group>"; };
 		84CD9FCC21E6E253009E6C14 /* YXCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXCalendarView.m; sourceTree = "<group>"; };
 		84CD9FCD21E6E253009E6C14 /* YXDateHelpObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXDateHelpObject.h; sourceTree = "<group>"; };
@@ -2743,12 +2769,12 @@
 		84293B5721E2FC7400D342F3 /* SysBVender */ = {
 			isa = PBXGroup;
 			children = (
+				843489DE221D4C8000C0FC8F /* BabyBluetooth */,
 				84A6DCD521FAFA0E00807CFC /* BRPickerView */,
 				84C290AA21F6FA380045DB82 /* YYWebImage */,
 				84C2902121F6F40F0045DB82 /* HXPhotoPicker */,
 				84F749D021E88F3600C67C67 /* MJRefresh */,
 				84F7495821E8784D00C67C67 /* JXCategorySources */,
-				84CD9FC221E6E1F5009E6C14 /* BAPrivacyManager */,
 				84CD9F9D21E6E1A7009E6C14 /* YWAlertView */,
 				84267BB121E4557C00070A36 /* Network */,
 				84267BA121E451C100070A36 /* SVProgressHUD */,
@@ -2868,6 +2894,8 @@
 				84267BCC21E47B0300070A36 /* SysPubSingleThings.m */,
 				8461020621F949A6007CED31 /* BeaconManager.h */,
 				8461020721F949A6007CED31 /* BeaconManager.m */,
+				843489FA221D4D1B00C0FC8F /* SysBeaconManager.h */,
+				843489FB221D4D1B00C0FC8F /* SysBeaconManager.m */,
 			);
 			path = SPubSingleTon;
 			sourceTree = "<group>";
@@ -2912,6 +2940,31 @@
 			path = ManagerDetailVCs;
 			sourceTree = "<group>";
 		};
+		843489DE221D4C8000C0FC8F /* BabyBluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				843489E5221D4C9800C0FC8F /* BabyBluetooth.h */,
+				843489DF221D4C9700C0FC8F /* BabyBluetooth.m */,
+				843489ED221D4C9A00C0FC8F /* BabyCallback.h */,
+				843489E9221D4C9900C0FC8F /* BabyCallback.m */,
+				843489E3221D4C9800C0FC8F /* BabyCentralManager.h */,
+				843489E0221D4C9800C0FC8F /* BabyCentralManager.m */,
+				843489EC221D4C9A00C0FC8F /* BabyDefine.h */,
+				843489F0221D4C9B00C0FC8F /* BabyDefine.m */,
+				843489E6221D4C9900C0FC8F /* BabyOptions.h */,
+				843489EA221D4C9900C0FC8F /* BabyOptions.m */,
+				843489EB221D4C9A00C0FC8F /* BabyPeripheralManager.h */,
+				843489EE221D4C9A00C0FC8F /* BabyPeripheralManager.m */,
+				843489E7221D4C9900C0FC8F /* BabyRhythm.h */,
+				843489E4221D4C9800C0FC8F /* BabyRhythm.m */,
+				843489E8221D4C9900C0FC8F /* BabySpeaker.h */,
+				843489EF221D4C9A00C0FC8F /* BabySpeaker.m */,
+				843489E1221D4C9800C0FC8F /* BabyToy.h */,
+				843489E2221D4C9800C0FC8F /* BabyToy.m */,
+			);
+			path = BabyBluetooth;
+			sourceTree = "<group>";
+		};
 		849002D221F018AD005B87DD /* AlertShowView */ = {
 			isa = PBXGroup;
 			children = (
@@ -2938,6 +2991,8 @@
 				8496FBF121EEB60C00EE8512 /* SPBCheckHomeVC.h */,
 				8496FBF221EEB60C00EE8512 /* SPBCheckHomeVC.m */,
 				8496FBF321EEB60C00EE8512 /* SPBCheckHomeVC.xib */,
+				841AA3A6221F9E29007F7276 /* SpbBlueModel.h */,
+				841AA3A7221F9E29007F7276 /* SpbBlueModel.m */,
 			);
 			path = SPBCheckModule;
 			sourceTree = "<group>";
@@ -3401,19 +3456,6 @@
 				84CD9FB521E6E1A7009E6C14 /* YWDatePicker.m */,
 			);
 			path = YWAlertView;
-			sourceTree = "<group>";
-		};
-		84CD9FC221E6E1F5009E6C14 /* BAPrivacyManager */ = {
-			isa = PBXGroup;
-			children = (
-				84CD9FC321E6E1F5009E6C14 /* BAKit_ConfigurationDefine.h */,
-				84CD9FC421E6E1F5009E6C14 /* BAKit_PrivacyManager.h */,
-				84CD9FC521E6E1F5009E6C14 /* BAKit_Singleton.h */,
-				84CD9FC621E6E1F5009E6C14 /* BAPrivacyManager.h */,
-				84CD9FC721E6E1F5009E6C14 /* BAPrivacyManager.m */,
-				84CD9FC821E6E1F5009E6C14 /* BAPrivacyManager_Version.h */,
-			);
-			path = BAPrivacyManager;
 			sourceTree = "<group>";
 		};
 		84CD9FCA21E6E253009E6C14 /* YXCalendar */ = {
@@ -3930,10 +3972,12 @@
 				84267B8E21E4467C00070A36 /* NSArray+MTLManipulationAdditions.m in Sources */,
 				84C2909121F6F40F0045DB82 /* HXDatePhotoViewTransition.m in Sources */,
 				84F749BA21E8784D00C67C67 /* JXCategoryIndicatorComponentView.m in Sources */,
+				843489F5221D4C9B00C0FC8F /* BabyCallback.m in Sources */,
 				84B96B6321EC22FD004E6BDE /* SPBAboutWeVC.m in Sources */,
 				84267AA121E432BB00070A36 /* UIFont-TTF.m in Sources */,
 				84267ADF21E432BB00070A36 /* UIView+Animation.m in Sources */,
 				84267B5621E432BB00070A36 /* NSURLRequest+ParamsFromDictionary.m in Sources */,
+				843489F8221D4C9B00C0FC8F /* BabySpeaker.m in Sources */,
 				84267A9521E432BB00070A36 /* UIButton+TouchAreaInsets.m in Sources */,
 				84267B2421E432BB00070A36 /* NSFileHandle+readLine.m in Sources */,
 				84267AE721E432BB00070A36 /* UIView+Frame.m in Sources */,
@@ -3945,6 +3989,7 @@
 				84267AAE21E432BB00070A36 /* UIImage+RemoteSize.m in Sources */,
 				842E4A6C21F16807000F8A98 /* CloseOperateVC.m in Sources */,
 				84267BE821E499E200070A36 /* SPBMainHomeVC.m in Sources */,
+				843489FC221D4D1B00C0FC8F /* SysBeaconManager.m in Sources */,
 				84267AE621E432BB00070A36 /* UIView+Find.m in Sources */,
 				84F749C221E8784D00C67C67 /* JXCategoryNumberCell.m in Sources */,
 				84F749AB21E8784D00C67C67 /* JXCategoryBaseView.m in Sources */,
@@ -3975,7 +4020,6 @@
 				84267A9921E432BB00070A36 /* UIColor+Random.m in Sources */,
 				84C290A821F6F40F0045DB82 /* UIView+HXExtension.m in Sources */,
 				84267AA321E432BB00070A36 /* UIImage+animatedGIF.m in Sources */,
-				84CD9FC921E6E1F6009E6C14 /* BAPrivacyManager.m in Sources */,
 				84267A9821E432BB00070A36 /* UIColor+Modify.m in Sources */,
 				84267AAC21E432BB00070A36 /* UIImage+Orientation.m in Sources */,
 				84267B8A21E4467C00070A36 /* MTLModel.m in Sources */,
@@ -4038,6 +4082,7 @@
 				84267ABD21E432BB00070A36 /* UINavigationBar+CustomHeight.m in Sources */,
 				84267B4621E432BB00070A36 /* NSString+Pinyin.m in Sources */,
 				84267B1D21E432BB00070A36 /* NSDictionary+JSONString.m in Sources */,
+				843489F9221D4C9B00C0FC8F /* BabyDefine.m in Sources */,
 				84267B0D21E432BB00070A36 /* NSData+Encrypt.m in Sources */,
 				84267BBE21E4557C00070A36 /* SgdFileDownLoad.m in Sources */,
 				84267A8421E432BB00070A36 /* UIAlertView+Block.m in Sources */,
@@ -4049,6 +4094,7 @@
 				84267B0B21E432BB00070A36 /* NSData+APNSToken.m in Sources */,
 				84267B0F21E432BB00070A36 /* NSData+Hash.m in Sources */,
 				84267AA421E432BB00070A36 /* UIImage+BetterFace.m in Sources */,
+				843489F3221D4C9B00C0FC8F /* BabyToy.m in Sources */,
 				84267AF821E432BB00070A36 /* UIViewController+ScrollingStatusBar.m in Sources */,
 				84A6DCEE21FAFA0E00807CFC /* NSDate+BRPickerView.m in Sources */,
 				84267BAF21E451C100070A36 /* SVProgressHUD.m in Sources */,
@@ -4165,6 +4211,7 @@
 				84C290A421F6F40F0045DB82 /* UIFont+HXExtension.m in Sources */,
 				84267AEC21E432BB00070A36 /* UIView+Screenshot.m in Sources */,
 				84267A9121E432BB00070A36 /* UIButton+CountDown.m in Sources */,
+				843489F1221D4C9B00C0FC8F /* BabyBluetooth.m in Sources */,
 				84267AB721E432BB00070A36 /* UIImageView+Reflect.m in Sources */,
 				84267AA221E432BB00070A36 /* UIImage+Alpha.m in Sources */,
 				84C2907F21F6F40F0045DB82 /* HXAlbumModel.m in Sources */,
@@ -4182,6 +4229,7 @@
 				84267AE921E432BB00070A36 /* UIView+Nib.m in Sources */,
 				84267AB821E432BB00070A36 /* UILabel+AutomaticWriting.m in Sources */,
 				84267B0421E432BB00070A36 /* UIWebView+TS_JavaScriptContext.m in Sources */,
+				843489F4221D4C9B00C0FC8F /* BabyRhythm.m in Sources */,
 				84267AEF21E432BB00070A36 /* UIView+ViewController.m in Sources */,
 				84267B0721E432BB00070A36 /* NSArray+Block.m in Sources */,
 				84B96B6621EC22FD004E6BDE /* SPBUserCenterVC.m in Sources */,
@@ -4191,6 +4239,7 @@
 				84267B2B21E432BB00070A36 /* NSDecimalNumber+CalculatingByString.m in Sources */,
 				84267AC321E432BB00070A36 /* UINavigationItem+Loading.m in Sources */,
 				84C2908E21F6F40F0045DB82 /* HXDatePhotoViewController.m in Sources */,
+				843489F6221D4C9B00C0FC8F /* BabyOptions.m in Sources */,
 				84267ACC21E432BB00070A36 /* UIScrollView+APParallaxHeader.m in Sources */,
 				84267B3621E432BB00070A36 /* NSObject+GCD.m in Sources */,
 				84267AFF21E432BB00070A36 /* UIWebView+JS.m in Sources */,
@@ -4206,6 +4255,7 @@
 				84F74A0321E88F3600C67C67 /* MJRefreshHeader.m in Sources */,
 				84267B2921E432BB00070A36 /* NSInvocation+Block.m in Sources */,
 				84267A8D21E432BB00070A36 /* UIBezierPath+SVG.m in Sources */,
+				841AA3A8221F9E29007F7276 /* SpbBlueModel.m in Sources */,
 				84C290DB21F6FA380045DB82 /* UIImage+YYWebImage.m in Sources */,
 				84267B3A21E432BB00070A36 /* NSObject+Runtime.m in Sources */,
 				84F74A0021E88F3600C67C67 /* MJRefreshBackFooter.m in Sources */,
@@ -4289,6 +4339,7 @@
 				84C2908821F6F40F0045DB82 /* HXDatePhotoEditViewController.m in Sources */,
 				84F749FF21E88F3600C67C67 /* MJRefreshAutoFooter.m in Sources */,
 				84F74A0B21E88F3600C67C67 /* MJRefreshNormalHeader.m in Sources */,
+				843489F2221D4C9B00C0FC8F /* BabyCentralManager.m in Sources */,
 				84267B2C21E432BB00070A36 /* NSDecimalNumber+Extensions.m in Sources */,
 				84267B3E21E432BB00070A36 /* NSString+Base64.m in Sources */,
 				84F74A1221E88F3600C67C67 /* UIView+MJExtension.m in Sources */,
@@ -4310,6 +4361,7 @@
 				84267A9221E432BB00070A36 /* UIButton+Indicator.m in Sources */,
 				84F7495721E8770400C67C67 /* UIWindow+JXSafeArea.m in Sources */,
 				84267B2121E432BB00070A36 /* NSDictionary+XML.m in Sources */,
+				843489F7221D4C9B00C0FC8F /* BabyPeripheralManager.m in Sources */,
 				84F749C921E8784D00C67C67 /* JXCategoryTitleImageCellModel.m in Sources */,
 				84267ABA21E432BB00070A36 /* UILabel+ESAdjustableLabel.m in Sources */,
 				84F74A0521E88F3600C67C67 /* MJRefreshAutoNormalFooter.m in Sources */,
@@ -4496,6 +4548,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/MuseumSysPro/SysBFrameWorks/MinewBeacon",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.changjianYu.MuseumSysPro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -4522,6 +4575,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/MuseumSysPro/SysBFrameWorks/MinewBeacon",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.changjianYu.MuseumSysPro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

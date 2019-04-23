@@ -13,18 +13,26 @@
 #import "ReportFaultView.h"
 #import "PubTimeLineTViewCell.h"
 #import "SPBLoginVC.h"
+//
+#import <CoreBluetooth/CoreBluetooth.h>
+#import "BabyBluetooth.h"
+#import "SpbBlueModel.h"
 
 @interface SPBCheckHomeVC ()<UINavigationControllerDelegate,UITableViewDelegate, UITableViewDataSource>{
     NSArray *dataArray;
     NSTimer *timeNow;
     BOOL isFirstOpen;
+    NSMutableArray *peripheralDataArray;
+    BabyBluetooth *baby;
 }
 @property (strong, nonatomic) MJRefreshAutoNormalFooter     * footerView;
 @property(nonatomic,strong) ShowSuccessView *showView ;
 @property(nonatomic,strong) ReportFaultView *reportFaultView ;
 @property(nonatomic,strong) NSMutableArray *deviceIDArray;
+@property(nonatomic,strong) NSMutableArray *peripheralDataArray;
 @property(nonatomic,assign) BOOL isShow;//是否展示正常打卡
 @property(nonatomic,strong) MinewBeacon *currentDevice;//当前打卡设备
+@property(nonatomic,strong) SpbBlueModel *currentBlueModel;//当前打卡设备
 @end
 
 @implementation SPBCheckHomeVC
@@ -45,6 +53,7 @@
     self.mainTableView.estimatedSectionHeaderHeight = 0;
     self.mainTableView.estimatedSectionFooterHeight = 0;
     self.mainTableView.separatorStyle=UITableViewCellSeparatorStyleNone;
+    self.mainTableView.separatorColor = [UIColor clearColor];
     [self.mainTableView registerClass:[PubTimeLineTViewCell class] forCellReuseIdentifier:@"PubTimeLineTViewCell"];
     self.mainTableView.backgroundColor = [UIColor clearColor];
     //
@@ -75,15 +84,15 @@
         }
         
     };
-//    [[BeaconManager sharedInstance] scanBeaconAboutArray:@[]];
-    //获取绑定的蓝牙设备列表
-    [self getHttpAboutMarkList];
+    //初始化蓝牙扫描
+    [self scanBeaconOpreation];
 }
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
     self.navigationController.delegate = self;
 //    [self.navigationController setNavigationBarHidden:YES animated:YES];
+    [self beginScan];
     if ([SysPubSingleThings getLoginStatus]) {
         if (isFirstOpen) {
             isFirstOpen = NO;
@@ -102,6 +111,11 @@
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
+    [self stopScan];
+    //清空之前扫描的设备
+    [self.peripheralDataArray removeAllObjects];
+    self.isShow = NO;
+    [self changeViewStatues:nil andIsContent:NO];
 //    [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 -(void)viewDidLayoutSubviews
@@ -181,8 +195,11 @@
     __weak typeof(self) weakSelf = self;
     if (self.isShow) {
         //
-        NSString *deviceId =  [self.currentDevice getBeaconValue:BeaconValueIndex_UUID].stringValue;
-        NSString *remaining_electricity =  [NSString stringWithFormat:@"%ld",(long)[self.currentDevice getBeaconValue:BeaconValueIndex_BatteryLevel].intValue];
+//        NSString *deviceId =  [self.currentDevice getBeaconValue:BeaconValueIndex_UUID].stringValue;
+//        NSString *remaining_electricity =  [NSString stringWithFormat:@"%ld",(long)[self.currentDevice getBeaconValue:BeaconValueIndex_BatteryLevel].intValue];
+        NSString *deviceId =  self.currentBlueModel.UUIDString;
+        NSString *remaining_electricity =  self.currentBlueModel.blueBatteryLevel;
+
         self.reportFaultView = nil;
         [[UIApplication sharedApplication].keyWindow addSubview:self.reportFaultView];
         self.reportFaultView.deviceId = deviceId;
@@ -206,10 +223,12 @@
     [self.mainTableView reloadData];
 }
 -(void)changeViewStatues:(NSDictionary *)dic andIsContent:(BOOL)isContent{
-    NSString *dateStr = [SwTools dateToString:[NSDate date] DateFormat:@"yyyy-MM-dd"];
-    NSString *deviceName =  [self.currentDevice getBeaconValue:BeaconValueIndex_Name].stringValue;
+//    NSString *dateStr = [SwTools dateToString:[NSDate date] DateFormat:@"yyyy-MM-dd"];
+//    NSLog(@"%@",dateStr);
+//    NSString *deviceName =  [self.currentDevice getBeaconValue:BeaconValueIndex_Name].stringValue;
+    NSString *deviceName = self.currentBlueModel.AddressName;
     self.showBeaconLabel.text = deviceName;
-    NSLog(@"%@",dateStr);
+    
     if (isContent) {
         //在打卡范围
         self.circleView.layer.cornerRadius = self.circleView.frame.size.width / 2;
@@ -256,11 +275,13 @@
         if (statusStr.boolValue) {
             NSArray *bindedList = retValue[@"obj"][@"bindedList"];
             if ([bindedList isKindOfClass:[NSArray class]] && bindedList.count) {
+                [weakSelf.deviceIDArray removeAllObjects];
                 for (NSDictionary *dic in bindedList) {
                     NSString *deviceId = [dic safeObjectForKey:@"deviceId"];
                     [weakSelf.deviceIDArray addObject:deviceId];
                 }
             }
+            //下面的配套SDK不可用，暂不清理代码，考虑以后可能更新SDK
             [[BeaconManager sharedInstance] scanBeaconAboutArray:weakSelf.deviceIDArray];
         }else{
             
@@ -284,6 +305,52 @@
     } andFailBlock:^(NSError * _Nonnull error, id  _Nonnull contextInfo) {
         NSLog(@"andFailBlock:%@",error);
        
+    }];
+}
+//根据设备名称查询设备id
+-(void)acchiveHttpAboutDetailDeviceId:(NSString *)deviceName{
+//    __weak typeof(self) weakSelf = self;
+    NSDictionary * dic = @{@"deviceIosName":deviceName};
+    [[SysPubHttpKit shareHttpKit] sPubInvokeApiWithPostBaseURL:BASE_HTTP_SERVER andMethond:@"/inspection/beacon/getDeviceId" andParams:dic andSuccessBlock:^(id  _Nonnull retValue) {
+        NSLog(@"andSuccessBlock:%@",retValue);
+        NSString *statusStr = [retValue safeObjectForKey:@"success"];
+        if (statusStr.boolValue) {
+           
+        }else{
+            
+        }
+    } andFailBlock:^(NSError * _Nonnull error, id  _Nonnull contextInfo) {
+        NSLog(@"andFailBlock:%@",error);
+        
+    }];
+}
+//获取绑定列表
+-(void)acchiveHttpForDeviceListall{
+    __weak typeof(self) weakSelf = self;
+    [self stopScan];
+    //清空之前扫描的设备
+    [self.peripheralDataArray removeAllObjects];
+    self.isShow = NO;
+    [self changeViewStatues:nil andIsContent:NO];
+    NSDictionary * dic = @{};
+    [[SysPubHttpKit shareHttpKit] sPubInvokeApiWithPostBaseURL:BASE_HTTP_SERVER andMethond:@"/inspection/location/listAll" andParams:dic andSuccessBlock:^(id  _Nonnull retValue) {
+        NSLog(@"andSuccessBlock:%@",retValue);
+        NSString *statusStr = [retValue safeObjectForKey:@"success"];
+        if (statusStr.boolValue) {
+            NSArray *bindedList = retValue[@"obj"][@"bindedList"];
+            if ([bindedList isKindOfClass:[NSArray class]] && bindedList.count) {
+                [weakSelf.deviceIDArray removeAllObjects];
+                for (NSDictionary *dic in bindedList) {
+                    [weakSelf.deviceIDArray addObject:dic];
+                }
+            }
+            [weakSelf beginScan];
+        }else{
+            
+        }
+    } andFailBlock:^(NSError * _Nonnull error, id  _Nonnull contextInfo) {
+        NSLog(@"andFailBlock:%@",error);
+        
     }];
 }
 #pragma mark ****************************** getter and setter   ******************************
@@ -328,7 +395,10 @@
     @weakify(self);
     _baseScrollView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
         @strongify(self);
+        [[BeaconManager sharedInstance] stopScan];
         [self httpRequestFromServers];
+        [self acchiveHttpForDeviceListall];
+//        [self getHttpAboutMarkList];
     }];
     
     if (!_footerView) {
@@ -379,5 +449,145 @@
 
 - (void)dealloc {
     self.navigationController.delegate = nil;
+}
+#pragma mark -BabyBluetooth Opreation
+- (void)scanBeaconOpreation{
+    if (!self.peripheralDataArray) {
+        self.peripheralDataArray = [[NSMutableArray alloc]init];
+    }
+    //初始化BabyBluetooth 蓝牙库
+    if (!baby) {
+        baby = [BabyBluetooth shareBabyBluetooth];
+    }
+    //蓝牙网关初始化和委托方法设置
+    __weak typeof(self) weakSelf = self;
+    [baby setBlockOnCentralManagerDidUpdateState:^(CBCentralManager *central) {
+        if (central.state == CBCentralManagerStatePoweredOn) {
+//            [SVProgressHUD showInfoWithStatus:@"正在检索打卡地点"];
+        }else{
+            [SVProgressHUD showInfoWithStatus:@"蓝牙状态异常"];
+        }
+    }];
+    
+    //设置扫描到设备的委托
+    [baby setBlockOnDiscoverToPeripherals:^(CBCentralManager *central, CBPeripheral *peripheral, NSDictionary *advertisementData, NSNumber *RSSI) {
+//        NSLog(@"搜索到了设备:%@",peripheral.name);
+        NSInteger perpheralIndex = -1 ;
+        for (int i = 0;  i < weakSelf.peripheralDataArray.count; i++) {
+            SpbBlueModel *model = [[SpbBlueModel alloc]init];
+            model = self.peripheralDataArray[i];
+            if ([model.peripheral.identifier isEqual:peripheral.identifier]) {
+                perpheralIndex = i ;
+                break ;
+            }
+        }
+        SpbBlueModel *model = [[SpbBlueModel alloc]init];
+        model.blueName = peripheral.name;
+        model.peripheral = peripheral;
+        model.UUIDString = peripheral.identifier.UUIDString;
+        model.blueBatteryLevel = @"80";//1.0.1版本传的是111
+        double min = [weakSelf  fzRssiToNumber:RSSI];
+        model.distance = [NSString stringWithFormat:@"%.2f",min];
+        if (perpheralIndex != -1) {
+            [weakSelf.peripheralDataArray replaceObjectAtIndex:perpheralIndex withObject:model];
+        }
+        else{
+            [weakSelf.peripheralDataArray addObject:model];
+        }
+        //上面得到去重和更新后的蓝牙设备数组
+        NSArray *newArray = [weakSelf compareBetweenArrayOne:weakSelf.deviceIDArray andArrayTwo:weakSelf.peripheralDataArray];
+//        NSLog(@"%lu",(unsigned long)newArray.count);
+        if (newArray.count) {
+            if (newArray.count) {
+                weakSelf.isShow = YES;
+                CGFloat cuDistance=1000.f;
+                for (SpbBlueModel *deviceModel in newArray) {
+                    CGFloat chaDistance = [deviceModel.distance floatValue];
+                    if (chaDistance<cuDistance) {
+                        cuDistance = chaDistance;
+                        weakSelf.currentBlueModel = deviceModel;
+                    }
+                    
+                }
+                [weakSelf changeViewStatues:nil andIsContent:weakSelf.isShow];
+            }else{
+                weakSelf.isShow = NO;
+                [weakSelf changeViewStatues:nil andIsContent:NO];
+            }
+        }
+    }];
+    
+    //设置查找设备的过滤器
+    [baby setFilterOnDiscoverPeripherals:^BOOL(NSString *peripheralName, NSDictionary *advertisementData, NSNumber *RSSI) {
+        
+        //最常用的场景是查找某一个前缀开头的设备
+        if ([peripheralName hasPrefix:@"cztech"] ) {
+            return YES;
+        }
+        return NO;
+        
+        //设置查找规则是名称大于0 ， the search rule is peripheral.name length > 0
+//        if (peripheralName.length >0) {
+//            return YES;
+//        }
+//        return NO;
+    }];
+    /*设置babyOptions
+     
+     参数分别使用在下面这几个地方，若不使用参数则传nil
+     - [centralManager scanForPeripheralsWithServices:scanForPeripheralsWithServices options:scanForPeripheralsWithOptions];
+     - [centralManager connectPeripheral:peripheral options:connectPeripheralWithOptions];
+     - [peripheral discoverServices:discoverWithServices];
+     - [peripheral discoverCharacteristics:discoverWithCharacteristics forService:service];
+     
+     该方法支持channel版本:
+     [baby setBabyOptionsAtChannel:<#(NSString *)#> scanForPeripheralsWithOptions:<#(NSDictionary *)#> connectPeripheralWithOptions:<#(NSDictionary *)#> scanForPeripheralsWithServices:<#(NSArray *)#> discoverWithServices:<#(NSArray *)#> discoverWithCharacteristics:<#(NSArray *)#>]
+     */
+    
+    //示例:
+    //扫描选项->CBCentralManagerScanOptionAllowDuplicatesKey:忽略同一个Peripheral端的多个发现事件被聚合成一个发现事件
+    NSDictionary *scanForPeripheralsWithOptions = @{CBCentralManagerScanOptionAllowDuplicatesKey:@YES};
+    //连接设备->
+    [baby setBabyOptionsWithScanForPeripheralsWithOptions:scanForPeripheralsWithOptions connectPeripheralWithOptions:nil scanForPeripheralsWithServices:nil discoverWithServices:nil discoverWithCharacteristics:nil];
+}
+- (void)beginScan{
+    //停止之前的连接
+    [baby cancelAllPeripheralsConnection];
+    //设置委托后直接可以使用，无需等待CBCentralManagerStatePoweredOn状态。
+    baby.scanForPeripherals().begin(2);
+    //baby.scanForPeripherals().begin().stop(10);
+}
+- (void)stopScan{
+    //停止扫描
+    [baby cancelScan];
+    
+}
+#pragma mark - RSSI转距离number
+- (double)fzRssiToNumber:(NSNumber *)RSSI
+{
+    int tempRssi = [RSSI intValue];
+    int absRssi = abs(tempRssi);
+    float power = (absRssi-75)/(10*2.0);
+    double number = pow(10, power);//除0外，任何数的0次方等于1
+    return number;
+}
+-(NSArray *)compareBetweenArrayOne:(NSArray *)fArray andArrayTwo:(NSArray *)peripheralArray{
+    //fArray存放字典，包含addressName，deviceId，locationId
+    NSMutableArray *changeArray = [[NSMutableArray alloc]initWithCapacity:10];
+    for (int i=0; i<peripheralArray.count; i++) {
+        SpbBlueModel *model = [[SpbBlueModel alloc]init];
+        model = self.peripheralDataArray[i];
+        for (int j=0; j<fArray.count; j++) {
+            NSDictionary *sssubDDDic = [fArray objectAtIndex:j];
+            NSString *ddNameStr = [sssubDDDic objectForKey:@"deviceIosName"];
+            if ([ddNameStr isEqualToString:model.blueName]) {
+                model.AddressName = [sssubDDDic objectForKey:@"addressName"];
+                model.UUIDString = [sssubDDDic objectForKey:@"deviceId"];
+                [changeArray addObject:model];
+                break;
+            }
+        }
+    }
+    return changeArray;
 }
 @end

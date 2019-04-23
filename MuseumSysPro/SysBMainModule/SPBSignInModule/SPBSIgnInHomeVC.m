@@ -266,13 +266,14 @@
 }
 - (UITableView *)mainTableView {
     if (!_mainTableView) {
-        _mainTableView = [[UITableView alloc]initWithFrame:CGRectMake(10, _pubCellDetailView2.bottom, SCREEN_WIDTH-25, SCREEN_HEIGHT-_pubCellDetailView2.bottom) style:UITableViewStylePlain];
+        _mainTableView = [[UITableView alloc]initWithFrame:CGRectMake(20, _pubCellDetailView2.bottom, SCREEN_WIDTH-35, SCREEN_HEIGHT-_pubCellDetailView2.bottom) style:UITableViewStylePlain];
 //        _mainTableView.backgroundColor = [UIColor colorWithHexString:@"f7f7f7"];
         _mainTableView.backgroundColor = [UIColor clearColor];
         _mainTableView.delegate = self;
         _mainTableView.dataSource = self;
         _mainTableView.showsVerticalScrollIndicator = NO;
         _mainTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        _mainTableView.separatorColor = [UIColor clearColor];
         _mainTableView.estimatedRowHeight = 0;
         _mainTableView.estimatedSectionHeaderHeight = 0;
         _mainTableView.estimatedSectionFooterHeight = 0;

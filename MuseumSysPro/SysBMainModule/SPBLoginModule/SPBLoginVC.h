@@ -9,6 +9,7 @@
 #import "SysPBaseViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
+typedef void(^LoginResult)(UIViewController *cViewC);
 
 @interface SPBLoginVC : SysPBaseViewController
 @property (weak, nonatomic) IBOutlet UIView *fMainView;
@@ -21,7 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet UIView *SSubLineView;
 @property (weak, nonatomic) IBOutlet UIButton *FindPasswordBt;
 @property (weak, nonatomic) IBOutlet UIButton *loginBt;
-
+@property (nonatomic, copy) LoginResult loginResult;
 @end
 
 NS_ASSUME_NONNULL_END

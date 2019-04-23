@@ -359,6 +359,7 @@ static const CGFloat SVProgressHUDLabelSpacing = 8.0f;
         _backgroundColor = [UIColor clearColor];
         _foregroundColor = [UIColor blackColor];
         _backgroundLayerColor = [UIColor colorWithWhite:0 alpha:0.4];
+//        _backgroundLayerColor = [[UIColor whiteColor] colorWithAlphaComponent:0.4];
         
         // Set default values
         _defaultMaskType = SVProgressHUDMaskTypeNone;
@@ -1216,6 +1217,7 @@ static const CGFloat SVProgressHUDLabelSpacing = 8.0f;
                 [_backgroundRadialGradientLayer removeFromSuperlayer];
             }
             _backgroundView.backgroundColor = self.defaultMaskType == SVProgressHUDMaskTypeCustom ? self.backgroundLayerColor : [UIColor colorWithWhite:0 alpha:0.4];
+//            _backgroundView.backgroundColor = self.defaultMaskType == SVProgressHUDMaskTypeCustom ? self.backgroundLayerColor : [[UIColor whiteColor] colorWithAlphaComponent:0.4];
             break;
         }
         case SVProgressHUDMaskTypeGradient:{

@@ -15,9 +15,9 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>1.0.4</string>
 	<key>CFBundleVersion</key>
-	<string>1.0.2</string>
+	<string>1.0.4</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
@@ -30,15 +30,7 @@
 	<key>NSCalendarsUsageDescription</key>
 	<string>App需要您的同意,才能访问日历</string>
 	<key>NSCameraUsageDescription</key>
-	<string>是否允许此App使用你的相机</string>
-	<key>NSContactsUsageDescription</key>
-	<string>App需要您的同意,才能使用通讯录模块</string>
-	<key>NSHealthShareUsageDescription</key>
-	<string>App需要您的同意,才能访问健康分享</string>
-	<key>NSHealthUpdateUsageDescription</key>
-	<string>App需要您的同意,才能访问健康更新</string>
-	<key>NSHomeKitUsageDescription</key>
-	<string>App需要您的同意,才能访问智能家居</string>
+	<string>App需要您的同意,才能使用你的相机,若不允许将不能在软件拍摄照片视频</string>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>App需要您的同意,才能始终访问位置信息</string>
 	<key>NSLocationUsageDescription</key>
@@ -50,9 +42,7 @@
 	<key>NSMotionUsageDescription</key>
 	<string>App需要您的同意,才能访问运动与健身</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>是否允许此App访问你的媒体资料库</string>
-	<key>NSSpeechRecognitionUsageDescription</key>
-	<string>App需要您的同意,才能访问语音识别</string>
+	<string>App需要您的同意,才能访问你的媒体资料库，若不允许将不能实现上报图片功能</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

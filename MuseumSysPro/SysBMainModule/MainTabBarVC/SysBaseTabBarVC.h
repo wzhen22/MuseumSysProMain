@@ -25,6 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,strong) SPBCheckHomeVC *checkHomeVC;
 @property(nonatomic,strong) StatisticsCenterHomeVC *statisticsCenterVC;
 
+-(instancetype)initAboutIsContentStatistics:(BOOL)isContent;
 @end
 
 NS_ASSUME_NONNULL_END

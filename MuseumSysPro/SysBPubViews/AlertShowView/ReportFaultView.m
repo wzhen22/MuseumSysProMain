@@ -84,10 +84,15 @@
 -(void)httpRequestFromServers{
     [SVProgressHUD show];
     NSString *dateStr = [SwTools dateToString:[NSDate date] DateFormat:@"yyyy-MM-dd HH:mm:ss"];
+//    NSDictionary * dic = @{@"inspectTime":dateStr,
+//                           @"emsi":@"",
+//                           @"deviceId":self.deviceId,
+//                           @"remaining_electricity":self.remaining_electricity,
+//                           @"report":self.textView.text
+//                           };
     NSDictionary * dic = @{@"inspectTime":dateStr,
                            @"emsi":@"",
                            @"deviceId":self.deviceId,
-                           @"remaining_electricity":self.remaining_electricity,
                            @"report":self.textView.text
                            };
     [[SysPubHttpKit shareHttpKit] sPubInvokeApiWithPostBaseURL:BASE_HTTP_SERVER andMethond:@"/inspection/record/report" andParams:dic andSuccessBlock:^(id  _Nonnull retValue) {

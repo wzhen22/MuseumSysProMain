@@ -7,9 +7,11 @@
 //
 
 #import "BeaconManager.h"
-#define uuid1 @"FDA50693-A4E2-4FB1-AFCF-C6EB07647825"
-#define uuid2 @"AB8190D5-D11E-4941-ACC4-42F30510B408"
-
+//#define uuid1 @"FDA50693-A4E2-4FB1-AFCF-C6EB07647825"
+//#define uuid2 @"AB8190D5-D11E-4941-ACC4-42F30510B408"
+#define uuid1 @"FDA50693-A4E2-4FB1-AFCF-C6EB07647826"
+#define uuid2 @"DEF7C445-3C2A-247C-50C1-97A067517DDD"
+#define uuid3 @"FDA50693-A4E2-4FB1-AFCF-C6EB07647825"
 @implementation BeaconManager{
     MinewBeaconManager *_manager;
 }
@@ -38,7 +40,8 @@
 - (void)scanBeaconAboutArray:(NSArray *)beaconArray
 {
     //用于测试
-//    [_manager startScan:@[uuid1, uuid2] backgroundSupport:YES];
+//    [_manager startScan:@[uuid1, uuid2, uuid3] backgroundSupport:YES];
+ 
 
     if (beaconArray.count) {
         [_manager startScan:beaconArray backgroundSupport:YES];
@@ -54,17 +57,8 @@
         }
     }else{
         //用于测试
-        [_manager startScan:@[uuid1, uuid2] backgroundSupport:YES];
+        [_manager startScan:@[uuid1, uuid2 , uuid3] backgroundSupport:YES];
     }
-
-    
-    
-//    if (beaconArray.count) {
-//        [_manager startScan:beaconArray backgroundSupport:YES];
-//    }else{
-//        //用于测试
-//        [_manager startScan:@[uuid1, uuid2] backgroundSupport:YES];
-//    }
     
 }
 

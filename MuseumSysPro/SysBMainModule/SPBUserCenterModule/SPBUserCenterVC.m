@@ -12,6 +12,7 @@
 #import "SPBLoginVC.h"
 #import "SPBMainUserHeaderView.h"
 #import "UserCTableViewCell.h"
+#import "SysBaseTabBarVC.h"
 
 @interface SPBUserCenterVC ()<UINavigationControllerDelegate,UITableViewDelegate, UITableViewDataSource>{
     NSArray *dataArray;
@@ -130,6 +131,31 @@
             [SysPubSingleThings saveLoginStatus:NO];
             [SysPubSingleThings sharePublicSingle].isChangeLogin = YES;
             SPBLoginVC *sVC = [[SPBLoginVC alloc]init];
+            sVC.loginResult = ^(UIViewController * _Nonnull cViewC) {
+                NSDictionary *ddddDic = [SysPubSingleThings sharePublicSingle].loginDic;
+                NSArray *aaaArray = [ddddDic safeObjectForKey:@"roles"];
+                BOOL isbool = NO;//[aaaArray containsObject: @"4"];
+                if ([aaaArray isKindOfClass:[NSArray class]] && aaaArray.count) {
+                    for (NSString *nSSSSS in aaaArray) {
+                        if (nSSSSS.intValue == 4) {
+                            isbool = YES;
+                        }
+                    }
+//                    for (NSDictionary *nSSSSS in aaaArray) {
+//                        NSString *newSSS = [nSSSSS objectForKey:@"roleId"];
+//                        if (newSSS.intValue == 4) {
+//                            isbool = YES;
+//                        }
+//                    }
+                }
+                if (isbool) {
+                    NSLog(@"containsObject");
+                }
+                SysBaseTabBarVC *yTabBarController = [[SysBaseTabBarVC alloc]initAboutIsContentStatistics:isbool];
+                AppDelegateInstance.window.rootViewController = yTabBarController;
+                AppDelegateInstance.window.backgroundColor = [UIColor colorWithHexString:@"fafafa"];
+                [AppDelegateInstance.window makeKeyAndVisible];
+            };
             [self.navigationController pushViewController:sVC animated:YES];
         } andFailBlock:^(NSError * _Nonnull error, id  _Nonnull contextInfo) {
             NSLog(@"andFailBlock:%@",error);

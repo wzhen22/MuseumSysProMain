@@ -145,8 +145,9 @@
         [SVProgressHUD dismiss];
         NSString *statusStr = [retValue safeObjectForKey:@"success"];
         if (statusStr.boolValue) {
-            [SVProgressHUD showSuccessWithStatus:@"报告上传成功"];
-            [self navBackAction];
+            [SVProgressHUD showSuccessWithStatus:@"处理记录上报成功"];
+            [self.navigationController popToRootViewControllerAnimated:YES];
+//            [self navBackAction];
         }else{
             [SVProgressHUD showInfoWithStatus:[retValue safeObjectForKey:@"msg"]];
         }

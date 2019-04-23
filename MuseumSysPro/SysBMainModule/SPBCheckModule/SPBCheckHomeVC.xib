@@ -37,7 +37,7 @@
                     <rect key="frame" x="0.0" y="22" width="375" height="645"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mtc-Mo-3Tu">
-                            <rect key="frame" x="16" y="10" width="343" height="137"/>
+                            <rect key="frame" x="16" y="15" width="343" height="137"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="个人中心-管理员默认大头像.png" translatesAutoresizingMaskIntoConstraints="NO" id="uCB-9Q-FlG">
                                     <rect key="frame" x="22" y="18" width="55" height="56"/>
@@ -117,7 +117,7 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XnB-On-5Rd">
-                            <rect key="frame" x="0.0" y="167" width="375" height="216"/>
+                            <rect key="frame" x="0.0" y="172" width="375" height="216"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rzj-rc-eb9">
                                     <rect key="frame" x="-15" y="8" width="105" height="36"/>
@@ -214,7 +214,7 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QqB-6B-wR1">
-                            <rect key="frame" x="0.0" y="403" width="375" height="210"/>
+                            <rect key="frame" x="0.0" y="408" width="375" height="210"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OKn-Ml-1Zl">
                                     <rect key="frame" x="-15" y="8" width="105" height="36"/>
@@ -248,7 +248,7 @@
                         <constraint firstItem="XnB-On-5Rd" firstAttribute="centerX" secondItem="5db-vS-3V8" secondAttribute="centerX" id="M8V-l7-RLC"/>
                         <constraint firstAttribute="trailing" secondItem="mtc-Mo-3Tu" secondAttribute="trailing" constant="16" id="MRL-vD-wcE"/>
                         <constraint firstItem="mtc-Mo-3Tu" firstAttribute="centerX" secondItem="5db-vS-3V8" secondAttribute="centerX" id="XWX-l8-JyK"/>
-                        <constraint firstItem="mtc-Mo-3Tu" firstAttribute="top" secondItem="5db-vS-3V8" secondAttribute="top" constant="10" id="ahP-MW-9Bg"/>
+                        <constraint firstItem="mtc-Mo-3Tu" firstAttribute="top" secondItem="5db-vS-3V8" secondAttribute="top" constant="15" id="ahP-MW-9Bg"/>
                         <constraint firstItem="XnB-On-5Rd" firstAttribute="top" secondItem="mtc-Mo-3Tu" secondAttribute="bottom" constant="20" id="boU-2g-how"/>
                         <constraint firstItem="QqB-6B-wR1" firstAttribute="leading" secondItem="5db-vS-3V8" secondAttribute="leading" id="czv-3D-4yj"/>
                         <constraint firstItem="mtc-Mo-3Tu" firstAttribute="leading" secondItem="5db-vS-3V8" secondAttribute="leading" constant="16" id="fJq-bI-riy"/>

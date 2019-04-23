@@ -7,7 +7,7 @@
 //
 
 #import "SysBaseTabBarVC.h"
-#import "SPBLoginVC.h"
+//#import "SPBLoginVC.h"
 
 @interface SysBaseTabBarVC ()
 
@@ -19,8 +19,16 @@
 -(instancetype)init{
     self = [super init];
     if (self) {
+//        self.delegate = self;
+//        [self setChildViewControllers];
+    }
+    return self;
+}
+-(instancetype)initAboutIsContentStatistics:(BOOL)isContent{
+    self = [super init];
+    if (self) {
         self.delegate = self;
-        [self setChildViewControllers];
+        [self setChildViewControllers:isContent];
     }
     return self;
 }
@@ -59,13 +67,15 @@
 /**
  * 初始化所有的子控制器
  */
--(void) setChildViewControllers{
+-(void) setChildViewControllers:(BOOL)isContent{
     [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor colorWithHexString:@"777777"], NSForegroundColorAttributeName, [UIFont fontWithName:@"Helvetica" size:13],NSFontAttributeName,nil] forState:UIControlStateNormal];
     [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor colorWithHexString:@"148aff"], NSForegroundColorAttributeName, [UIFont fontWithName:@"Helvetica" size:13],NSFontAttributeName,nil] forState:UIControlStateSelected];
+    if (isContent) {
+        self.statisticsCenterVC  = [[StatisticsCenterHomeVC alloc]init];
+        //self.checkHomeVC.title = @"寻更巡检";
+        [self setupOneChildViewController:_statisticsCenterVC title:@"统计" image:@"05-数据统计-normal-" selectedImage:@"05-数据统计-activel-"];
+    }
     
-    self.statisticsCenterVC  = [[StatisticsCenterHomeVC alloc]init];
-    //self.checkHomeVC.title = @"寻更巡检";
-    [self setupOneChildViewController:_statisticsCenterVC title:@"统计" image:@"05-数据统计-normal-" selectedImage:@"05-数据统计-activel-"];
     
     self.checkHomeVC  = [[SPBCheckHomeVC alloc]init];
     //self.checkHomeVC.title = @"寻更巡检";

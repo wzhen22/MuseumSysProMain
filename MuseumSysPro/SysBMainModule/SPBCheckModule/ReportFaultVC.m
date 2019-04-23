@@ -138,6 +138,14 @@ static const CGFloat kPhotoViewMargin = 12.0;
 #pragma mark ****************************** event   Response    ******************************
 
 - (IBAction)publishBtClick:(id)sender {
+    if (!self.faultAddressField.text.length) {
+        [SVProgressHUD showInfoWithStatus:@"隐患地址不能为空"];
+        return;
+    }
+    if (!self.faultTextView.text.length) {
+        [SVProgressHUD showInfoWithStatus:@"隐患内容不能为空"];
+        return;
+    }
     if (self.mPhotoImages.count) {
         //    UIImage *img1 = [UIImage imageNamed:@"qidong@2x.png"];
         //    UIImage *img2 = [UIImage imageNamed:@"qidong@2x.png"];
@@ -204,6 +212,7 @@ static const CGFloat kPhotoViewMargin = 12.0;
     __weak typeof(self) weakSelf = self;
     self.alertPublishSView.dissViewBlock = ^(id  _Nonnull obj) {
         [weakSelf navBackAction];
+//        [weakSelf.navigationController popToRootViewControllerAnimated:YES];
     };
     [[UIApplication sharedApplication].keyWindow addSubview:self.alertPublishSView];
 }
@@ -213,7 +222,7 @@ static const CGFloat kPhotoViewMargin = 12.0;
         [SVProgressHUD showInfoWithStatus:@"隐患地址不能为空"];
         return;
     }
-    if (!self.faultAddressField.text.length) {
+    if (!self.faultTextView.text.length) {
         [SVProgressHUD showInfoWithStatus:@"隐患内容不能为空"];
         return;
     }

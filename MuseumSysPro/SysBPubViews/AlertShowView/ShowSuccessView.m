@@ -67,6 +67,8 @@
     //添加响应手势
     self.frame = [[UIScreen mainScreen] bounds];
     self.backgroundColor = [UIColor clearColor];
+    NSString *dateStr = [SwTools dateToString:[NSDate date] DateFormat:@"HH:mm"];
+    self.timelabel.text = dateStr;
     self.BackBaseView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.4];
     UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapGestureClick)];
     self.userInteractionEnabled = YES;
